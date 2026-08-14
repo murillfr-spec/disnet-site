@@ -16,7 +16,7 @@ export const heroCopy = {
   eyebrow: "Operador logístico en Barcelona",
   title: company.tagline,
   paragraphs: [
-    "Disnet está compuesta por profesionales con más de 35 años de experiencia en la gestión logística de la tercerización de las cadenas de suministro. El equipo gestiona los procesos con el conocimiento y rigor necesarios para que la externalización de las actividades logísticas de cualquier organización sea un éxito.",
+    "**Disnet** está compuesta por profesionales con **más de 35 años de experiencia en la gestión logística** de la tercerización de las cadenas de suministro. El equipo gestiona los procesos con el conocimiento y rigor necesarios para que la externalización de las actividades logísticas de cualquier organización sea un éxito.",
     "Los miembros del equipo de Disnet destacan en su amplia capacidad para identificar las necesidades de sus clientes e implementar los mecanismos necesarios para darles respuesta.",
     "Conscientes de la continua evolución del sector, el equipo de Disnet se encuentra en formación continua, buscando la vanguardia del conocimiento en las nuevas estrategias y metodologías de las operaciones logísticas.",
     "El equipo de Disnet garantiza una estructura logística permanente, que hace que todo esté a punto en el momento que se necesite.",
@@ -26,8 +26,8 @@ export const heroCopy = {
 export const barcelonaCopy = {
   title: "Logística en Barcelona con Disnet",
   paragraphs: [
-    "La ciudad de Barcelona es conocida por ser uno de los principales centros logísticos de España, ya que cuenta con una ubicación estratégica que la convierte en un punto clave para el transporte de mercancías tanto a nivel nacional como internacional.",
-    "Para aquellas empresas que buscan mejorar sus operaciones y aprovechar al máximo las oportunidades del mercado, contar con servicios logísticos en Barcelona es una decisión acertada. Disnet, como operador logístico líder en la ciudad, ofrece soluciones a medida para las necesidades de cada empresa, garantizando eficiencia, calidad y satisfacción en cada etapa de la cadena de suministro.",
+    "La ciudad de Barcelona es conocida por ser **uno de los principales centros logísticos de España**, ya que cuenta con una ubicación estratégica que la convierte en un punto clave para el transporte de mercancías tanto a nivel nacional como internacional.",
+    "Para aquellas empresas que buscan mejorar sus operaciones y aprovechar al máximo las oportunidades del mercado, contar con servicios logísticos en Barcelona es una decisión acertada. Disnet, como operador logístico líder en la ciudad, ofrece **soluciones a medida para las necesidades de cada empresa**, garantizando eficiencia, calidad y satisfacción en cada etapa de la cadena de suministro.",
   ],
   highlight: "¡Confía en Disnet para llevar tu empresa al siguiente nivel en logística!",
 };
@@ -63,9 +63,9 @@ export const services: Service[] = [
     name: "Recepción de mercancías",
     headline: "Con Disnet, la mercancía de tu empresa está siempre segura",
     intro: [
-      "Gestionamos la recepción de mercancías de acuerdo con los pliegos de condiciones previamente acordados con los clientes.",
-      "También realizamos los controles de calidad logísticos e informamos al cliente y/o proveedor de todas las incidencias detectadas.",
-      "Nuestras metodologías de trabajo buscan optimizar los movimientos, garantizar la trazabilidad y maximizar la eficacia de las operaciones.",
+      "Gestionamos la recepción de mercancías de acuerdo con los **pliegos de condiciones** previamente acordados con los clientes.",
+      "También realizamos los **controles de calidad logísticos** e informamos al cliente y/o proveedor de todas las incidencias detectadas.",
+      "Nuestras metodologías de trabajo buscan **optimizar los movimientos, garantizar la trazabilidad y maximizar la eficacia** de las operaciones.",
     ],
   },
   {
@@ -73,8 +73,8 @@ export const services: Service[] = [
     name: "Manipulación de mercancías",
     headline: "Disnet, trazabilidad garantizada en todos nuestros procesos",
     intro: [
-      "Realizamos cualquier operación de manipulación acordada con el cliente garantizando la trazabilidad total del proceso.",
-      "Realizamos manipulaciones independientemente del tamaño del lote. Desde lotes pequeños con poca automatización, a grandes lotes con secuencias semiautomatizadas.",
+      "Realizamos cualquier operación de manipulación acordada con el cliente garantizando la **trazabilidad total del proceso**.",
+      "Realizamos manipulaciones independientemente del tamaño del lote. Desde lotes pequeños con poca automatización, a **grandes lotes con secuencias semiautomatizadas**.",
     ],
     list: [
       "Planchado y encajado o embolsado de productos textiles.",
@@ -89,18 +89,18 @@ export const services: Service[] = [
     name: "Almacenaje",
     headline: "En Disnet, tenemos la tecnología más avanzada para el almacenaje de tus mercancías",
     intro: [
-      "Tenemos la capacidad para almacenar múltiples tipologías de unidades de carga (paletas, cajas, bobinas, etc.) de acuerdo con los estándares más exigentes de la manutención. Todo ello para garantizar su correcta conservación.",
-      "Disponemos de más de 6.000 ubicaciones en racks convencionales de palet, más de 15.000 ubicaciones de picking en una instalación de 6.500 m2 para almacenaje.",
-      "Para garantizar la veracidad de los stocks, realizamos inventarios permanentes y validamos el estado de estos.",
-      "Nuestro Sistema de Gestión de Almacén (SGA) nos permite aplicar una correcta distribución de los productos de acuerdo a la previsión de su consumo y así conseguir una mejor optimización del circuito logístico en el almacén.",
+      "Tenemos la capacidad para almacenar múltiples tipologías de unidades de carga (paletas, cajas, bobinas, etc.) de acuerdo con los **estándares más exigentes de la manutención**. Todo ello para garantizar su correcta conservación.",
+      "Disponemos de **más de 6.000 ubicaciones en racks** convencionales de palet, **más de 15.000 ubicaciones de picking** en una instalación de 6.500 m2 para almacenaje.",
+      "Para garantizar la veracidad de los stocks, realizamos **inventarios permanentes** y validamos el estado de estos.",
+      "Nuestro **Sistema de Gestión de Almacén (SGA)** nos permite aplicar una correcta distribución de los productos de acuerdo a la previsión de su consumo y así conseguir una mejor optimización del circuito logístico en el almacén.",
     ],
     sections: [
       {
         heading: "Almacenamiento de mercancías, gestión de inventario y distribución",
         paragraphs: [
-          "En Disnet, somos líderes en soluciones de almacenamiento y logística en Barcelona. Nuestros almacenes modernos y seguros están estratégicamente ubicados para brindarte acceso rápido y conveniente a las principales redes de transporte. Ya sea que necesites almacenar productos, gestionar inventarios o realizar distribuciones eficientes, nuestro equipo altamente capacitado está listo para ayudarte. Con tecnología de vanguardia y sistemas de gestión avanzados, podemos garantizar una gestión precisa y transparente de tus mercancías.",
-          "Además, entendemos la importancia de la flexibilidad y la adaptabilidad en el entorno empresarial actual. Por eso, ofrecemos soluciones personalizadas que se ajusten a tus necesidades específicas. Confía en nuestra experiencia y compromiso con la excelencia para optimizar tus operaciones logísticas.",
-          "Obtén soluciones personalizadas, servicios confiables y eficientes, y un equipo experto que se encargará de todas tus necesidades de almacenamiento y distribución. No pierdas más tiempo, aprovecha nuestra experiencia y ubicación estratégica para llevar tu empresa al siguiente nivel.",
+          "En Disnet, somos **líderes en soluciones de almacenamiento y logística** en Barcelona. Nuestros almacenes modernos y seguros están estratégicamente ubicados para brindarte acceso rápido y conveniente a las principales redes de transporte. Ya sea que necesites **almacenar productos, gestionar inventarios o realizar distribuciones eficientes**, nuestro equipo altamente capacitado está listo para ayudarte. Con tecnología de vanguardia y sistemas de gestión avanzados, podemos garantizar una gestión precisa y transparente de tus mercancías.",
+          "Además, entendemos la importancia de la **flexibilidad y la adaptabilidad** en el entorno empresarial actual. Por eso, ofrecemos **soluciones personalizadas** que se ajusten a tus necesidades específicas. Confía en nuestra experiencia y compromiso con la excelencia para optimizar tus operaciones logísticas.",
+          "Obtén **soluciones personalizadas, servicios confiables y eficientes**, y un equipo experto que se encargará de todas tus necesidades de almacenamiento y distribución. No pierdas más tiempo, aprovecha nuestra experiencia y ubicación estratégica para llevar tu empresa al siguiente nivel.",
         ],
       },
       {
@@ -155,7 +155,7 @@ export const services: Service[] = [
     name: "Preparación de pedidos",
     headline: "Disnet, especialistas en procesos de picking",
     intro: [
-      "En Disnet, somos expertos en la ejecución de operaciones de picking, que consisten en la preparación de pedidos utilizando el material almacenado antes de su envío al destinatario.",
+      "En Disnet, somos **expertos en la ejecución de operaciones de picking**, que consisten en la preparación de pedidos utilizando el material almacenado antes de su envío al destinatario.",
       "Nuestra planificación minuciosa nos permite seleccionar el método de optimización más apropiado en cada caso.",
     ],
     list: [
@@ -203,8 +203,8 @@ export const services: Service[] = [
     name: "Empaquetado – Packing",
     headline: "En Disnet, te garantizamos el mejor empaquetado para tu mercancía",
     intro: [
-      "En nuestras operaciones de empaquetado, conocidas como 'packing', nos encargamos de preparar todas las unidades de transporte en las que serán enviados los pedidos. Durante este proceso, aplicamos los criterios más avanzados en sostenibilidad, seguridad y trazabilidad.",
-      "Nuestro sistema de gestión de almacén (SGA) nos brinda recomendaciones sobre el embalaje más adecuado para cada envío, asegurando una preparación eficiente y apropiada.",
+      "En nuestras operaciones de empaquetado, conocidas como 'packing', nos encargamos de preparar todas las unidades de transporte en las que serán enviados los pedidos. Durante este proceso, aplicamos los **criterios más avanzados en sostenibilidad, seguridad y trazabilidad**.",
+      "Nuestro sistema de gestión de almacén (SGA) nos brinda **recomendaciones sobre el embalaje más adecuado** para cada envío, asegurando una preparación eficiente y apropiada.",
       "Una vez realizado el empaquetado, nos enfocamos en el envío de la mercancía de acuerdo con la fecha de entrega especificada por el cliente, generando toda la documentación necesaria según los requerimientos contractuales, legales y normativos aplicables.",
       "Esto garantiza que cada envío cumpla con los estándares y regulaciones vigentes.",
     ],
@@ -214,7 +214,7 @@ export const services: Service[] = [
     name: "e-Commerce",
     headline: "En Disnet, te garantizamos los mejores tiempos de entrega",
     intro: [
-      "Siguiendo las tendencias actuales del comercio, somos especialistas en la tercerización de cadenas de suministro para el sector del eCommerce. Con más de 25 años de experiencia, hemos gestionado y preparado pedidos, con la capacidad de atender más de 2.000.000 de envíos al año.",
+      "Siguiendo las tendencias actuales del comercio, somos especialistas en la tercerización de cadenas de suministro para el sector del eCommerce. Con **más de 25 años de experiencia**, hemos gestionado y preparado pedidos, con la capacidad de atender **más de 2.000.000 de envíos al año**.",
     ],
     list: [
       "Optimizar los tiempos de entrega.",
@@ -231,8 +231,8 @@ export const services: Service[] = [
     headline: "En Disnet, ofrecemos los mejores precios para el transporte de tu mercancía",
     subheadline: "Entrega rápida y siempre a tiempo",
     intro: [
-      "De acuerdo con nuestros procedimientos, siempre efectuamos el control de la calidad logística de la expedición antes de efectuar la carga de la mercancía en el transporte.",
-      "Utilizamos las agencias de transporte más convenientes para cada necesidad y garantizar el cumplimiento de las tasas de servicio acordadas con el cliente.",
+      "De acuerdo con nuestros procedimientos, siempre efectuamos el **control de la calidad logística** de la expedición antes de efectuar la carga de la mercancía en el transporte.",
+      "Utilizamos las **agencias de transporte más convenientes** para cada necesidad y garantizar el cumplimiento de las tasas de servicio acordadas con el cliente.",
       "Homologamos, calificamos y evaluamos las agencias de transporte utilizadas sea cual sea el destino de la mercancía.",
       "Disnet también puede responsabilizarse de la prestación de todo tipo de servicios tales como búsqueda y selección de transportistas, negociación de las condiciones, preparación de los contratos, gestión y control de la ejecución.",
       "De igual manera, estamos capacitados para gestionar servicios de transporte de forma eficiente, lo que nos permite ofrecer un servicio integral de envío de pedidos. Ya sea que necesites entregas locales o nacionales, estamos listos para manejar cada aspecto de tu logística de manera efectiva, garantizando que tus productos lleguen a su destino de manera segura y puntual.",
@@ -243,7 +243,7 @@ export const services: Service[] = [
     name: "Logística inversa",
     headline: "Gestión de devoluciones e incidencias con total fiabilidad",
     intro: [
-      "En Disnet, no solo nos enfocamos en la gestión eficiente de las entregas, sino que también nos ocupamos de la logística inversa, lo que abarca la gestión de devoluciones y la resolución de cualquier incidencia que pueda surgir en el proceso.",
+      "En Disnet, no solo nos enfocamos en la gestión eficiente de las entregas, sino que también nos ocupamos de la logística inversa, lo que abarca la **gestión de devoluciones** y la resolución de cualquier incidencia que pueda surgir en el proceso.",
       "Mantenemos conectividad con los sistemas de gestión de información más ampliamente utilizados, como Magento, PrestaShop, Opencart y otros. Esto nos permite estar en sintonía con las plataformas de eCommerce y garantizar una integración sin problemas en todas las etapas de la cadena de suministro.",
       "Reconocemos que ofrecer facilidad y rapidez en los procesos de reclamación y devolución es esencial para la satisfacción del cliente. Por lo tanto, hemos desarrollado varias alternativas de soporte diseñadas para simplificar y agilizar estos procedimientos. Nuestro objetivo es permitir que los clientes realicen devoluciones de manera confiable y sin costos que intimiden o afecten negativamente a su experiencia de compra o al negocio de nuestros clientes.",
     ],
@@ -253,7 +253,7 @@ export const services: Service[] = [
 export const whyChooseUs = {
   title: "¿Por qué escoger Disnet?",
   intro: [
-    "Disnet es un 3PL que ofrece desde 1991 un servicio flexible adaptado a las necesidades de cada cliente. La razón de ser de Disnet es asumir todos los requerimientos logísticos de nuestros clientes adaptando nuestros sistemas de trabajo, organización e instalaciones para responder a sus expectativas con la máxima rapidez y fiabilidad.",
+    "Disnet es un 3PL que ofrece **desde 1991 un servicio flexible** adaptado a las necesidades de cada cliente. La razón de ser de Disnet es asumir todos los requerimientos logísticos de nuestros clientes adaptando nuestros sistemas de trabajo, organización e instalaciones para responder a sus expectativas con la **máxima rapidez y fiabilidad**.",
     "Nuestra dimensión y proximidad nos coloca al alcance de cualquier organización, desde pequeñas empresas de ámbito local hasta organizaciones industriales de mayor dimensión.",
   ],
   points: [
@@ -290,8 +290,8 @@ export const quotes = [
 export const empresaCopy = {
   title: "Disnet – la logística como filosofía de trabajo",
   intro: [
-    "¿Buscas una empresa de logística en Barcelona confiable y eficiente? En Disnet nos enorgullece ofrecer servicios de logística de primera clase.",
-    "Ya sea que necesites transporte, almacenamiento o distribución de mercancías, nuestro equipo altamente capacitado y nuestras soluciones personalizadas están diseñados para satisfacer tus necesidades específicas. Con una sólida red de socios y una amplia experiencia en la industria, estamos comprometidos a brindarte soluciones logísticas integrales que optimicen tus operaciones y te ayuden a alcanzar tus objetivos comerciales.",
+    "¿Buscas una empresa de logística en Barcelona confiable y eficiente? En Disnet nos enorgullece ofrecer **servicios de logística de primera clase**.",
+    "Ya sea que necesites transporte, almacenamiento o distribución de mercancías, nuestro equipo altamente capacitado y nuestras **soluciones personalizadas** están diseñados para satisfacer tus necesidades específicas. Con una sólida red de socios y una amplia experiencia en la industria, estamos comprometidos a brindarte **soluciones logísticas integrales** que optimicen tus operaciones y te ayuden a alcanzar tus objetivos comerciales.",
     "Confía en nuestra experiencia local y en nuestra dedicación para proporcionarte un servicio confiable y eficiente. ¡Contacta con nosotros hoy mismo y descubre cómo podemos impulsar el éxito de tu negocio en Barcelona!",
   ],
   mission: "Proporcionar competitividad a los procesos logísticos.",
@@ -337,7 +337,7 @@ export const blogPosts: BlogPost[] = [
     title: "Operador logístico en Barcelona: aspectos clave que debes tener en cuenta antes de contratar",
     excerpt: "Gestionar la cadena de suministro de una empresa de forma interna puede convertirse rápidamente en un verdadero cuello de botella operativo. A medida que un negocio escala, tareas críticas como…",
     body: [
-      { text: "Gestionar la cadena de suministro de una empresa de forma interna puede convertirse rápidamente en un verdadero cuello de botella operativo. A medida que un negocio escala, tareas críticas como el almacenamiento, el control de inventario y el despacho de mercancías absorben recursos humanos y tiempo valioso que se debería invertir en ventas y estrategias de marca. En este escenario, delegar los procesos en un operador logístico en Barcelona no es solo una alternativa de ahorro, sino una decisión estratégica indispensable." },
+      { text: "Gestionar la cadena de suministro de una empresa de forma interna puede convertirse rápidamente en un **verdadero cuello de botella operativo**. A medida que un negocio escala, tareas críticas como el almacenamiento, el control de inventario y el despacho de mercancías absorben recursos humanos y tiempo valioso que se debería invertir en ventas y estrategias de marca. En este escenario, delegar los procesos en un operador logístico en Barcelona no es solo una alternativa de ahorro, sino una **decisión estratégica indispensable**." },
       { text: "Barcelona se consolida como uno de los principales hubs logísticos del sur de Europa y un punto de conexión estratégico a nivel nacional e internacional. Sin embargo, elegir al socio de infraestructura física adecuado exige evaluar ciertos criterios de peso. Desde la experiencia de Disnet, como especialistas con más de 35 años en el sector (desde 1991), te desglosamos los factores esenciales que debes analizar antes de firmar con tu próximo proveedor 3PL." },
       { heading: "Ubicación estratégica y conectividad con vías de distribución" },
       { text: "El éxito de la distribución física radica en la inmediatez. Un operador logístico óptimo debe contar con naves ubicadas de manera que faciliten rápidos accesos a las principales arterias de comunicación, aeropuertos y puertos marítimos. Disponer de almacenes en el cinturón industrial de Barcelona reduce tiempos de tránsito y costes de última milla." },
@@ -363,7 +363,7 @@ export const blogPosts: BlogPost[] = [
     title: "Operador logístico 3PL: el aliado estratégico para delegar tu logística y escalar tu negocio",
     excerpt: "Gestionar la cadena de suministro, el almacenamiento y los envíos de una empresa puede convertirse rápidamente en un verdadero dolor de cabeza. Cuando el volumen crece, el tiempo que deberías…",
     body: [
-      { text: "Gestionar la cadena de suministro, el almacenamiento y los envíos de una empresa puede convertirse rápidamente en un verdadero dolor de cabeza. Cuando el volumen crece, el tiempo que deberías dedicar a vender y a hacer crecer tu marca se diluye entre cajas, inventarios y albaranes." },
+      { text: "Gestionar la cadena de suministro, el almacenamiento y los envíos de una empresa puede convertirse rápidamente en un **verdadero dolor de cabeza**. Cuando el volumen crece, el tiempo que deberías dedicar a vender y a hacer crecer tu marca se diluye entre cajas, inventarios y albaranes." },
       { text: "Para evitar que la gestión operativa frene tu evolución, contar con un operador logístico 3PL experto es la solución definitiva. Al externalizar estos procesos con un especialista, no solo liberas recursos humanos y tiempo valioso, sino que dejas la eficiencia de tus entregas en manos profesionales. En Disnet nos encargamos de absolutamente todo el proceso para que recuperes el foco en lo que realmente importa: tu negocio." },
       { heading: "¿Qué es exactamente un operador logístico 3PL y cómo transforma tu operativa?" },
       { text: "El concepto 3PL (Third-Party Logistics o Logística de Terceros) hace referencia a los servicios globales que una empresa subcontrata a un proveedor externo especializado para que asuma la responsabilidad de la gestión logística." },
@@ -394,7 +394,7 @@ export const blogPosts: BlogPost[] = [
     title: "¿Cómo la tecnología y la inteligencia artificial están transformando las empresas de logística?",
     excerpt: "Las empresas de logística han evolucionado mucho más allá del simple transporte de mercancías. Hoy, la clave está en integrar tecnología que permita trabajar con mayor precisión, rapidez y…",
     body: [
-      { text: "Las empresas de logística han evolucionado mucho más allá del simple transporte de mercancías. Hoy, la clave está en integrar tecnología que permita trabajar con mayor precisión, rapidez y control. La incorporación de herramientas avanzadas como la inteligencia artificial y la automatización está cambiando por completo la forma en la que se gestionan los pedidos, los envíos y el almacenamiento." },
+      { text: "Las empresas de logística han evolucionado mucho más allá del simple transporte de mercancías. Hoy, la clave está en integrar tecnología que permita trabajar con **mayor precisión, rapidez y control**. La incorporación de herramientas avanzadas como la **inteligencia artificial y la automatización** está cambiando por completo la forma en la que se gestionan los pedidos, los envíos y el almacenamiento." },
       { text: "Ya no se trata solo de mover productos, sino de hacerlo de forma más inteligente, eficiente y sin errores. Por eso, hoy te contamos cómo la tecnología y la inteligencia artificial están revolucionando las empresas de logística y por qué elegir un partner que apueste por la innovación puede marcar la diferencia en tu negocio." },
       { heading: "Inteligencia artificial en logística: decisiones más rápidas y precisas" },
       { text: "La inteligencia artificial permite a las empresas de logística anticiparse a situaciones y mejorar la toma de decisiones en tiempo real. Entre sus aplicaciones más relevantes destacan la predicción de la demanda, que permite anticipar picos de pedidos y ajustar el stock para evitar roturas o excesos de inventario; la optimización de rutas, analizando variables para elegir los recorridos más eficientes y reducir tiempos y costes; la automatización de procesos, desde la gestión de pedidos hasta el control de inventario, minimizando errores y mejorando la productividad; y la detección de incidencias, identificando posibles problemas antes de que afecten a la operativa o al cliente final." },
@@ -415,7 +415,7 @@ export const blogPosts: BlogPost[] = [
     title: "Operador logístico vs logística propia: ¿qué opción impulsa realmente el crecimiento de tu empresa?",
     excerpt: "Gestionar correctamente la logística de una empresa va mucho más allá de almacenar productos o enviarlos a tiempo. Hoy, la eficiencia en la cadena de suministro puede marcar la diferencia entre…",
     body: [
-      { text: "Gestionar correctamente la logística de una empresa va mucho más allá de almacenar productos o enviarlos a tiempo. Hoy, la eficiencia en la cadena de suministro puede marcar la diferencia entre una empresa competitiva y otra que pierde rentabilidad, tiempo y oportunidades." },
+      { text: "Gestionar correctamente la logística de una empresa va mucho más allá de almacenar productos o enviarlos a tiempo. Hoy, **la eficiencia en la cadena de suministro** puede marcar la diferencia entre una empresa competitiva y otra que pierde rentabilidad, tiempo y oportunidades." },
       { text: "Ante este escenario, muchas organizaciones se enfrentan a una decisión clave: mantener una logística propia o apostar por un operador logístico especializado. Aunque gestionar internamente ciertas operaciones puede parecer una solución de control, cada vez más empresas descubren que trabajar con un operador logístico como Disnet supone una ventaja estratégica, económica y operativa mucho más sólida." },
       { heading: "¿Qué implica tener una logística propia?" },
       { text: "La logística interna supone que la empresa asume directamente todos los procesos relacionados con su cadena de suministro: recepción de mercancías, almacenaje, control de stock, preparación de pedidos, empaquetado, transporte, gestión de devoluciones, tecnología de trazabilidad y personal especializado." },
@@ -440,7 +440,7 @@ export const blogPosts: BlogPost[] = [
     title: "Preparación de pedidos: cosas que debes tener en cuenta antes de contratar este servicio",
     excerpt: "La preparación de pedidos es uno de los procesos más críticos dentro de la logística de cualquier empresa que gestione envíos. Una gestión eficiente del picking no solo impacta en la rapidez de…",
     body: [
-      { text: "La preparación de pedidos es uno de los procesos más críticos dentro de la logística de cualquier empresa que gestione envíos. Una gestión eficiente del picking no solo impacta en la rapidez de las entregas, sino también en la satisfacción del cliente, la reducción de errores y la rentabilidad del negocio." },
+      { text: "La preparación de pedidos es uno de los **procesos más críticos** dentro de la logística de cualquier empresa que gestione envíos. Una gestión eficiente del picking no solo impacta en la rapidez de las entregas, sino también en la satisfacción del cliente, la reducción de errores y la rentabilidad del negocio." },
       { text: "Antes de contratar una empresa especializada en preparación de pedidos, es fundamental analizar una serie de factores clave que garantizarán que el servicio realmente aporte valor a tu cadena de suministro." },
       { heading: "Metodología de picking y capacidad de optimización" },
       { text: "No todas las empresas trabajan la preparación de pedidos de la misma forma. Es importante comprobar qué métodos de picking utilizan y si son capaces de adaptarlos a las necesidades específicas de tu operativa. Técnicas como el batch picking (picking por oleadas) permiten agrupar pedidos para optimizar tiempos, mientras que sistemas como el pick to box eliminan procesos intermedios al preparar directamente los productos en la caja final de envío." },
@@ -474,7 +474,7 @@ export const blogPosts: BlogPost[] = [
     title: "Aspectos clave a valorar antes de contratar un servicio de fulfillment",
     excerpt: "Delegar la logística es uno de los pasos más importantes para cualquier negocio online que busca optimizar su operativa y escalar de forma eficiente. Un servicio de fulfillment profesional no…",
     body: [
-      { text: "Delegar la logística es uno de los pasos más importantes para cualquier negocio online que busca optimizar su operativa y escalar de forma eficiente. Un servicio de fulfillment profesional no solo se encarga de almacenar y enviar productos, sino que se convierte en un aliado estratégico que impacta directamente en la experiencia del cliente y en la rentabilidad del e-commerce." },
+      { text: "Delegar la logística es uno de los pasos más importantes para cualquier negocio online que busca optimizar su operativa y escalar de forma eficiente. Un servicio de fulfillment profesional no solo se encarga de almacenar y enviar productos, sino que se convierte en un **aliado estratégico** que impacta directamente en la experiencia del cliente y en la rentabilidad del e-commerce." },
       { text: "Por este motivo, antes de contratar un servicio de fulfillment es fundamental analizar ciertos factores clave." },
       { heading: "Ubicación del almacén y conectividad logística" },
       { text: "Uno de los primeros puntos a evaluar es la localización del centro logístico. Contar con un almacén de fulfillment en Barcelona supone una ventaja estratégica gracias a su excelente red de transporte, su puerto internacional y sus conexiones aéreas y terrestres con el resto de Europa." },
@@ -509,7 +509,7 @@ export const blogPosts: BlogPost[] = [
     title: "Errores que perjudican la logística en tu e-commerce",
     excerpt: "La logística es uno de los pilares fundamentales para el éxito de cualquier e-commerce. Una mala gestión no solo afecta los tiempos de entrega, sino que impacta directamente en la satisfacción…",
     body: [
-      { text: "La logística es uno de los pilares fundamentales para el éxito de cualquier e-commerce. Una mala gestión no solo afecta los tiempos de entrega, sino que impacta directamente en la satisfacción del cliente, las valoraciones y, en consecuencia, en tus ventas." },
+      { text: "La logística es uno de los **pilares fundamentales** para el éxito de cualquier e-commerce. Una mala gestión no solo afecta los tiempos de entrega, sino que impacta directamente en la satisfacción del cliente, las valoraciones y, en consecuencia, en tus ventas." },
       { text: "En Disnet, especialistas en soluciones logísticas para e-commerce, sabemos que optimizar cada proceso marca la diferencia entre un negocio que crece y uno que pierde oportunidades." },
       { heading: "No optimizar los tiempos de entrega" },
       { text: "Uno de los errores más comunes en cualquier e-commerce es no contar con una estrategia clara para reducir los tiempos de entrega. Hoy en día, los usuarios esperan envíos rápidos y fiables. Cuando esto no se cumple, aumentan las cancelaciones, disminuye la confianza del cliente y se generan opiniones negativas." },

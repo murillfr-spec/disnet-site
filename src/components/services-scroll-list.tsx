@@ -12,10 +12,12 @@ function ServiceRow({ service, index }: { service: (typeof services)[number]; in
   const Icon = serviceIconBySlug[service.slug];
   const n = String(index + 1).padStart(2, "0");
 
+  const fromX = index % 2 === 0 ? -72 : 72;
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 56 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: fromX }}
+      whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-15% 0px -15% 0px" }}
       transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
     >

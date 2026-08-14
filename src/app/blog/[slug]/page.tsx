@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { blogPosts } from "@/lib/content";
 import { Reveal } from "@/components/reveal";
 import { CtaBanner } from "@/components/cta-banner";
+import { RichText } from "@/components/rich-text";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -57,7 +58,7 @@ export default async function BlogPostPage({
                   </h2>
                 ) : (
                   <p key={i} className="leading-relaxed">
-                    {block.text}
+                    <RichText text={block.text} />
                   </p>
                 )
               )}

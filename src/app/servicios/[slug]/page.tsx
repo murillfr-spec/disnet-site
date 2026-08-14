@@ -7,18 +7,19 @@ import { CtaBanner } from "@/components/cta-banner";
 import { MotionLink } from "@/components/motion-link";
 import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
+import { RichText } from "@/components/rich-text";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 const serviceImageBySlug: Record<string, string> = {
-  "recepcion-de-mercancias": "/images/hero-1.webp",
-  "manipulacion-de-mercancias": "/images/hero-5.webp",
+  "recepcion-de-mercancias": "/images/svc-recepcion.jpg",
+  "manipulacion-de-mercancias": "/images/svc-manipulacion.jpg",
   almacenaje: "/images/hero-4-almacen.webp",
   "preparacion-de-pedidos": "/images/hero-5.webp",
-  "empaqueado-packing": "/images/hero-4-almacen.webp",
-  "e-commerce": "/images/hero-3-server.webp",
-  "transporte-de-mercancias": "/images/hero-1.webp",
-  "logistica-inversa": "/images/hero-2.webp",
+  "empaqueado-packing": "/images/svc-empaquetado.jpg",
+  "e-commerce": "/images/svc-ecommerce.jpg",
+  "transporte-de-mercancias": "/images/svc-transporte.jpg",
+  "logistica-inversa": "/images/svc-inversa.jpg",
 };
 
 export async function generateStaticParams() {
@@ -83,7 +84,9 @@ export default async function ServiceDetailPage({
 
             <div className="mt-8 space-y-4 text-muted-foreground">
               {service.intro.map((p) => (
-                <p key={p}>{p}</p>
+                <p key={p}>
+                  <RichText text={p} />
+                </p>
               ))}
             </div>
 
@@ -101,7 +104,9 @@ export default async function ServiceDetailPage({
             {service.extra && (
               <div className="mt-6 space-y-4 text-muted-foreground">
                 {service.extra.map((p) => (
-                  <p key={p}>{p}</p>
+                  <p key={p}>
+                    <RichText text={p} />
+                  </p>
                 ))}
               </div>
             )}
@@ -126,7 +131,9 @@ export default async function ServiceDetailPage({
                 <h2 className="text-h3">{sec.heading}</h2>
                 <div className="mt-3 space-y-4 text-muted-foreground">
                   {sec.paragraphs.map((p) => (
-                    <p key={p}>{p}</p>
+                    <p key={p}>
+                      <RichText text={p} />
+                    </p>
                   ))}
                 </div>
               </Reveal>

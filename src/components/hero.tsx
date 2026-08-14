@@ -4,6 +4,7 @@ import { motion, type Variants } from "motion/react";
 import { heroCopy, company } from "@/lib/content";
 import { MotionLink } from "@/components/motion-link";
 import { HeroSlider } from "@/components/hero-slider";
+import { RichText } from "@/components/rich-text";
 
 const container: Variants = {
   hidden: {},
@@ -42,7 +43,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="text-body-lg mt-6 max-w-xl text-white/85">
-          {heroCopy.paragraphs[0]}
+          <RichText text={heroCopy.paragraphs[0]} />
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-wrap gap-3">

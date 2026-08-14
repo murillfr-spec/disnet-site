@@ -3,6 +3,7 @@
 import { whyChooseUs, quotes, barcelonaCopy } from "@/lib/content";
 import { Reveal } from "@/components/reveal";
 import { WhyChooseShowcase } from "@/components/why-choose-showcase";
+import { RichText } from "@/components/rich-text";
 
 export function WhyChooseUs() {
   return (
@@ -13,14 +14,16 @@ export function WhyChooseUs() {
             <h2 className="text-h2">{whyChooseUs.title}</h2>
             <div className="mt-5 space-y-4 text-muted-foreground">
               {whyChooseUs.intro.map((p) => (
-                <p key={p}>{p}</p>
+                <p key={p}>
+                  <RichText text={p} />
+                </p>
               ))}
             </div>
 
             <div className="mt-10 rounded-2xl border border-border bg-card p-6">
               <h3 className="text-h3">{barcelonaCopy.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {barcelonaCopy.paragraphs[0]}
+                <RichText text={barcelonaCopy.paragraphs[0]} />
               </p>
               <p className="mt-4 text-sm font-medium text-accent">{barcelonaCopy.highlight}</p>
             </div>
