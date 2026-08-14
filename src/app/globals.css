@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2e2e2e;
+  --card: #ffffff;
+  --card-foreground: #2e2e2e;
+  --muted: #f4f4f4;
+  --muted-foreground: #777777;
+  --border: #e6e6e6;
+  --accent: #cc0000;
+  --accent-foreground: #ffffff;
+  --accent-secondary: #1369cf;
+  --accent-secondary-foreground: #ffffff;
+  --ring: #cc0000;
+}
+
+:root[data-theme="dark"] {
+  --background: #121212;
+  --foreground: #f0f0f0;
+  --card: #1c1c1c;
+  --card-foreground: #f0f0f0;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --border: #2c2c2c;
+  --accent: #ff4d4d;
+  --accent-foreground: #121212;
+  --accent-secondary: #4a9eff;
+  --accent-secondary-foreground: #121212;
+  --ring: #ff4d4d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #121212;
+    --foreground: #f0f0f0;
+    --card: #1c1c1c;
+    --card-foreground: #f0f0f0;
+    --muted: #1a1a1a;
+    --muted-foreground: #a3a3a3;
+    --border: #2c2c2c;
+    --accent: #ff4d4d;
+    --accent-foreground: #121212;
+    --accent-secondary: #4a9eff;
+    --accent-secondary-foreground: #121212;
+    --ring: #ff4d4d;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-foreground: var(--accent-secondary-foreground);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-montserrat);
+  --font-mono: var(--font-geist-mono);
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+/*
+  Fluid type scale with optical sizing: tracking tightens and leading
+  compresses as size grows, per Apple's typography guidance. Body text
+  stays near-neutral tracking with generous leading for legibility.
+*/
+.text-display {
+  font-size: clamp(2.75rem, 2rem + 3vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.text-h1 {
+  font-size: clamp(2.25rem, 1.75rem + 2.2vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+
+.text-h2 {
+  font-size: clamp(1.875rem, 1.5rem + 1.5vw, 2.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.text-h3 {
+  font-size: clamp(1.125rem, 1rem + 0.4vw, 1.375rem);
+  line-height: 1.25;
+  letter-spacing: -0.011em;
+  font-weight: 600;
+}
+
+.text-eyebrow {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-body-lg {
+  font-size: clamp(1.0625rem, 1rem + 0.2vw, 1.25rem);
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

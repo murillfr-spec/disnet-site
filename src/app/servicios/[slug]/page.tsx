@@ -1,0 +1,227 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { services } from "@/lib/content";
+import { CtaBanner } from "@/components/cta-banner";
+import { MotionLink } from "@/components/motion-link";
+import { serviceIconBySlug } from "@/components/service-icons";
+import { Reveal } from "@/components/reveal";
+
+const press = { type: "spring", damping: 1, duration: 0.3 } as const;
+
+const serviceImageBySlug: Record<string, string> = {
+  "recepcion-de-mercancias": "/images/hero-1.webp",
+  "manipulacion-de-mercancias": "/images/hero-5.webp",
+  almacenaje: "/images/hero-4-almacen.webp",
+  "preparacion-de-pedidos": "/images/hero-5.webp",
+  "empaqueado-packing": "/images/hero-4-almacen.webp",
+  "e-commerce": "/images/hero-3-server.webp",
+  "transporte-de-mercancias": "/images/hero-1.webp",
+  "logistica-inversa": "/images/hero-2.webp",
+};
+
+export async function generateStaticParams() {
+  return services.map((service) => ({ slug: service.slug }));
+}
+
+async function getService(slug: string) {
+  return services.find((s) => s.slug === slug);
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const service = await getService(slug);
+  if (!service) return {};
+  return {
+    title: `${service.name} | Disnet`,
+    description: service.headline,
+  };
+}
+
+export default async function ServiceDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const service = await getService(slug);
+  if (!service) notFound();
+
+  const otherServices = services.filter((s) => s.slug !== slug);
+  const Icon = serviceIconBySlug[service.slug];
+  const image = serviceImageBySlug[service.slug];
+
+  return (
+    <>
+      <section className="border-b border-border">
+        <div className="mx-auto max-w-3xl px-6 py-20">
+          <Link href="/servicios" className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
+            ← Volver a servicios
+          </Link>
+          <Reveal>
+            <span className="mt-6 flex size-14 items-center justify-center rounded-full border border-border text-accent">
+              <Icon className="size-7" />
+            </span>
+            <h1 className="text-h1 mt-4">{service.name}</h1>
+            <p className="mt-4 text-lg text-accent">{service.headline}</p>
+            {service.subheadline && (
+              <p className="mt-1 text-sm font-medium uppercase tracking-wide text-muted-foreground">
+                {service.subheadline}
+              </p>
+            )}
+
+            {image && (
+              <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
+                <Image src={image} alt={service.name} fill sizes="(min-width: 768px) 672px, 100vw" className="object-cover" />
+              </div>
+            )}
+
+            <div className="mt-8 space-y-4 text-muted-foreground">
+              {service.intro.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+
+            {service.list && (
+              <ul className="mt-6 space-y-3">
+                {service.list.map((li) => (
+                  <li key={li} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
+                    {li}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {service.extra && (
+              <div className="mt-6 space-y-4 text-muted-foreground">
+                {service.extra.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+            )}
+
+            <MotionLink
+              href="/contacto"
+              whileTap={{ scale: 0.96 }}
+              transition={press}
+              className="mt-10 inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground"
+            >
+              Pedir presupuesto
+            </MotionLink>
+          </Reveal>
+        </div>
+      </section>
+
+      {service.sections && (
+        <section className="border-b border-border">
+          <div className="mx-auto max-w-3xl px-6 py-16">
+            {service.sections.map((sec, i) => (
+              <Reveal key={sec.heading} delay={i * 0.05} className={i > 0 ? "mt-10" : undefined}>
+                <h2 className="text-h3">{sec.heading}</h2>
+                <div className="mt-3 space-y-4 text-muted-foreground">
+                  {sec.paragraphs.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {service.benefits && (
+        <section className="border-b border-border bg-muted/40">
+          <div className="mx-auto max-w-6xl px-6 py-16">
+            <Reveal>
+              {service.benefitsTitle && <h2 className="text-h2">{service.benefitsTitle}</h2>}
+            </Reveal>
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {service.benefits.map((b, i) => (
+                <Reveal key={b.title} delay={(i % 3) * 0.06} className="rounded-2xl border border-border bg-card p-6">
+                  <h3 className="font-semibold text-accent">{b.title}</h3>
+                  {b.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b.description}</p>
+                  )}
+                  {b.points && (
+                    <ul className="mt-2 space-y-2">
+                      {b.points.map((pt) => (
+                        <li key={pt} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                          <span className="mt-1.5 size-1 shrink-0 rounded-full bg-accent" />
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {service.audience && (
+        <section className="border-b border-border">
+          <div className="mx-auto max-w-3xl px-6 py-16">
+            <Reveal>
+              {service.audienceTitle && <h2 className="text-h3">{service.audienceTitle}</h2>}
+              <ul className="mt-5 space-y-3">
+                {service.audience.map((a) => (
+                  <li key={a} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0 text-accent">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {service.ctaLabel && (
+        <section className="border-b border-border bg-muted/40">
+          <div className="mx-auto max-w-3xl px-6 py-14 text-center">
+            <MotionLink
+              href="/contacto"
+              whileTap={{ scale: 0.96 }}
+              transition={press}
+              className="inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground"
+            >
+              {service.ctaLabel}
+            </MotionLink>
+          </div>
+        </section>
+      )}
+
+      <section className="border-b border-border bg-muted/40">
+        <div className="mx-auto max-w-6xl px-6 py-14">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Otros servicios
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {otherServices.map((s) => (
+              <MotionLink
+                key={s.slug}
+                href={`/servicios/${s.slug}`}
+                whileTap={{ scale: 0.95 }}
+                transition={press}
+                className="rounded-full border border-border bg-card px-4 py-2 text-sm transition-colors duration-150 hover:border-accent hover:text-accent"
+              >
+                {s.name}
+              </MotionLink>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaBanner />
+    </>
+  );
+}
