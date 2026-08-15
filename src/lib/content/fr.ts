@@ -65,6 +65,29 @@ const services: Content["services"] = [
       "Nous réalisons également les **contrôles de qualité logistique** et informons le client et/ou le fournisseur de toutes les incidences détectées.",
       "Nos méthodologies de travail visent à **optimiser les mouvements, garantir la traçabilité et maximiser l'efficacité** des opérations.",
     ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Qu'est-ce que la réception de marchandises en logistique ?",
+        answer:
+          "C'est le processus de réception, de vérification et de contrôle de la qualité des produits qui arrivent dans un entrepôt avant leur stockage. Il comprend la vérification des quantités, de l'état et de la documentation selon les cahiers des charges convenus avec le client, ainsi que la notification de toute incidence détectée.",
+      },
+      {
+        question: "Comment garantit-on la traçabilité lors de la réception des marchandises ?",
+        answer:
+          "Grâce à un Système de Gestion d'Entrepôt (SGE) qui enregistre chaque mouvement dès l'entrée, à des contrôles de qualité logistique systématiques et à une communication immédiate au client ou au fournisseur de toute incidence détectée lors du déchargement.",
+      },
+      {
+        question: "Que se passe-t-il en cas d'incidence à la réception d'une commande ?",
+        answer:
+          "Elle est documentée et immédiatement signalée au client et/ou au fournisseur, ce qui permet de résoudre les écarts de quantité, les dommages ou les erreurs de référence avant que la marchandise n'entre en stock, évitant ainsi des problèmes ultérieurs dans l'inventaire.",
+      },
+      {
+        question: "Combien de temps faut-il pour traiter la réception d'une commande ?",
+        answer:
+          "Cela dépend du volume et du type de marchandise, mais un opérateur logistique avec des processus optimisés peut traiter la réception, le contrôle de qualité et le rangement en entrepôt le jour même, minimisant ainsi le délai entre l'arrivée et la disponibilité du stock.",
+      },
+    ],
   },
   {
     slug: "manipulacion-de-mercancias",
@@ -80,6 +103,29 @@ const services: Content["services"] = [
       "Démontage et montage de meubles du secteur de la literie.",
       "Unification de matières premières avec d'autres pour définir le produit final.",
       "Confection de packs et groupage pour promotions.",
+    ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Qu'inclut le service de manutention de marchandises ?",
+        answer:
+          "Des opérations telles que le repassage et la mise en boîte de produits textiles, l'assemblage de composants, le démontage et le montage de meubles, l'unification de matières premières et la confection de packs et de groupages pour promotions, toujours avec une traçabilité totale du processus.",
+      },
+      {
+        question: "Peut-on manipuler n'importe quel volume de marchandise ?",
+        answer:
+          "Oui. Un opérateur logistique expérimenté gère aussi bien de petits lots avec peu d'automatisation que de grands lots avec des séquences semi-automatisées, en adaptant le processus au type de produit et au volume spécifique de chaque client.",
+      },
+      {
+        question: "Quels secteurs ont le plus besoin de services de manutention ?",
+        answer:
+          "Le textile et la mode (repassage, mise en boîte), l'automobile (assemblage de composants), l'ameublement (montage et démontage) et les secteurs nécessitant la confection de packs promotionnels ou l'unification de matières premières pour des produits finaux personnalisés.",
+      },
+      {
+        question: "Comment garantit-on la traçabilité lors de la manutention des produits ?",
+        answer:
+          "Grâce à un système de gestion d'entrepôt qui enregistre chaque opération de manutention, de l'entrée du matériel jusqu'à la sortie du produit transformé, garantissant un contrôle total du processus quelle que soit la taille du lot.",
+      },
     ],
   },
   {
@@ -148,6 +194,29 @@ const services: Content["services"] = [
       },
     ],
     ctaLabel: "Demandez un devis personnalisé",
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Combien d'emplacements de stockage Disnet possède-t-il à Barcelone ?",
+        answer:
+          "Nous disposons de plus de 12 000 emplacements en racks conventionnels à palettes et de plus de 15 000 emplacements de picking dans une installation stratégiquement située à Sabadell, avec une capacité pour de multiples typologies d'unités de charge.",
+      },
+      {
+        question: "Quels types de marchandises peuvent être stockés ?",
+        answer:
+          "Palettes, cartons, bobines et pratiquement toute unité de charge, y compris pour des secteurs spécialisés comme la logistique textile et mode, cosmétique et parfumerie, toujours selon les normes de manutention et de conservation les plus exigeantes.",
+      },
+      {
+        question: "Qu'est-ce qu'un Système de Gestion d'Entrepôt (SGE) et pourquoi est-ce important ?",
+        answer:
+          "C'est le logiciel qui contrôle l'emplacement, le mouvement et l'inventaire de chaque produit en temps réel. Il permet de répartir la marchandise selon sa prévision de consommation, en optimisant le circuit logistique et en garantissant l'exactitude du stock grâce à des inventaires permanents.",
+      },
+      {
+        question: "Vaut-il mieux louer son propre entrepôt ou faire appel à un opérateur 3PL pour le stockage ?",
+        answer:
+          "Louer un entrepôt implique de gérer soi-même l'espace, le personnel et la technologie. Avec un opérateur 3PL comme Disnet, vous bénéficiez d'un service logistique complet (sécurité, SGE, personnel spécialisé) sans cette complexité opérationnelle ni l'investissement initial.",
+      },
+    ],
   },
   {
     slug: "preparacion-de-pedidos",
@@ -196,6 +265,29 @@ const services: Content["services"] = [
       "Aux marques qui aspirent à offrir une expérience client exceptionnelle grâce à des livraisons rapides et sans erreurs.",
     ],
     ctaLabel: "Contactez-nous",
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Quelle différence entre batch picking et pick to box ?",
+        answer:
+          "Le batch picking consiste à extraire ensemble le matériel de plusieurs commandes regroupées, puis à séparer les quantités par référence. Le pick to box place le matériel directement dans le carton d'expédition final au point même de prélèvement, éliminant une étape de séparation ultérieure.",
+      },
+      {
+        question: "Comment choisit-on la méthode de picking la plus adaptée ?",
+        answer:
+          "On analyse le volume de commandes, la typologie des produits et la fréquence des expéditions de chaque client afin de sélectionner la méthode d'optimisation la plus appropriée, en donnant toujours la priorité à la rapidité et à la précision de la préparation.",
+      },
+      {
+        question: "Quelles entreprises ont besoin d'un service de picking professionnel ?",
+        answer:
+          "Les e-commerces à fort volume de commandes en ligne, les entreprises avec un flux constant d'expéditions, celles qui cherchent à réduire leurs coûts opérationnels d'entrepôt et les marques qui souhaitent offrir des livraisons rapides et sans erreurs à leurs clients finaux.",
+      },
+      {
+        question: "Comment la préparation de commandes affecte-t-elle les retours ?",
+        answer:
+          "Une préparation de commandes précise réduit drastiquement les erreurs d'expédition, l'une des principales causes de retours. Le contrôle et la traçabilité intégraux durant le picking minimisent les erreurs avant que la commande ne quitte l'entrepôt.",
+      },
+    ],
   },
   {
     slug: "empaqueado-packing",
@@ -206,6 +298,29 @@ const services: Content["services"] = [
       "Notre système de gestion d'entrepôt (SGE) nous fournit des **recommandations sur l'emballage le plus adapté** à chaque expédition, garantissant une préparation efficace et appropriée.",
       "Une fois l'emballage réalisé, nous nous concentrons sur l'envoi de la marchandise conformément à la date de livraison spécifiée par le client, en générant toute la documentation nécessaire selon les exigences contractuelles, légales et réglementaires applicables.",
       "Cela garantit que chaque expédition respecte les normes et réglementations en vigueur.",
+    ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Quelle différence entre le packing et l'emballage standard ?",
+        answer:
+          "Le packing est la préparation spécifique de l'unité de transport pour l'expédition, en appliquant des critères de durabilité, de sécurité et de traçabilité. Un Système de Gestion d'Entrepôt recommande l'emballage le plus adapté selon le type de produit et la destination.",
+      },
+      {
+        question: "Comment décide-t-on du matériel d'emballage à utiliser pour chaque expédition ?",
+        answer:
+          "Le Système de Gestion d'Entrepôt (SGE) analyse le type de produit, sa fragilité et la destination de l'expédition pour recommander automatiquement l'emballage le plus adapté, en équilibrant protection du produit, coût et durabilité.",
+      },
+      {
+        question: "Quelle documentation est générée pendant le processus de packing ?",
+        answer:
+          "Toute la documentation nécessaire selon les exigences contractuelles, légales et réglementaires applicables à chaque expédition, garantissant sa conformité aux normes et réglementations en vigueur avant de quitter l'entrepôt vers sa destination.",
+      },
+      {
+        question: "Le packing inclut-il un emballage personnalisé à la marque ?",
+        answer:
+          "Oui. Le service s'adapte aux besoins spécifiques de chaque client et de chaque type de produit, en donnant toujours la priorité aux critères les plus avancés de durabilité, de sécurité et de traçabilité pour chaque unité de transport préparée.",
+      },
     ],
   },
   {
@@ -224,6 +339,29 @@ const services: Content["services"] = [
     extra: [
       "Chez Disnet, nous comprenons que, pour qu'une activité d'eCommerce prospère, la logistique doit offrir une expérience d'achat exceptionnelle. C'est la seule façon d'accroître la satisfaction du client. Il est donc essentiel que l'environnement en ligne fonctionne en harmonie avec le monde hors ligne. Pour y parvenir, nous maintenons une connectivité fluide avec les systèmes de gestion de l'information les plus utilisés, tels que **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, entre autres.",
     ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Avec quelles plateformes e-commerce Disnet s'intègre-t-il ?",
+        answer:
+          "Disnet propose un fulfillment avec une connectivité fluide pour Shopify, WooCommerce, Magento, PrestaShop, Opencart et d'autres systèmes de gestion, permettant à la logistique hors ligne de fonctionner en harmonie avec la boutique en ligne, sans friction technique.",
+      },
+      {
+        question: "Combien d'expéditions e-commerce Disnet gère-t-il par an ?",
+        answer:
+          "Avec plus de 25 ans d'expérience dans le secteur, Disnet a la capacité de traiter plus de 2 000 000 d'expéditions par an, en optimisant les délais de livraison, la traçabilité et la flexibilité des horaires d'expédition.",
+      },
+      {
+        question: "Qu'est-ce que le fulfillment et en quoi diffère-t-il de la logistique traditionnelle ?",
+        answer:
+          "Le fulfillment est la gestion intégrale de la commande e-commerce : réception du stock, stockage, picking, packing et envoi, le tout intégré à la plateforme en ligne. Contrairement à la logistique traditionnelle, il se concentre sur l'expérience d'achat numérique de bout en bout.",
+      },
+      {
+        question: "Comment le fulfillment améliore-t-il les délais de livraison de ma boutique en ligne ?",
+        answer:
+          "En externalisant auprès d'un opérateur spécialisé, les commandes sont préparées et expédiées grâce à des processus optimisés et une traçabilité en temps réel, réduisant les annulations et renforçant la confiance du client face à des délais de livraison peu fiables.",
+      },
+    ],
   },
   {
     slug: "transporte-de-mercancias",
@@ -237,6 +375,29 @@ const services: Content["services"] = [
       "Disnet peut également se charger de la prestation de tous types de services tels que la recherche et la sélection de transporteurs, la négociation des conditions, la préparation des contrats, ainsi que la gestion et le contrôle de l'exécution.",
       "De même, nous sommes en mesure de gérer efficacement les services de transport, ce qui nous permet d'offrir un service intégral d'expédition des commandes. Que vous ayez besoin de livraisons locales ou nationales, nous sommes prêts à prendre en charge chaque aspect de votre logistique de manière efficace, garantissant que vos produits arrivent à destination en toute sécurité et ponctuellement.",
     ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Comment Disnet sélectionne-t-il les agences de transport ?",
+        answer:
+          "Nous homologuons, qualifions et évaluons les agences de transport selon chaque besoin et destination, en utilisant toujours les options les plus avantageuses pour garantir le respect des taux de service convenus avec le client.",
+      },
+      {
+        question: "Quels contrôles de qualité sont effectués avant l'envoi de la marchandise ?",
+        answer:
+          "Le contrôle de la qualité logistique de l'expédition est toujours effectué avant le chargement de la marchandise dans le moyen de transport, en vérifiant l'état, les quantités et la documentation pour garantir qu'elle arrive à destination en toute sécurité et ponctuellement.",
+      },
+      {
+        question: "Disnet gère-t-il le transport national et international ?",
+        answer:
+          "Oui. Disnet recherche et sélectionne les transporteurs, négocie les conditions, prépare les contrats et gère l'exécution, tant pour les livraisons locales et nationales que pour les expéditions internationales, en s'adaptant aux besoins de chaque client.",
+      },
+      {
+        question: "Quel est l'avantage d'externaliser le transport avec un opérateur 3PL ?",
+        answer:
+          "On accède à de meilleurs tarifs grâce à la mutualisation des volumes de plusieurs clients, on élimine la gestion directe des transporteurs et on garantit un service intégral d'expédition avec un contrôle de qualité à chaque expédition.",
+      },
+    ],
   },
   {
     slug: "logistica-inversa",
@@ -246,6 +407,29 @@ const services: Content["services"] = [
       "Chez Disnet, nous ne nous limitons pas à la gestion efficace des livraisons, nous nous occupons également de la logistique inverse, qui englobe la **gestion des retours** et la résolution de tout incident pouvant survenir au cours du processus.",
       "Nous maintenons une connectivité avec les systèmes de gestion de l'information les plus largement utilisés, tels que Shopify, WooCommerce, Magento, PrestaShop, Opencart et d'autres. Cela nous permet d'être en phase avec les plateformes d'eCommerce et de garantir une intégration sans problème à toutes les étapes de la chaîne d'approvisionnement.",
       "Nous reconnaissons qu'offrir facilité et rapidité dans les processus de réclamation et de retour est essentiel à la satisfaction du client. C'est pourquoi nous avons développé plusieurs alternatives d'accompagnement conçues pour simplifier et accélérer ces procédures. Notre objectif est de permettre aux clients d'effectuer des retours de manière fiable et sans coûts qui intimideraient ou nuiraient à leur expérience d'achat ou à l'activité de nos clients.",
+    ],
+    faqTitle: "Questions fréquentes",
+    faq: [
+      {
+        question: "Qu'est-ce que la logistique inverse et qu'inclut-elle ?",
+        answer:
+          "C'est la gestion du flux de produits depuis le client final jusqu'au retour à l'entrepôt : retours, échanges, commandes non livrées et produits défectueux, en résolvant toute incidence pouvant survenir tout au long du processus de retour.",
+      },
+      {
+        question: "Avec quelles plateformes la gestion des retours s'intègre-t-elle ?",
+        answer:
+          "Disnet maintient une connectivité avec Shopify, WooCommerce, Magento, PrestaShop, Opencart et d'autres systèmes de gestion e-commerce, garantissant une intégration sans problème à toutes les étapes de la chaîne d'approvisionnement, y compris les retours.",
+      },
+      {
+        question: "Pourquoi est-il important d'externaliser la logistique inverse ?",
+        answer:
+          "Cela facilite des processus de réclamation et de retour rapides et fiables, sans coûts qui intimident le client. Cela améliore la satisfaction et la fidélisation, en particulier dans des secteurs comme la mode ou l'électronique où les retours peuvent représenter entre 20 % et 40 % des ventes.",
+      },
+      {
+        question: "Comment la logistique inverse affecte-t-elle l'expérience client d'un e-commerce ?",
+        answer:
+          "Une gestion des retours agile et sans friction renforce la confiance de l'acheteur au moment de décider d'un achat en ligne, car il sait qu'un échange ou un retour ne sera pas un processus compliqué ni coûteux.",
+      },
     ],
   },
 ];

@@ -65,6 +65,29 @@ const services: Content["services"] = [
       "També realitzem els **controls de qualitat logístics** i informem el client i/o proveïdor de totes les incidències detectades.",
       "Les nostres metodologies de treball busquen **optimitzar els moviments, garantir la traçabilitat i maximitzar l'eficàcia** de les operacions.",
     ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Què és la recepció de mercaderies en logística?",
+        answer:
+          "És el procés de rebre, verificar i controlar la qualitat dels productes que arriben a un magatzem abans del seu emmagatzematge. Inclou comprovar quantitats, estat i documentació segons els plecs de condicions acordats amb el client, i notificar qualsevol incidència detectada.",
+      },
+      {
+        question: "Com es garanteix la traçabilitat en la recepció de mercaderies?",
+        answer:
+          "Mitjançant un Sistema de Gestió de Magatzem (SGA) que registra cada moviment des de l'entrada, controls de qualitat logístics sistemàtics i comunicació immediata al client o proveïdor de qualsevol incidència detectada durant la descàrrega.",
+      },
+      {
+        question: "Què passa si hi ha una incidència en rebre una comanda?",
+        answer:
+          "Es documenta i s'informa immediatament el client i/o proveïdor, cosa que permet resoldre discrepàncies de quantitat, danys o errors de referència abans que la mercaderia entri en estoc, evitant problemes posteriors en l'inventari.",
+      },
+      {
+        question: "Quant de temps triga a processar-se la recepció d'una comanda?",
+        answer:
+          "Depèn del volum i tipus de mercaderia, però un operador logístic amb processos optimitzats pot processar la recepció, el control de qualitat i la ubicació al magatzem el mateix dia, minimitzant el temps entre l'arribada i la disponibilitat de l'estoc.",
+      },
+    ],
   },
   {
     slug: "manipulacion-de-mercancias",
@@ -80,6 +103,29 @@ const services: Content["services"] = [
       "Desmuntatge i muntatge de mobles del sector del descans.",
       "Unificació de matèries primeres amb altres per definir el producte final.",
       "Confecció de packs i agrupament per a promocions.",
+    ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Què inclou el servei de manipulació de mercaderies?",
+        answer:
+          "Operacions com planxat i encaixat de productes tèxtils, muntatge de components, desmuntatge i muntatge de mobles, unificació de matèries primeres i confecció de packs i agrupaments per a promocions, sempre amb traçabilitat total del procés.",
+      },
+      {
+        question: "Es pot manipular qualsevol volum de mercaderia?",
+        answer:
+          "Sí. Un operador logístic experimentat gestiona des de lots petits amb poca automatització fins a grans lots amb seqüències semiautomatitzades, adaptant el procés al tipus de producte i al volum específic de cada client.",
+      },
+      {
+        question: "Quins sectors necessiten més serveis de manipulació?",
+        answer:
+          "Tèxtil i moda (planxat, encaixat), automoció (muntatge de components), mobiliari (muntatge i desmuntatge) i sectors que requereixen confecció de packs promocionals o unificació de matèries primeres per a productes finals personalitzats.",
+      },
+      {
+        question: "Com es garanteix la traçabilitat en manipular productes?",
+        answer:
+          "Amb un sistema de gestió de magatzem que registra cada operació de manipulació, des de l'entrada del material fins a la sortida del producte transformat, garantint control total del procés independentment de la mida del lot.",
+      },
     ],
   },
   {
@@ -148,6 +194,29 @@ const services: Content["services"] = [
       },
     ],
     ctaLabel: "Sol·licita un pressupost personalitzat",
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Quantes ubicacions d'emmagatzematge té Disnet a Barcelona?",
+        answer:
+          "Disposem de més de 12.000 ubicacions en racks convencionals de palet i més de 15.000 ubicacions de picking en una instal·lació estratègicament ubicada a Sabadell, amb capacitat per a múltiples tipologies d'unitats de càrrega.",
+      },
+      {
+        question: "Quins tipus de mercaderia es poden emmagatzemar?",
+        answer:
+          "Palets, caixes, bobines i pràcticament qualsevol unitat de càrrega, incloent-hi sectors especialitzats com la logística tèxtil i de moda, cosmètica i perfumeria, sempre segons els estàndards més exigents de manutenció i conservació.",
+      },
+      {
+        question: "Què és un Sistema de Gestió de Magatzem (SGA) i per què importa?",
+        answer:
+          "És el programari que controla la ubicació, el moviment i l'inventari de cada producte en temps real. Permet distribuir la mercaderia segons la previsió del seu consum, optimitzant el circuit logístic i garantint la veracitat de l'estoc mitjançant inventaris permanents.",
+      },
+      {
+        question: "És millor llogar un magatzem propi o contractar emmagatzematge amb un operador 3PL?",
+        answer:
+          "Llogar un magatzem implica gestionar tu mateix l'espai, el personal i la tecnologia. Amb un operador 3PL com Disnet obtens un servei logístic complet (seguretat, SGA, personal especialitzat) sense aquesta complexitat operativa ni la inversió inicial.",
+      },
+    ],
   },
   {
     slug: "preparacion-de-pedidos",
@@ -196,6 +265,29 @@ const services: Content["services"] = [
       "Marques que aspiren a oferir una experiència de client excepcional a través de lliuraments ràpids i sense errors.",
     ],
     ctaLabel: "Contacta'ns",
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Quina diferència hi ha entre batch picking i pick to box?",
+        answer:
+          "El batch picking extreu conjuntament el material de diverses comandes agrupades i després separa les quantitats per referència. El pick to box col·loca el material directament a la caixa d'enviament final al mateix punt d'extracció, eliminant un pas de separació posterior.",
+      },
+      {
+        question: "Com se selecciona el mètode de picking més adequat?",
+        answer:
+          "S'analitza el volum de comandes, la tipologia de productes i la freqüència d'enviaments de cada client per seleccionar el mètode d'optimització més apropiat, prioritzant sempre velocitat i precisió en la preparació.",
+      },
+      {
+        question: "Quines empreses necessiten un servei de picking professional?",
+        answer:
+          "E-commerce amb un alt volum de comandes en línia, negocis amb flux constant d'enviaments, empreses que busquen reduir costos operatius al magatzem i marques que volen oferir lliuraments ràpids i sense errors als seus clients finals.",
+      },
+      {
+        question: "Com afecta la preparació de comandes les devolucions?",
+        answer:
+          "Una preparació de comandes precisa redueix dràsticament els errors d'enviament, una de les principals causes de devolucions. El control i la traçabilitat integral durant el picking minimitzen equivocacions abans que la comanda surti del magatzem.",
+      },
+    ],
   },
   {
     slug: "empaqueado-packing",
@@ -206,6 +298,29 @@ const services: Content["services"] = [
       "El nostre sistema de gestió de magatzem (SGA) ens ofereix **recomanacions sobre l'embalatge més adequat** per a cada enviament, assegurant una preparació eficient i apropiada.",
       "Un cop realitzat l'empaquetat, ens centrem en l'enviament de la mercaderia d'acord amb la data de lliurament especificada pel client, generant tota la documentació necessària segons els requeriments contractuals, legals i normatius aplicables.",
       "Això garanteix que cada enviament compleixi els estàndards i les regulacions vigents.",
+    ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Quina diferència hi ha entre packing i empaquetat estàndard?",
+        answer:
+          "El packing és la preparació específica de la unitat de transport per a l'enviament, aplicant criteris de sostenibilitat, seguretat i traçabilitat. Un Sistema de Gestió de Magatzem recomana l'embalatge més adequat segons el tipus de producte i destinació.",
+      },
+      {
+        question: "Com es decideix quin material d'embalatge s'utilitza per a cada enviament?",
+        answer:
+          "El Sistema de Gestió de Magatzem (SGA) analitza el tipus de producte, la seva fragilitat i la destinació de l'enviament per recomanar automàticament l'embalatge més adequat, equilibrant protecció del producte, cost i sostenibilitat.",
+      },
+      {
+        question: "Quina documentació es genera durant el procés de packing?",
+        answer:
+          "Tota la documentació necessària segons els requeriments contractuals, legals i normatius aplicables a cada enviament, garantint que compleixi els estàndards i les regulacions vigents abans de sortir del magatzem cap a la seva destinació.",
+      },
+      {
+        question: "El packing inclou embalatge personalitzat de marca?",
+        answer:
+          "Sí. El servei s'adapta a les necessitats específiques de cada client i tipus de producte, prioritzant sempre els criteris més avançats de sostenibilitat, seguretat i traçabilitat en cada unitat de transport preparada.",
+      },
     ],
   },
   {
@@ -224,6 +339,29 @@ const services: Content["services"] = [
     extra: [
       "A Disnet entenem que, perquè un negoci d'eCommerce prosperi, la logística ha d'oferir una experiència de compra excepcional. Només així s'aconsegueix augmentar la satisfacció del client. Per tant, és essencial que l'entorn en línia funcioni en harmonia amb el món offline. Per aconseguir-ho, mantenim una connectivitat fluida amb els sistemes de gestió de la informació més utilitzats, com **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, i altres.",
     ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Amb quines plataformes d'e-commerce s'integra Disnet?",
+        answer:
+          "Disnet ofereix fulfillment amb connectivitat fluida per a Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres sistemes de gestió, permetent que la logística offline funcioni en harmonia amb la botiga en línia sense friccions tècniques.",
+      },
+      {
+        question: "Quants enviaments d'e-commerce gestiona Disnet a l'any?",
+        answer:
+          "Amb més de 25 anys d'experiència en el sector, Disnet té capacitat per atendre més de 2.000.000 d'enviaments a l'any, optimitzant temps de lliurament, traçabilitat i flexibilitat en els horaris d'expedició.",
+      },
+      {
+        question: "Què és el fulfillment i en què es diferencia de la logística tradicional?",
+        answer:
+          "El fulfillment és la gestió integral de la comanda d'e-commerce: recepció d'estoc, emmagatzematge, picking, packing i enviament, tot integrat amb la plataforma en línia. A diferència de la logística tradicional, se centra en l'experiència de compra digital de principi a fi.",
+      },
+      {
+        question: "Com millora el fulfillment els terminis de lliurament de la meva botiga en línia?",
+        answer:
+          "En externalitzar amb un operador especialitzat, les comandes es preparen i s'envien amb processos optimitzats i traçabilitat en temps real, reduint cancel·lacions i millorant la confiança del client davant terminis de lliurament poc fiables.",
+      },
+    ],
   },
   {
     slug: "transporte-de-mercancias",
@@ -237,6 +375,29 @@ const services: Content["services"] = [
       "Disnet també pot responsabilitzar-se de la prestació de tot tipus de serveis com ara la cerca i selecció de transportistes, la negociació de les condicions, la preparació dels contractes, i la gestió i control de l'execució.",
       "De la mateixa manera, estem capacitats per gestionar serveis de transport de forma eficient, cosa que ens permet oferir un servei integral d'enviament de comandes. Tant si necessites lliuraments locals com nacionals, estem preparats per gestionar cada aspecte de la teva logística de manera efectiva, garantint que els teus productes arribin a la seva destinació de manera segura i puntual.",
     ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Com selecciona Disnet les agències de transport?",
+        answer:
+          "Homologuem, qualifiquem i avaluem les agències de transport segons cada necessitat i destinació, utilitzant sempre les opcions més convenients per garantir el compliment de les taxes de servei acordades amb el client.",
+      },
+      {
+        question: "Quins controls de qualitat es fan abans d'enviar la mercaderia?",
+        answer:
+          "Sempre s'efectua el control de la qualitat logística de l'expedició abans de carregar la mercaderia al transport, verificant estat, quantitats i documentació per assegurar que arribi a la seva destinació de manera segura i puntual.",
+      },
+      {
+        question: "Disnet gestiona transport nacional i internacional?",
+        answer:
+          "Sí. Disnet busca i selecciona transportistes, negocia condicions, prepara contractes i gestiona l'execució tant per a lliuraments locals i nacionals com per a enviaments internacionals, adaptant-se a les necessitats de cada client.",
+      },
+      {
+        question: "Quin avantatge té externalitzar el transport amb un operador 3PL?",
+        answer:
+          "S'accedeix a millors tarifes gràcies a la unificació de volums de múltiples clients, s'elimina la gestió directa de transportistes i es garanteix un servei integral d'enviament amb control de qualitat en cada expedició.",
+      },
+    ],
   },
   {
     slug: "logistica-inversa",
@@ -246,6 +407,29 @@ const services: Content["services"] = [
       "A Disnet, no només ens enfoquem en la gestió eficient dels lliuraments, sinó que també ens ocupem de la logística inversa, la qual cosa engloba la **gestió de devolucions** i la resolució de qualsevol incidència que pugui sorgir en el procés.",
       "Mantenim connectivitat amb els sistemes de gestió d'informació més àmpliament utilitzats, com Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres. Això ens permet estar en sintonia amb les plataformes d'eCommerce i garantir una integració sense problemes en totes les etapes de la cadena de subministrament.",
       "Reconeixem que oferir facilitat i rapidesa en els processos de reclamació i devolució és essencial per a la satisfacció del client. Per això, hem desenvolupat diverses alternatives de suport dissenyades per simplificar i agilitzar aquests procediments. El nostre objectiu és permetre que els clients facin devolucions de manera fiable i sense costos que intimidin o afectin negativament la seva experiència de compra o el negoci dels nostres clients.",
+    ],
+    faqTitle: "Preguntes freqüents",
+    faq: [
+      {
+        question: "Què és la logística inversa i què inclou?",
+        answer:
+          "És la gestió del flux de productes des del client final de tornada al magatzem: devolucions, canvis, comandes no lliurades i productes defectuosos, resolent qualsevol incidència que sorgeixi durant tot el procés de retorn.",
+      },
+      {
+        question: "Amb quines plataformes s'integra la gestió de devolucions?",
+        answer:
+          "Disnet manté connectivitat amb Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres sistemes de gestió d'e-commerce, garantint una integració sense problemes en totes les etapes de la cadena de subministrament, incloses les devolucions.",
+      },
+      {
+        question: "Per què és important externalitzar la logística inversa?",
+        answer:
+          "Facilita processos de reclamació i devolució ràpids i fiables, sense costos que intimidin el client. Això millora la satisfacció i la fidelització, especialment en sectors com la moda o l'electrònica, on les devolucions poden representar entre el 20% i el 40% de les vendes.",
+      },
+      {
+        question: "Com afecta la logística inversa l'experiència de client d'un e-commerce?",
+        answer:
+          "Una gestió de devolucions àgil i sense friccions augmenta la confiança del comprador a l'hora de decidir-se per una compra en línia, ja que sap que un canvi o devolució no serà un procés complicat ni costós.",
+      },
     ],
   },
 ];

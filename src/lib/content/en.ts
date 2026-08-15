@@ -65,6 +65,29 @@ const services: Content["services"] = [
       "We also carry out **logistics quality controls** and inform the client and/or supplier of any incidents detected.",
       "Our working methodologies aim to **optimize movements, guarantee traceability and maximize the efficiency** of operations.",
     ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "What is goods receiving in logistics?",
+        answer:
+          "It's the process of receiving, verifying and quality-checking products arriving at a warehouse before they're put into storage. It includes checking quantities, condition and documentation according to the specifications agreed with the client, and reporting any incident detected.",
+      },
+      {
+        question: "How is traceability guaranteed during goods receiving?",
+        answer:
+          "Through a Warehouse Management System (WMS) that logs every movement from the moment goods arrive, systematic logistics quality controls, and immediate communication to the client or supplier of any incident detected during unloading.",
+      },
+      {
+        question: "What happens if there's an incident when receiving an order?",
+        answer:
+          "It's documented and reported immediately to the client and/or supplier, allowing quantity discrepancies, damage or reference errors to be resolved before the goods enter stock, preventing inventory problems further down the line.",
+      },
+      {
+        question: "How long does it take to process the receiving of an order?",
+        answer:
+          "It depends on the volume and type of goods, but a logistics operator with optimized processes can complete receiving, quality control and warehouse put-away on the same day, minimizing the time between arrival and stock availability.",
+      },
+    ],
   },
   {
     slug: "manipulacion-de-mercancias",
@@ -80,6 +103,29 @@ const services: Content["services"] = [
       "Disassembly and assembly of furniture for the bedding and rest sector.",
       "Combining raw materials with others to create the final product.",
       "Putting together packs and groupage for promotions.",
+    ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "What does the goods handling service include?",
+        answer:
+          "Operations such as ironing and boxing of textile products, assembly of components, disassembly and assembly of furniture, combining raw materials, and putting together packs and groupage for promotions, always with full traceability of the process.",
+      },
+      {
+        question: "Can any volume of goods be handled?",
+        answer:
+          "Yes. An experienced logistics operator manages everything from small batches with minimal automation to large batches with semi-automated sequences, adapting the process to the type of product and each client's specific volume.",
+      },
+      {
+        question: "Which sectors need handling services the most?",
+        answer:
+          "Textile and fashion (ironing, boxing), automotive (component assembly), furniture (assembly and disassembly), and sectors that require the creation of promotional packs or the combining of raw materials for customized final products.",
+      },
+      {
+        question: "How is traceability guaranteed when handling products?",
+        answer:
+          "With a Warehouse Management System that logs every handling operation, from the material's arrival through to the output of the transformed product, guaranteeing full control of the process regardless of batch size.",
+      },
     ],
   },
   {
@@ -148,6 +194,29 @@ const services: Content["services"] = [
       },
     ],
     ctaLabel: "Request a personalized quote",
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "How many storage locations does Disnet have in Barcelona?",
+        answer:
+          "We have more than 12,000 conventional pallet rack locations and more than 15,000 picking locations in a facility strategically located in Sabadell, with capacity for multiple types of load units.",
+      },
+      {
+        question: "What types of goods can be stored?",
+        answer:
+          "Pallets, boxes, coils and practically any load unit, including specialized sectors such as textile and fashion logistics, cosmetics and perfumery, always in line with the most demanding handling and preservation standards.",
+      },
+      {
+        question: "What is a Warehouse Management System (WMS) and why does it matter?",
+        answer:
+          "It's the software that controls the location, movement and inventory of every product in real time. It allows goods to be distributed according to expected consumption, optimizing the logistics flow and guaranteeing stock accuracy through permanent inventories.",
+      },
+      {
+        question: "Is it better to rent your own warehouse or hire storage with a 3PL operator?",
+        answer:
+          "Renting a warehouse means managing the space, staff and technology yourself. With a 3PL operator like Disnet, you get a complete logistics service (security, WMS, specialized staff) without that operational complexity or the upfront investment.",
+      },
+    ],
   },
   {
     slug: "preparacion-de-pedidos",
@@ -196,6 +265,29 @@ const services: Content["services"] = [
       "Brands that aspire to deliver an exceptional customer experience through fast, error-free deliveries.",
     ],
     ctaLabel: "Contact us",
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "What's the difference between batch picking and pick to box?",
+        answer:
+          "Batch picking extracts material from several grouped orders together and then separates the quantities by reference. Pick to box places the material directly into the final shipping box at the point of extraction, eliminating a later separation step.",
+      },
+      {
+        question: "How is the most suitable picking method chosen?",
+        answer:
+          "We analyze each client's order volume, product type and shipping frequency to select the most appropriate optimization method, always prioritizing speed and accuracy in order preparation.",
+      },
+      {
+        question: "What kind of businesses need a professional picking service?",
+        answer:
+          "E-commerce businesses with a high volume of online orders, companies with a constant flow of shipments, businesses looking to reduce warehouse operating costs, and brands that want to offer fast, error-free deliveries to their end customers.",
+      },
+      {
+        question: "How does order preparation affect returns?",
+        answer:
+          "Accurate order preparation drastically reduces shipping errors, one of the main causes of returns. Full control and traceability during picking minimizes mistakes before the order leaves the warehouse.",
+      },
+    ],
   },
   {
     slug: "empaqueado-packing",
@@ -206,6 +298,29 @@ const services: Content["services"] = [
       "Our Warehouse Management System (WMS) provides us with **recommendations on the most suitable packaging** for each shipment, ensuring efficient and appropriate preparation.",
       "Once packaging is complete, we focus on shipping the goods according to the delivery date specified by the client, generating all the necessary documentation in line with applicable contractual, legal and regulatory requirements.",
       "This guarantees that every shipment complies with current standards and regulations.",
+    ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "What's the difference between packing and standard packaging?",
+        answer:
+          "Packing is the specific preparation of the transport unit for shipping, applying sustainability, safety and traceability criteria. A Warehouse Management System recommends the most suitable packaging based on the type of product and destination.",
+      },
+      {
+        question: "How is the packaging material decided for each shipment?",
+        answer:
+          "The Warehouse Management System (WMS) analyzes the type of product, its fragility and the shipment's destination to automatically recommend the most suitable packaging, balancing product protection, cost and sustainability.",
+      },
+      {
+        question: "What documentation is generated during the packing process?",
+        answer:
+          "All the documentation required by the contractual, legal and regulatory requirements applicable to each shipment, ensuring it complies with current standards and regulations before leaving the warehouse for its destination.",
+      },
+      {
+        question: "Does packing include custom branded packaging?",
+        answer:
+          "Yes. The service adapts to the specific needs of each client and type of product, always prioritizing the most advanced sustainability, safety and traceability criteria in every transport unit prepared.",
+      },
     ],
   },
   {
@@ -224,6 +339,29 @@ const services: Content["services"] = [
     extra: [
       "At Disnet, we understand that for an e-Commerce business to thrive, logistics must deliver an exceptional shopping experience. Only then can customer satisfaction truly increase. It's therefore essential that the online environment works in harmony with the offline world. To achieve this, we maintain seamless connectivity with the most widely used information management systems, such as **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, and others.",
     ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "Which e-commerce platforms does Disnet integrate with?",
+        answer:
+          "Disnet offers fulfillment with seamless connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart and other management systems, allowing offline logistics to work in harmony with the online store without technical friction.",
+      },
+      {
+        question: "How many e-commerce shipments does Disnet handle per year?",
+        answer:
+          "With more than 25 years of experience in the sector, Disnet has the capacity to handle more than 2,000,000 shipments a year, optimizing delivery times, traceability and flexibility in dispatch schedules.",
+      },
+      {
+        question: "What is fulfillment and how does it differ from traditional logistics?",
+        answer:
+          "Fulfillment is the end-to-end management of an e-commerce order: stock receiving, storage, picking, packing and shipping, all integrated with the online platform. Unlike traditional logistics, it focuses on the digital shopping experience from start to finish.",
+      },
+      {
+        question: "How does fulfillment improve delivery times for my online store?",
+        answer:
+          "By outsourcing to a specialized operator, orders are prepared and shipped with optimized processes and real-time traceability, reducing cancellations and improving customer trust compared to unreliable delivery times.",
+      },
+    ],
   },
   {
     slug: "transporte-de-mercancias",
@@ -237,6 +375,29 @@ const services: Content["services"] = [
       "Disnet can also take responsibility for providing all kinds of services, such as the search and selection of carriers, negotiation of terms, preparation of contracts, and management and oversight of execution.",
       "Likewise, we are equipped to manage transport services efficiently, allowing us to offer a comprehensive order shipping service. Whether you need local or national deliveries, we're ready to handle every aspect of your logistics effectively, ensuring your products reach their destination safely and on time.",
     ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "How does Disnet select its transport agencies?",
+        answer:
+          "We approve, qualify and evaluate transport agencies according to each need and destination, always using the most suitable options to guarantee compliance with the service levels agreed with the client.",
+      },
+      {
+        question: "What quality controls are carried out before shipping goods?",
+        answer:
+          "A logistics quality control of the shipment is always carried out before loading the goods onto the transport, verifying condition, quantities and documentation to ensure it reaches its destination safely and on time.",
+      },
+      {
+        question: "Does Disnet manage domestic and international transport?",
+        answer:
+          "Yes. Disnet searches for and selects carriers, negotiates terms, prepares contracts and manages execution for local and domestic deliveries as well as international shipments, adapting to each client's needs.",
+      },
+      {
+        question: "What's the advantage of outsourcing transport to a 3PL operator?",
+        answer:
+          "You gain access to better rates through the consolidation of volumes from multiple clients, eliminate the need to manage carriers directly, and get a comprehensive shipping service with quality control on every dispatch.",
+      },
+    ],
   },
   {
     slug: "logistica-inversa",
@@ -246,6 +407,29 @@ const services: Content["services"] = [
       "At Disnet, we don't just focus on efficient delivery management — we also handle reverse logistics, which covers **returns management** and the resolution of any incidents that may arise during the process.",
       "We maintain connectivity with the most widely used information management systems, such as Shopify, WooCommerce, Magento, PrestaShop, Opencart and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
       "We recognize that offering ease and speed in claims and returns processes is essential for customer satisfaction. That's why we've developed several support options designed to simplify and speed up these procedures. Our goal is to let customers make returns reliably and without costs that might discourage them or negatively affect their shopping experience or our clients' business.",
+    ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        question: "What is reverse logistics and what does it include?",
+        answer:
+          "It's the management of the flow of products from the end customer back to the warehouse: returns, exchanges, undelivered orders and defective products, resolving any incident that arises throughout the return process.",
+      },
+      {
+        question: "Which platforms does returns management integrate with?",
+        answer:
+          "Disnet maintains connectivity with Shopify, WooCommerce, Magento, PrestaShop, Opencart and other e-commerce management systems, guaranteeing seamless integration at every stage of the supply chain, including returns.",
+      },
+      {
+        question: "Why is it important to outsource reverse logistics?",
+        answer:
+          "It enables fast, reliable claims and returns processes without costs that discourage the customer. This improves satisfaction and loyalty, especially in sectors such as fashion or electronics, where returns can account for between 20% and 40% of sales.",
+      },
+      {
+        question: "How does reverse logistics affect the customer experience of an e-commerce business?",
+        answer:
+          "Agile, friction-free returns management increases buyer confidence when deciding to make an online purchase, since they know an exchange or return won't be a complicated or costly process.",
+      },
     ],
   },
 ];

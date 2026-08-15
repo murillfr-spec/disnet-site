@@ -65,6 +65,29 @@ const services: Content["services"] = [
       "También realizamos los **controles de calidad logísticos** e informamos al cliente y/o proveedor de todas las incidencias detectadas.",
       "Nuestras metodologías de trabajo buscan **optimizar los movimientos, garantizar la trazabilidad y maximizar la eficacia** de las operaciones.",
     ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué es la recepción de mercancías en logística?",
+        answer:
+          "Es el proceso de recibir, verificar y controlar la calidad de los productos que llegan a un almacén antes de su almacenaje. Incluye comprobar cantidades, estado y documentación según los pliegos de condiciones acordados con el cliente, y notificar cualquier incidencia detectada.",
+      },
+      {
+        question: "¿Cómo se garantiza la trazabilidad en la recepción de mercancías?",
+        answer:
+          "Mediante un Sistema de Gestión de Almacén (SGA) que registra cada movimiento desde la entrada, controles de calidad logísticos sistemáticos y comunicación inmediata al cliente o proveedor de cualquier incidencia detectada durante la descarga.",
+      },
+      {
+        question: "¿Qué pasa si hay una incidencia al recibir un pedido?",
+        answer:
+          "Se documenta y se informa de inmediato al cliente y/o proveedor, permitiendo resolver discrepancias de cantidad, daños o errores de referencia antes de que la mercancía entre en stock, evitando problemas posteriores en el inventario.",
+      },
+      {
+        question: "¿Cuánto tiempo tarda en procesarse la recepción de un pedido?",
+        answer:
+          "Depende del volumen y tipo de mercancía, pero un operador logístico con procesos optimizados puede procesar la recepción, el control de calidad y la ubicación en almacén en el mismo día, minimizando el tiempo entre la llegada y la disponibilidad del stock.",
+      },
+    ],
   },
   {
     slug: "manipulacion-de-mercancias",
@@ -80,6 +103,29 @@ const services: Content["services"] = [
       "Desmontaje y montaje de muebles del sector del descanso.",
       "Unificación de materias primas con otras para definir el producto final.",
       "Confección de packs y grupaje para promociones.",
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué incluye el servicio de manipulación de mercancías?",
+        answer:
+          "Operaciones como planchado y encajado de productos textiles, ensamblaje de componentes, desmontaje y montaje de muebles, unificación de materias primas y confección de packs y grupajes para promociones, siempre con trazabilidad total del proceso.",
+      },
+      {
+        question: "¿Se puede manipular cualquier volumen de mercancía?",
+        answer:
+          "Sí. Un operador logístico experimentado gestiona desde lotes pequeños con poca automatización hasta grandes lotes con secuencias semiautomatizadas, adaptando el proceso al tipo de producto y al volumen específico de cada cliente.",
+      },
+      {
+        question: "¿Qué sectores necesitan más servicios de manipulación?",
+        answer:
+          "Textil y moda (planchado, encajado), automoción (ensamblaje de componentes), mobiliario (montaje y desmontaje) y sectores que requieren confección de packs promocionales o unificación de materias primas para productos finales personalizados.",
+      },
+      {
+        question: "¿Cómo se garantiza la trazabilidad al manipular productos?",
+        answer:
+          "Con un sistema de gestión de almacén que registra cada operación de manipulación, desde la entrada del material hasta la salida del producto transformado, garantizando control total del proceso independientemente del tamaño del lote.",
+      },
     ],
   },
   {
@@ -148,6 +194,29 @@ const services: Content["services"] = [
       },
     ],
     ctaLabel: "Solicita una cotización personalizada",
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Cuántas ubicaciones de almacenaje tiene Disnet en Barcelona?",
+        answer:
+          "Disponemos de más de 12.000 ubicaciones en racks convencionales de palet y más de 15.000 ubicaciones de picking en una instalación estratégicamente ubicada en Sabadell, con capacidad para múltiples tipologías de unidades de carga.",
+      },
+      {
+        question: "¿Qué tipos de mercancía se pueden almacenar?",
+        answer:
+          "Paletas, cajas, bobinas y prácticamente cualquier unidad de carga, incluyendo sectores especializados como logística textil y de moda, cosmética y perfumería, siempre según los estándares más exigentes de manutención y conservación.",
+      },
+      {
+        question: "¿Qué es un Sistema de Gestión de Almacén (SGA) y por qué importa?",
+        answer:
+          "Es el software que controla la ubicación, movimiento e inventario de cada producto en tiempo real. Permite distribuir la mercancía según su previsión de consumo, optimizando el circuito logístico y garantizando la veracidad del stock mediante inventarios permanentes.",
+      },
+      {
+        question: "¿Es mejor alquilar un almacén propio o contratar almacenaje con un operador 3PL?",
+        answer:
+          "Alquilar un almacén implica gestionar tú mismo el espacio, personal y tecnología. Con un operador 3PL como Disnet obtienes un servicio logístico completo (seguridad, SGA, personal especializado) sin esa complejidad operativa ni la inversión inicial.",
+      },
+    ],
   },
   {
     slug: "preparacion-de-pedidos",
@@ -196,6 +265,29 @@ const services: Content["services"] = [
       "Marcas que aspiran a ofrecer una experiencia de cliente excepcional a través de entregas rápidas y sin errores.",
     ],
     ctaLabel: "Contáctenos",
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué diferencia hay entre batch picking y pick to box?",
+        answer:
+          "El batch picking extrae conjuntamente el material de varios pedidos agrupados y luego separa las cantidades por referencia. El pick to box coloca el material directamente en la caja de envío final en el mismo punto de extracción, eliminando un paso de separación posterior.",
+      },
+      {
+        question: "¿Cómo se elige el método de picking más adecuado?",
+        answer:
+          "Se analiza el volumen de pedidos, la tipología de productos y la frecuencia de envíos de cada cliente para seleccionar el método de optimización más apropiado, priorizando siempre velocidad y precisión en la preparación.",
+      },
+      {
+        question: "¿Qué empresas necesitan un servicio de picking profesional?",
+        answer:
+          "E-commerce con alto volumen de pedidos online, negocios con flujo constante de envíos, empresas que buscan reducir costes operativos en almacén y marcas que quieren ofrecer entregas rápidas y sin errores a sus clientes finales.",
+      },
+      {
+        question: "¿Cómo afecta la preparación de pedidos a las devoluciones?",
+        answer:
+          "Una preparación de pedidos precisa reduce drásticamente los errores de envío, una de las principales causas de devoluciones. El control y trazabilidad integral durante el picking minimiza equivocaciones antes de que el pedido salga del almacén.",
+      },
+    ],
   },
   {
     slug: "empaqueado-packing",
@@ -206,6 +298,29 @@ const services: Content["services"] = [
       "Nuestro sistema de gestión de almacén (SGA) nos brinda **recomendaciones sobre el embalaje más adecuado** para cada envío, asegurando una preparación eficiente y apropiada.",
       "Una vez realizado el empaquetado, nos enfocamos en el envío de la mercancía de acuerdo con la fecha de entrega especificada por el cliente, generando toda la documentación necesaria según los requerimientos contractuales, legales y normativos aplicables.",
       "Esto garantiza que cada envío cumpla con los estándares y regulaciones vigentes.",
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué diferencia hay entre packing y empaquetado estándar?",
+        answer:
+          "El packing es la preparación específica de la unidad de transporte para el envío, aplicando criterios de sostenibilidad, seguridad y trazabilidad. Un Sistema de Gestión de Almacén recomienda el embalaje más adecuado según el tipo de producto y destino.",
+      },
+      {
+        question: "¿Cómo se decide qué material de embalaje usar para cada envío?",
+        answer:
+          "El Sistema de Gestión de Almacén (SGA) analiza el tipo de producto, su fragilidad y el destino del envío para recomendar automáticamente el embalaje más adecuado, equilibrando protección del producto, coste y sostenibilidad.",
+      },
+      {
+        question: "¿Qué documentación se genera durante el proceso de packing?",
+        answer:
+          "Toda la documentación necesaria según los requerimientos contractuales, legales y normativos aplicables a cada envío, garantizando que cumpla con los estándares y regulaciones vigentes antes de salir del almacén hacia su destino.",
+      },
+      {
+        question: "¿El packing incluye embalaje personalizado de marca?",
+        answer:
+          "Sí. El servicio se adapta a las necesidades específicas de cada cliente y tipo de producto, priorizando siempre los criterios más avanzados de sostenibilidad, seguridad y trazabilidad en cada unidad de transporte preparada.",
+      },
     ],
   },
   {
@@ -224,6 +339,29 @@ const services: Content["services"] = [
     extra: [
       "En Disnet entendemos que, para que un negocio de eCommerce prospere, la logística debe ofrecer una experiencia de compra excepcional. Solo así se logra aumentar la satisfacción del cliente. Por lo tanto, es esencial que el entorno en línea funcione en armonía con el mundo offline. Para lograrlo, mantenemos una conectividad fluida con los sistemas de gestión de la información más utilizados, como **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, y otros.",
     ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Con qué plataformas de e-commerce se integra Disnet?",
+        answer:
+          "Disnet ofrece fulfillment con conectividad fluida para Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
+      },
+      {
+        question: "¿Cuántos envíos de e-commerce gestiona Disnet al año?",
+        answer:
+          "Con más de 25 años de experiencia en el sector, Disnet tiene capacidad para atender más de 2.000.000 de envíos al año, optimizando tiempos de entrega, trazabilidad y flexibilidad en los horarios de expedición.",
+      },
+      {
+        question: "¿Qué es el fulfillment y en qué se diferencia de la logística tradicional?",
+        answer:
+          "El fulfillment es la gestión integral del pedido de e-commerce: recepción de stock, almacenaje, picking, packing y envío, todo integrado con la plataforma online. A diferencia de la logística tradicional, se centra en la experiencia de compra digital de principio a fin.",
+      },
+      {
+        question: "¿Cómo mejora el fulfillment los tiempos de entrega de mi tienda online?",
+        answer:
+          "Al externalizar con un operador especializado, los pedidos se preparan y envían con procesos optimizados y trazabilidad en tiempo real, reduciendo cancelaciones y mejorando la confianza del cliente frente a plazos de entrega poco fiables.",
+      },
+    ],
   },
   {
     slug: "transporte-de-mercancias",
@@ -237,6 +375,29 @@ const services: Content["services"] = [
       "Disnet también puede responsabilizarse de la prestación de todo tipo de servicios tales como búsqueda y selección de transportistas, negociación de las condiciones, preparación de los contratos, gestión y control de la ejecución.",
       "De igual manera, estamos capacitados para gestionar servicios de transporte de forma eficiente, lo que nos permite ofrecer un servicio integral de envío de pedidos. Ya sea que necesites entregas locales o nacionales, estamos listos para manejar cada aspecto de tu logística de manera efectiva, garantizando que tus productos lleguen a su destino de manera segura y puntual.",
     ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Cómo selecciona Disnet las agencias de transporte?",
+        answer:
+          "Homologamos, calificamos y evaluamos las agencias de transporte según cada necesidad y destino, utilizando siempre las opciones más convenientes para garantizar el cumplimiento de las tasas de servicio acordadas con el cliente.",
+      },
+      {
+        question: "¿Qué controles de calidad se hacen antes de enviar la mercancía?",
+        answer:
+          "Se efectúa siempre el control de la calidad logística de la expedición antes de cargar la mercancía en el transporte, verificando estado, cantidades y documentación para asegurar que llegue a su destino de forma segura y puntual.",
+      },
+      {
+        question: "¿Disnet gestiona transporte nacional e internacional?",
+        answer:
+          "Sí. Disnet busca y selecciona transportistas, negocia condiciones, prepara contratos y gestiona la ejecución tanto para entregas locales y nacionales como para envíos internacionales, adaptándose a las necesidades de cada cliente.",
+      },
+      {
+        question: "¿Qué ventaja tiene externalizar el transporte con un operador 3PL?",
+        answer:
+          "Se accede a mejores tarifas gracias a la unificación de volúmenes de múltiples clientes, se elimina la gestión directa de transportistas y se garantiza un servicio integral de envío con control de calidad en cada expedición.",
+      },
+    ],
   },
   {
     slug: "logistica-inversa",
@@ -246,6 +407,29 @@ const services: Content["services"] = [
       "En Disnet, no solo nos enfocamos en la gestión eficiente de las entregas, sino que también nos ocupamos de la logística inversa, lo que abarca la **gestión de devoluciones** y la resolución de cualquier incidencia que pueda surgir en el proceso.",
       "Mantenemos conectividad con los sistemas de gestión de información más ampliamente utilizados, como Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros. Esto nos permite estar en sintonía con las plataformas de eCommerce y garantizar una integración sin problemas en todas las etapas de la cadena de suministro.",
       "Reconocemos que ofrecer facilidad y rapidez en los procesos de reclamación y devolución es esencial para la satisfacción del cliente. Por lo tanto, hemos desarrollado varias alternativas de soporte diseñadas para simplificar y agilizar estos procedimientos. Nuestro objetivo es permitir que los clientes realicen devoluciones de manera confiable y sin costos que intimiden o afecten negativamente a su experiencia de compra o al negocio de nuestros clientes.",
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué es la logística inversa y qué incluye?",
+        answer:
+          "Es la gestión del flujo de productos desde el cliente final de vuelta al almacén: devoluciones, cambios, pedidos no entregados y productos defectuosos, resolviendo cualquier incidencia que surja durante todo el proceso de retorno.",
+      },
+      {
+        question: "¿Con qué plataformas se integra la gestión de devoluciones?",
+        answer:
+          "Disnet mantiene conectividad con Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión de e-commerce, garantizando una integración sin problemas en todas las etapas de la cadena de suministro, incluidas las devoluciones.",
+      },
+      {
+        question: "¿Por qué es importante externalizar la logística inversa?",
+        answer:
+          "Facilita procesos de reclamación y devolución rápidos y confiables, sin costes que intimiden al cliente. Esto mejora la satisfacción y fidelización, especialmente en sectores como moda o electrónica donde las devoluciones pueden representar entre el 20% y el 40% de las ventas.",
+      },
+      {
+        question: "¿Cómo afecta la logística inversa a la experiencia de cliente de un e-commerce?",
+        answer:
+          "Una gestión de devoluciones ágil y sin fricciones aumenta la confianza del comprador a la hora de decidirse por una compra online, ya que sabe que un cambio o devolución no será un proceso complicado ni costoso.",
+      },
     ],
   },
 ];

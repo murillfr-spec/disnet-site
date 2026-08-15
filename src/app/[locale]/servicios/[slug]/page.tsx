@@ -11,7 +11,7 @@ import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
 import { RichText } from "@/components/rich-text";
 import { buildAlternates } from "@/lib/seo";
-import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
+import { serviceSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/json-ld";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
@@ -79,6 +79,13 @@ export default async function ServiceDetailPage({
           locale
         )}
       />
+      {service.faq && service.faq.length > 0 && (
+        <JsonLd
+          data={faqPageSchema(
+            service.faq.map((item) => ({ question: item.question, answer: item.answer }))
+          )}
+        />
+      )}
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">
           <Link href={localeHref(locale, "/servicios")} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
@@ -207,6 +214,26 @@ export default async function ServiceDetailPage({
                   </li>
                 ))}
               </ul>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {service.faq && service.faq.length > 0 && (
+        <section className="border-b border-border">
+          <div className="mx-auto max-w-3xl px-6 py-16">
+            <Reveal>
+              {service.faqTitle && <h2 className="text-h3">{service.faqTitle}</h2>}
+              <div className="mt-6 space-y-6">
+                {service.faq.map((item) => (
+                  <div key={item.question}>
+                    <h3 className="font-semibold">{item.question}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      <RichText text={item.answer} />
+                    </p>
+                  </div>
+                ))}
+              </div>
             </Reveal>
           </div>
         </section>

@@ -15,6 +15,8 @@ export type Service = {
   audienceTitle?: string;
   audience?: string[];
   ctaLabel?: string;
+  faqTitle?: string;
+  faq?: { question: string; answer: string }[];
 };
 
 export type BlogBlock = { heading: string } | { text: string };
