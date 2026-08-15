@@ -7,6 +7,9 @@ import { Footer } from "@/components/footer";
 import { AppToaster } from "@/components/app-toaster";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
+import { getContent } from "@/lib/content";
+import { organizationSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/json-ld";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -66,6 +69,7 @@ export default async function LocaleLayout({
 }) {
   const { locale: rawLocale } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { company } = getContent(locale);
 
   return (
     <html
@@ -74,6 +78,7 @@ export default async function LocaleLayout({
       className={`${montserrat.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <JsonLd data={organizationSchema(company)} />
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>

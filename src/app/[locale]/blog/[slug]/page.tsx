@@ -8,6 +8,9 @@ import { Reveal } from "@/components/reveal";
 import { CtaBanner } from "@/components/cta-banner";
 import { RichText } from "@/components/rich-text";
 import { buildAlternates } from "@/lib/seo";
+import { blogPostingSchema, extractFaqItems, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import { parseSpanishDate } from "@/lib/blog-date";
+import { JsonLd } from "@/components/json-ld";
 
 export function generateStaticParams() {
   const { blogPosts } = getContent("es");
@@ -38,14 +41,32 @@ export default async function BlogPostPage({
 }) {
   const { locale: rawLocale, slug } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { blogPosts, ui } = getContent(locale);
+  const { blogPosts, ui, navLinks } = getContent(locale);
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
   const otherPosts = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
+  const esPost = getContent("es").blogPosts.find((p) => p.slug === slug);
+  const dateISO = parseSpanishDate(esPost?.date ?? post.date);
+  const faqItems = extractFaqItems(post);
+  const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
+  const blogLabel = navLinks.find((l) => l.href === "/blog")?.label ?? "Blog";
+
   return (
     <>
+      <JsonLd data={blogPostingSchema(post, locale, dateISO)} />
+      <JsonLd
+        data={breadcrumbSchema(
+          [
+            { name: homeLabel, path: "/" },
+            { name: blogLabel, path: "/blog" },
+            { name: post.title, path: `/blog/${slug}` },
+          ],
+          locale
+        )}
+      />
+      {faqItems.length > 0 && <JsonLd data={faqPageSchema(faqItems)} />}
       <article className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">
           <Link href={localeHref(locale, "/blog")} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">

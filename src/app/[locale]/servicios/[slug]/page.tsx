@@ -11,6 +11,8 @@ import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
 import { RichText } from "@/components/rich-text";
 import { buildAlternates } from "@/lib/seo";
+import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/json-ld";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
@@ -54,16 +56,29 @@ export default async function ServiceDetailPage({
 }) {
   const { locale: rawLocale, slug } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { services, ui } = getContent(locale);
+  const { services, ui, navLinks } = getContent(locale);
   const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
 
   const otherServices = services.filter((s) => s.slug !== slug);
   const Icon = serviceIconBySlug[service.slug];
   const image = serviceImageBySlug[service.slug];
+  const servicesLabel = navLinks.find((l) => l.href === "/servicios")?.label ?? "Servicios";
+  const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
 
   return (
     <>
+      <JsonLd data={serviceSchema(service, locale)} />
+      <JsonLd
+        data={breadcrumbSchema(
+          [
+            { name: homeLabel, path: "/" },
+            { name: servicesLabel, path: "/servicios" },
+            { name: service.name, path: `/servicios/${slug}` },
+          ],
+          locale
+        )}
+      />
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">
           <Link href={localeHref(locale, "/servicios")} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
