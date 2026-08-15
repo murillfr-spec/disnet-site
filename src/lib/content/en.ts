@@ -211,6 +211,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "At Disnet, we guarantee the best delivery times",
+    subheadline: "Fulfillment for Shopify, WooCommerce and the leading platforms",
     intro: [
       "Following current trends in commerce, we specialize in outsourcing supply chains for the e-Commerce sector. With **more than 25 years of experience**, we have managed and prepared orders, with the capacity to handle **more than 2,000,000 shipments a year**.",
     ],
@@ -220,7 +221,7 @@ const services: Content["services"] = [
       "Offer flexibility in delivery schedules.",
     ],
     extra: [
-      "At Disnet, we understand that for an e-Commerce business to thrive, logistics must deliver an exceptional shopping experience. Only then can customer satisfaction truly increase. It's therefore essential that the online environment works in harmony with the offline world. To achieve this, we maintain seamless connectivity with the most widely used information management systems, such as Magento, PrestaShop, Opencart, and others.",
+      "At Disnet, we understand that for an e-Commerce business to thrive, logistics must deliver an exceptional shopping experience. Only then can customer satisfaction truly increase. It's therefore essential that the online environment works in harmony with the offline world. To achieve this, we maintain seamless connectivity with the most widely used information management systems, such as **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, and others.",
     ],
   },
   {
@@ -242,7 +243,7 @@ const services: Content["services"] = [
     headline: "Returns and incident management with total reliability",
     intro: [
       "At Disnet, we don't just focus on efficient delivery management — we also handle reverse logistics, which covers **returns management** and the resolution of any incidents that may arise during the process.",
-      "We maintain connectivity with the most widely used information management systems, such as Magento, PrestaShop, Opencart and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
+      "We maintain connectivity with the most widely used information management systems, such as Shopify, WooCommerce, Magento, PrestaShop, Opencart and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
       "We recognize that offering ease and speed in claims and returns processes is essential for customer satisfaction. That's why we've developed several support options designed to simplify and speed up these procedures. Our goal is to let customers make returns reliably and without costs that might discourage them or negatively affect their shopping experience or our clients' business.",
     ],
   },
@@ -261,7 +262,7 @@ const whyChooseUs: Content["whyChooseUs"] = {
     },
     {
       title: "Strategic location",
-      description: "A strategic location with fast access to the main communication routes.",
+      description: "Logistics hub in Sabadell (Vallès Occidental), with fast access to Barcelona's main communication routes.",
     },
     {
       title: "Online",
@@ -510,7 +511,7 @@ const blogPosts: Content["blogPosts"] = [
       { text: "At Disnet, we understand that logistics should adapt to the customer, not the other way around, offering flexible solutions that improve the overall experience." },
       { heading: "Disconnect between online systems and logistics" },
       { text: "An efficient e-commerce business needs its online platform to be perfectly integrated with logistics management. Common mistakes include systems that don't sync, stock errors and delays in order preparation." },
-      { text: "At Disnet, we work with seamless integrations with platforms like Magento, PrestaShop and Opencart, guaranteeing connected, error-free management." },
+      { text: "At Disnet, we work with seamless integrations with platforms like Shopify, WooCommerce, Magento, PrestaShop and Opencart, guaranteeing connected, error-free management." },
       { heading: "Not outsourcing logistics to professionals" },
       { text: "Trying to manage all logistics in-house may seem cost-effective at first, but as order volume grows, it becomes a problem: operational overload, shipping errors and rising hidden costs." },
       { text: "Outsourcing allows the business to scale without compromising service quality. With more than 25 years of experience, Disnet offers specialized solutions for the comprehensive management of the e-commerce supply chain." },

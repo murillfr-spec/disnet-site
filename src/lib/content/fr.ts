@@ -211,6 +211,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "Chez Disnet, nous vous garantissons les meilleurs délais de livraison",
+    subheadline: "Fulfillment pour Shopify, WooCommerce et les principales plateformes",
     intro: [
       "En suivant les tendances actuelles du commerce, nous sommes spécialistes de l'externalisation des chaînes d'approvisionnement pour le secteur de l'eCommerce. Avec **plus de 25 ans d'expérience**, nous avons géré et préparé des commandes, avec la capacité de traiter **plus de 2 000 000 d'expéditions par an**.",
     ],
@@ -220,7 +221,7 @@ const services: Content["services"] = [
       "Offrir de la flexibilité dans les horaires de livraison.",
     ],
     extra: [
-      "Chez Disnet, nous comprenons que, pour qu'une activité d'eCommerce prospère, la logistique doit offrir une expérience d'achat exceptionnelle. C'est la seule façon d'accroître la satisfaction du client. Il est donc essentiel que l'environnement en ligne fonctionne en harmonie avec le monde hors ligne. Pour y parvenir, nous maintenons une connectivité fluide avec les systèmes de gestion de l'information les plus utilisés, tels que Magento, PrestaShop, Opencart, entre autres.",
+      "Chez Disnet, nous comprenons que, pour qu'une activité d'eCommerce prospère, la logistique doit offrir une expérience d'achat exceptionnelle. C'est la seule façon d'accroître la satisfaction du client. Il est donc essentiel que l'environnement en ligne fonctionne en harmonie avec le monde hors ligne. Pour y parvenir, nous maintenons une connectivité fluide avec les systèmes de gestion de l'information les plus utilisés, tels que **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, entre autres.",
     ],
   },
   {
@@ -242,7 +243,7 @@ const services: Content["services"] = [
     headline: "Gestion des retours et des incidents en toute fiabilité",
     intro: [
       "Chez Disnet, nous ne nous limitons pas à la gestion efficace des livraisons, nous nous occupons également de la logistique inverse, qui englobe la **gestion des retours** et la résolution de tout incident pouvant survenir au cours du processus.",
-      "Nous maintenons une connectivité avec les systèmes de gestion de l'information les plus largement utilisés, tels que Magento, PrestaShop, Opencart et d'autres. Cela nous permet d'être en phase avec les plateformes d'eCommerce et de garantir une intégration sans problème à toutes les étapes de la chaîne d'approvisionnement.",
+      "Nous maintenons une connectivité avec les systèmes de gestion de l'information les plus largement utilisés, tels que Shopify, WooCommerce, Magento, PrestaShop, Opencart et d'autres. Cela nous permet d'être en phase avec les plateformes d'eCommerce et de garantir une intégration sans problème à toutes les étapes de la chaîne d'approvisionnement.",
       "Nous reconnaissons qu'offrir facilité et rapidité dans les processus de réclamation et de retour est essentiel à la satisfaction du client. C'est pourquoi nous avons développé plusieurs alternatives d'accompagnement conçues pour simplifier et accélérer ces procédures. Notre objectif est de permettre aux clients d'effectuer des retours de manière fiable et sans coûts qui intimideraient ou nuiraient à leur expérience d'achat ou à l'activité de nos clients.",
     ],
   },
@@ -261,7 +262,7 @@ const whyChooseUs: Content["whyChooseUs"] = {
     },
     {
       title: "Emplacement stratégique",
-      description: "Emplacement stratégique avec des accès rapides aux principaux axes de communication.",
+      description: "Centre logistique à Sabadell (Vallès Occidental), avec des accès rapides aux principaux axes de communication de Barcelone.",
     },
     {
       title: "En ligne",
@@ -510,7 +511,7 @@ const blogPosts: Content["blogPosts"] = [
       { text: "Chez Disnet, nous comprenons que la logistique doit s'adapter au client, et non l'inverse, en proposant des solutions flexibles qui améliorent l'expérience globale." },
       { heading: "Déconnexion entre les systèmes en ligne et la logistique" },
       { text: "Un e-commerce efficace a besoin que sa plateforme en ligne soit parfaitement intégrée à la gestion logistique. Les erreurs courantes sont les systèmes qui ne se synchronisent pas, les défaillances de stock et les retards dans la préparation des commandes." },
-      { text: "Chez Disnet, nous travaillons avec des intégrations fluides avec des plateformes comme Magento, PrestaShop ou Opencart, garantissant une gestion connectée et sans erreurs." },
+      { text: "Chez Disnet, nous travaillons avec des intégrations fluides avec des plateformes comme Shopify, WooCommerce, Magento, PrestaShop ou Opencart, garantissant une gestion connectée et sans erreurs." },
       { heading: "Ne pas externaliser la logistique à des professionnels" },
       { text: "Essayer de gérer toute la logistique en interne peut sembler rentable au début, mais à mesure que le volume de commandes augmente, cela devient un problème : saturation opérationnelle, erreurs dans les envois et augmentation des coûts cachés." },
       { text: "L'externalisation permet de faire évoluer l'entreprise sans compromettre la qualité du service. Avec plus de 25 ans d'expérience, Disnet propose des solutions spécialisées dans la gestion intégrale de la chaîne d'approvisionnement pour l'e-commerce." },
