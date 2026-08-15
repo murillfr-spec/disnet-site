@@ -1,17 +1,31 @@
 import type { Metadata } from "next";
-import { empresaCopy, jobsCopy } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { isLocale, type Locale } from "@/lib/i18n";
 import { JobForm } from "@/components/job-form";
 import { CtaBanner } from "@/components/cta-banner";
 import { Reveal } from "@/components/reveal";
 import { YoutubeEmbed } from "@/components/youtube-embed";
 import { RichText } from "@/components/rich-text";
 
-export const metadata: Metadata = {
-  title: "Empresa | Disnet",
-  description: empresaCopy.intro[0],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { empresaCopy } = getContent(locale);
+  return {
+    title: `${empresaCopy.title} | Disnet`,
+    description: empresaCopy.intro[0],
+  };
+}
 
-export default function EmpresaPage() {
+export default async function EmpresaPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { empresaCopy, jobsCopy, ui } = getContent(locale);
+
   return (
     <>
       <section className="border-b border-border">
@@ -33,15 +47,15 @@ export default function EmpresaPage() {
 
           <Reveal delay={0.15} className="mt-14 grid gap-6 pb-20 sm:grid-cols-3">
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">Misión</h2>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">{ui.missionLabel}</h2>
               <p className="mt-3 text-sm leading-relaxed">{empresaCopy.mission}</p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">Visión</h2>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">{ui.visionLabel}</h2>
               <p className="mt-3 text-sm leading-relaxed">{empresaCopy.vision}</p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">Valores</h2>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">{ui.valuesLabel}</h2>
               <p className="mt-3 text-sm leading-relaxed">{empresaCopy.values}</p>
             </div>
           </Reveal>
@@ -60,7 +74,7 @@ export default function EmpresaPage() {
         </div>
       </section>
 
-      <CtaBanner />
+      <CtaBanner locale={locale} />
     </>
   );
 }

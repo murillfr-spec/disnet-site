@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { services } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { CtaBanner } from "@/components/cta-banner";
 import { MotionLink } from "@/components/motion-link";
 import { serviceIconBySlug } from "@/components/service-icons";
@@ -22,21 +24,20 @@ const serviceImageBySlug: Record<string, string> = {
   "logistica-inversa": "/images/svc-inversa.jpg",
 };
 
-export async function generateStaticParams() {
-  return services.map((service) => ({ slug: service.slug }));
-}
-
-async function getService(slug: string) {
-  return services.find((s) => s.slug === slug);
+export function generateStaticParams() {
+  const { services } = getContent("es");
+  return locales.flatMap((locale) => services.map((service) => ({ locale, slug: service.slug })));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const service = await getService(slug);
+  const { locale: rawLocale, slug } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { services } = getContent(locale);
+  const service = services.find((s) => s.slug === slug);
   if (!service) return {};
   return {
     title: `${service.name} | Disnet`,
@@ -47,10 +48,12 @@ export async function generateMetadata({
 export default async function ServiceDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const service = await getService(slug);
+  const { locale: rawLocale, slug } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { services, ui } = getContent(locale);
+  const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
 
   const otherServices = services.filter((s) => s.slug !== slug);
@@ -61,8 +64,8 @@ export default async function ServiceDetailPage({
     <>
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">
-          <Link href="/servicios" className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
-            ← Volver a servicios
+          <Link href={localeHref(locale, "/servicios")} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
+            {ui.backToServices}
           </Link>
           <Reveal>
             <span className="mt-6 flex size-14 items-center justify-center rounded-full border border-border text-accent">
@@ -112,12 +115,12 @@ export default async function ServiceDetailPage({
             )}
 
             <MotionLink
-              href="/contacto"
+              href={localeHref(locale, "/contacto")}
               whileTap={{ scale: 0.96 }}
               transition={press}
               className="mt-10 inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground"
             >
-              Pedir presupuesto
+              {ui.requestQuote}
             </MotionLink>
           </Reveal>
         </div>
@@ -196,7 +199,7 @@ export default async function ServiceDetailPage({
         <section className="border-b border-border bg-muted/40">
           <div className="mx-auto max-w-3xl px-6 py-14 text-center">
             <MotionLink
-              href="/contacto"
+              href={localeHref(locale, "/contacto")}
               whileTap={{ scale: 0.96 }}
               transition={press}
               className="inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground"
@@ -210,13 +213,13 @@ export default async function ServiceDetailPage({
       <section className="border-b border-border bg-muted/40">
         <div className="mx-auto max-w-6xl px-6 py-14">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Otros servicios
+            {ui.otherServices}
           </h2>
           <div className="mt-6 flex flex-wrap gap-2">
             {otherServices.map((s) => (
               <MotionLink
                 key={s.slug}
-                href={`/servicios/${s.slug}`}
+                href={localeHref(locale, `/servicios/${s.slug}`)}
                 whileTap={{ scale: 0.95 }}
                 transition={press}
                 className="rounded-full border border-border bg-card px-4 py-2 text-sm transition-colors duration-150 hover:border-accent hover:text-accent"
@@ -228,7 +231,7 @@ export default async function ServiceDetailPage({
         </div>
       </section>
 
-      <CtaBanner />
+      <CtaBanner locale={locale} />
     </>
   );
 }

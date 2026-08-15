@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { clientAreaCopy } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { MotionLink } from "@/components/motion-link";
 
@@ -11,12 +12,25 @@ const portalImages = {
   B2B: "/images/portal-b2b.jpg",
 } as const;
 
-export const metadata: Metadata = {
-  title: "Área clientes | Disnet",
-  description: clientAreaCopy.description,
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { clientAreaCopy } = getContent(locale);
+  return {
+    title: `${clientAreaCopy.title} | Disnet`,
+    description: clientAreaCopy.description,
+  };
+}
 
-export default function AreaClientesPage() {
+export default async function AreaClientesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { clientAreaCopy, ui } = getContent(locale);
+
   return (
     <section>
       <div className="mx-auto max-w-5xl px-6 py-20">
@@ -52,7 +66,7 @@ export default function AreaClientesPage() {
                   transition={press}
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
                 >
-                  Acceder
+                  {ui.access}
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-150 group-hover:translate-x-0.5">
                     <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>

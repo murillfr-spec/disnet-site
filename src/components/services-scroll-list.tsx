@@ -1,14 +1,28 @@
 "use client";
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { motion } from "motion/react";
-import { services } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import type { Locale } from "@/lib/i18n";
+import type { Service } from "@/lib/content";
 import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
-function ServiceRow({ service, index }: { service: (typeof services)[number]; index: number }) {
+function ServiceRow({
+  service,
+  index,
+  locale,
+  isLast,
+}: {
+  service: Service;
+  index: number;
+  locale: Locale;
+  isLast: boolean;
+}) {
   const Icon = serviceIconBySlug[service.slug];
   const n = String(index + 1).padStart(2, "0");
 
@@ -19,11 +33,11 @@ function ServiceRow({ service, index }: { service: (typeof services)[number]; in
       initial={{ opacity: 0, x: fromX }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-15% 0px -15% 0px" }}
-      transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
+      transition={{ duration: 2.2, ease: [0.23, 1, 0.32, 1] }}
     >
       <motion.div whileHover="hover" whileTap={{ scale: 0.99 }} transition={press}>
         <Link
-          href={`/servicios/${service.slug}`}
+          href={localeHref(locale, `/servicios/${service.slug}`)}
           className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 py-7 sm:gap-8 sm:py-9"
         >
           <span className="text-h2 text-border tabular-nums transition-colors duration-300 group-hover:text-accent/30">
@@ -62,27 +76,32 @@ function ServiceRow({ service, index }: { service: (typeof services)[number]; in
           </motion.span>
         </Link>
       </motion.div>
-      {index < services.length - 1 && <div className="h-px w-full bg-border" />}
+      {!isLast && <div className="h-px w-full bg-border" />}
     </motion.div>
   );
 }
 
 export function ServicesScrollList() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { services, ui } = getContent(locale);
+
   return (
     <section className="border-b border-border">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <Reveal className="max-w-2xl">
-          <h2 className="text-h2">Servicios que ofrecemos</h2>
-          <p className="mt-4 text-muted-foreground">
-            En Disnet, además de los servicios estándar, atendemos cualquier necesidad de logística de
-            nuestros clientes con el objetivo de que no tengan que ocuparse, si así lo desean, de ningún
-            aspecto relacionado con la distribución física de sus productos.
-          </p>
+          <h2 className="text-h2">{ui.servicesOffered}</h2>
+          <p className="mt-4 text-muted-foreground">{ui.servicesOfferedIntro}</p>
         </Reveal>
 
         <div className="mt-6 border-t border-border">
           {services.map((service, i) => (
-            <ServiceRow key={service.slug} service={service} index={i} />
+            <ServiceRow
+              key={service.slug}
+              service={service}
+              index={i}
+              locale={locale}
+              isLast={i === services.length - 1}
+            />
           ))}
         </div>
       </div>

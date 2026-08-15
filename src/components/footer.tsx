@@ -1,26 +1,34 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { company, navLinks, services } from "@/lib/content";
+import { useParams } from "next/navigation";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import type { Locale } from "@/lib/i18n";
 
 export function Footer() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { company, navLinks, services, ui } = getContent(locale);
+
   return (
-    <footer className="border-t border-border bg-muted/40">
+    <footer className="bg-footer-bg text-footer-foreground">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
         <div>
-          <Link href="/" className="inline-flex items-center gap-2 rounded-xl bg-white p-2.5">
+          <Link href={localeHref(locale, "/")} className="inline-flex items-center gap-2 rounded-xl bg-white p-2.5">
             <Image src="/images/logo-disnet.jpg" alt={company.name} width={1400} height={843} quality={100} className="h-16 w-auto" />
           </Link>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-sm leading-relaxed text-footer-muted">
             {company.tagline}
           </p>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold">Navegación</h3>
+          <h3 className="text-sm font-semibold text-footer-foreground">{ui.footerNavigation}</h3>
           <ul className="mt-4 space-y-2">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
+                <Link href={localeHref(locale, link.href)} className="text-sm text-footer-muted transition-colors duration-150 hover:text-accent">
                   {link.label}
                 </Link>
               </li>
@@ -29,13 +37,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold">Servicios</h3>
+          <h3 className="text-sm font-semibold text-footer-foreground">{ui.footerServices}</h3>
           <ul className="mt-4 space-y-2">
             {services.slice(0, 5).map((service) => (
               <li key={service.slug}>
                 <Link
-                  href={`/servicios/${service.slug}`}
-                  className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent"
+                  href={localeHref(locale, `/servicios/${service.slug}`)}
+                  className="text-sm text-footer-muted transition-colors duration-150 hover:text-accent"
                 >
                   {service.name}
                 </Link>
@@ -45,8 +53,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold">Contacto</h3>
-          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <h3 className="text-sm font-semibold text-footer-foreground">{ui.footerContact}</h3>
+          <ul className="mt-4 space-y-2 text-sm text-footer-muted">
             <li>{company.address}</li>
             <li>
               <a href={company.phoneHref} className="transition-colors duration-150 hover:text-accent">
@@ -62,14 +70,14 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
+      <div className="border-t border-footer-border">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-footer-muted md:flex-row md:items-center md:justify-between">
           <p>
-            © {new Date().getFullYear()} {company.legalName}. Todos los derechos reservados.
+            © {new Date().getFullYear()} {company.legalName}. {ui.footerRights}
           </p>
           <div className="flex gap-4">
-            <span>Aviso legal</span>
-            <span>Política de privacidad</span>
+            <span>{ui.footerLegalNotice}</span>
+            <span>{ui.footerPrivacyPolicy}</span>
           </div>
         </div>
       </div>

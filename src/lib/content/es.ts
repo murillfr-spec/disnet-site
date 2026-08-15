@@ -1,6 +1,7 @@
 // Contenido extraído de https://disnet.es — reescrito visualmente pero fiel a los textos originales.
+import type { Content } from "./types";
 
-export const company = {
+const company: Content["company"] = {
   name: "Disnet",
   legalName: "Disnet Sistemas de Distribución S.A.",
   tagline: "Operador Logístico 3PL para tu cadena de suministro",
@@ -12,7 +13,7 @@ export const company = {
   yearsExperience: 35,
 };
 
-export const heroCopy = {
+const heroCopy: Content["heroCopy"] = {
   eyebrow: "Operador logístico en Barcelona",
   title: company.tagline,
   paragraphs: [
@@ -23,7 +24,16 @@ export const heroCopy = {
   ],
 };
 
-export const barcelonaCopy = {
+const companyIntroCopy: Content["companyIntroCopy"] = {
+  paragraphs: [
+    "**Disnet** está compuesta por profesionales con **más de 35 años de experiencia en la gestión logística** de la tercerización de las cadenas de suministro. El equipo gestiona los procesos con el conocimiento y rigor necesarios para que la externalización de las actividades logísticas de cualquier organización sea un éxito.",
+    "Los miembros del equipo de Disnet destacan en su amplia capacidad para identificar las necesidades de sus clientes e implementar los mecanismos necesarios para darles respuesta.",
+    "Conscientes de la continua evolución del sector, el equipo de Disnet se encuentra en formación continua. Buscando la vanguardia del conocimiento en las nuevas estrategias y metodologías de las operaciones logísticas.",
+    "El equipo de Disnet garantiza una estructura logística permanente, que hace que todo esté a punto en el momento que se necesite.",
+  ],
+};
+
+const barcelonaCopy: Content["barcelonaCopy"] = {
   title: "Logística en Barcelona con Disnet",
   paragraphs: [
     "La ciudad de Barcelona es conocida por ser **uno de los principales centros logísticos de España**, ya que cuenta con una ubicación estratégica que la convierte en un punto clave para el transporte de mercancías tanto a nivel nacional como internacional.",
@@ -32,32 +42,13 @@ export const barcelonaCopy = {
   highlight: "¡Confía en Disnet para llevar tu empresa al siguiente nivel en logística!",
 };
 
-export const stats = [
+const stats: Content["stats"] = [
   { value: 12000, label: "Ubicaciones en racks" },
   { value: 15000, label: "Ubicaciones de picking" },
   { value: 100000, label: "Capacidad pedidos e-commerce" },
 ];
 
-export type ServiceBenefit = { title: string; description?: string; points?: string[] };
-export type ServiceSection = { heading: string; paragraphs: string[] };
-
-export type Service = {
-  slug: string;
-  name: string;
-  headline: string;
-  subheadline?: string;
-  intro: string[];
-  extra?: string[];
-  list?: string[];
-  sections?: ServiceSection[];
-  benefitsTitle?: string;
-  benefits?: ServiceBenefit[];
-  audienceTitle?: string;
-  audience?: string[];
-  ctaLabel?: string;
-};
-
-export const services: Service[] = [
+const services: Content["services"] = [
   {
     slug: "recepcion-de-mercancias",
     name: "Recepción de mercancías",
@@ -250,7 +241,7 @@ export const services: Service[] = [
   },
 ];
 
-export const whyChooseUs = {
+const whyChooseUs: Content["whyChooseUs"] = {
   title: "¿Por qué escoger Disnet?",
   intro: [
     "Disnet es un 3PL que ofrece **desde 1991 un servicio flexible** adaptado a las necesidades de cada cliente. La razón de ser de Disnet es asumir todos los requerimientos logísticos de nuestros clientes adaptando nuestros sistemas de trabajo, organización e instalaciones para responder a sus expectativas con la **máxima rapidez y fiabilidad**.",
@@ -276,7 +267,7 @@ export const whyChooseUs = {
   ],
 };
 
-export const quotes = [
+const quotes: Content["quotes"] = [
   {
     text: "Cuanto más tiempo pase sin que actúes más dinero estás dejando de ganar.",
     author: "Carrie Wilkerson",
@@ -287,7 +278,7 @@ export const quotes = [
   },
 ];
 
-export const empresaCopy = {
+const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – la logística como filosofía de trabajo",
   intro: [
     "¿Buscas una empresa de logística en Barcelona confiable y eficiente? En Disnet nos enorgullece ofrecer **servicios de logística de primera clase**.",
@@ -299,19 +290,19 @@ export const empresaCopy = {
   values: "Profesionalidad, integridad, confianza, eficacia y eficiencia…",
 };
 
-export const jobsCopy = {
+const jobsCopy: Content["jobsCopy"] = {
   title: "Trabaja con nosotros",
   description: "¿Quieres formar parte del equipo de Disnet? Envíanos tus datos y tu currículum y nos pondremos en contacto contigo.",
   legal:
     "Sus datos serán tratados por Disnet Sistemas de Distribución S.A. y se conservarán durante 5 años, de acuerdo con la Ley Orgánica 3/2018 de 5 de diciembre, de Protección de Datos de Carácter Personal, con la finalidad de gestionar procesos de selección de personal. Puede ejercer sus derechos de acceso, rectificación y cancelación en los términos que establece la ley.",
 };
 
-export const contactCopy = {
+const contactCopy: Content["contactCopy"] = {
   title: "Contacta con Disnet",
   subtitle: "Nuestra flexibilidad con nuestros clientes nos hace adaptarnos a tus necesidades",
 };
 
-export const clientAreaCopy = {
+const clientAreaCopy: Content["clientAreaCopy"] = {
   title: "Área clientes Disnet",
   description: "Para tu máxima comodidad y control, Disnet te ofrece su «Área de clientes», donde tendrás acceso a toda tu información importante online y en tiempo real.",
   portals: [
@@ -320,17 +311,7 @@ export const clientAreaCopy = {
   ],
 };
 
-export type BlogBlock = { heading: string } | { text: string };
-
-export type BlogPost = {
-  slug: string;
-  date: string;
-  title: string;
-  excerpt: string;
-  body: BlogBlock[];
-};
-
-export const blogPosts: BlogPost[] = [
+const blogPosts: Content["blogPosts"] = [
   {
     slug: "operador-logistico-barcelona",
     date: "10 de julio de 2026",
@@ -533,7 +514,7 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const navLinks = [
+const navLinks: Content["navLinks"] = [
   { href: "/", label: "Inicio" },
   { href: "/empresa", label: "Empresa" },
   { href: "/servicios", label: "Servicios" },
@@ -541,3 +522,92 @@ export const navLinks = [
   { href: "/empresa#trabaja-con-nosotros", label: "Trabaja con nosotros" },
   { href: "/area-clientes", label: "Área clientes" },
 ];
+
+const ui: Content["ui"] = {
+  headerContact: "Contacto",
+  headerOpenMenu: "Abrir menú",
+  heroCtaContact: "Contacta con nosotros",
+  heroCtaVisit: "¡Visita nuestras instalaciones!",
+  heroCtaServices: "Ver servicios",
+  readMore: "Leer más",
+  requestQuote: "Pedir presupuesto",
+  contactUs: "Contacta con nosotros",
+  backToServices: "← Volver a servicios",
+  backToBlog: "← Volver al blog",
+  otherServices: "Otros servicios",
+  moreArticles: "Más artículos",
+  readArticle: "Leer artículo",
+  servicesOffered: "Servicios que ofrecemos",
+  servicesOfferedIntro:
+    "En Disnet, además de los servicios estándar, atendemos cualquier necesidad de logística de nuestros clientes con el objetivo de que no tengan que ocuparse, si así lo desean, de ningún aspecto relacionado con la distribución física de sus productos.",
+  learnMore: "Saber más",
+  access: "Acceder",
+  footerNavigation: "Navegación",
+  footerServices: "Servicios",
+  footerContact: "Contacto",
+  footerRights: "Todos los derechos reservados.",
+  footerLegalNotice: "Aviso legal",
+  footerPrivacyPolicy: "Política de privacidad",
+  contactFormName: "Nombre *",
+  contactFormSurname: "Apellidos",
+  contactFormEmail: "Correo electrónico *",
+  contactFormPhone: "Teléfono",
+  contactFormMessage: "Comentario o mensaje *",
+  contactFormTerms: "Acepto los términos al clicar aquí.",
+  contactFormMarketing: "Deseo recibir información que pueda ser de mi interés.",
+  contactFormSubmit: "Enviar",
+  contactFormSubmitting: "Enviando…",
+  contactFormToastTitle: "Mensaje enviado",
+  contactFormToastDescription: "Gracias por contactar con Disnet, te responderemos lo antes posible.",
+  jobFormName: "Nombre y apellidos *",
+  jobFormEmail: "Correo electrónico *",
+  jobFormPhone: "Teléfono de contacto",
+  jobFormSubject: "Asunto *",
+  jobFormMessage: "Mensaje *",
+  jobFormCv: "Currículum (doc | pdf máx. 5Mb)",
+  jobFormTerms: "Acepto los términos al clicar aquí.",
+  jobFormMarketing: "Deseo recibir información que pueda ser de mi interés.",
+  jobFormSubmit: "Enviar candidatura",
+  jobFormSubmitting: "Enviando…",
+  jobFormToastTitle: "Solicitud enviada",
+  jobFormToastDescription: "Gracias por tu interés, el equipo de Disnet revisará tu candidatura.",
+  ctaBannerTitle: "¿Hablamos de tu cadena de suministro?",
+  ctaBannerSubtitle: "Escríbenos y te ayudamos a encontrar la solución logística adecuada para tu negocio.",
+  addressLabel: "Dirección",
+  phoneLabel: "Teléfono",
+  emailLabel: "Email",
+  contactPageTitle: "Contacto | Disnet",
+  servicesPageTitle: "Servicios | Disnet",
+  servicesPageDescription:
+    "Recepción, manipulación, almacenaje, preparación de pedidos, empaquetado, e-commerce, transporte y logística inversa.",
+  blogPageTitle: "Blog sobre logística",
+  blogPageDescription:
+    "Novedades, análisis y consejos del equipo de Disnet sobre operaciones logísticas y cadena de suministro.",
+  changeToSpanish: "Cambiar a Castellano",
+  changeToEnglish: "Cambiar a Inglés",
+  changeToCatalan: "Cambiar a Catalán",
+  changeToFrench: "Cambiar a Francés",
+  missionLabel: "Misión",
+  visionLabel: "Visión",
+  valuesLabel: "Valores",
+};
+
+const content: Content = {
+  company,
+  heroCopy,
+  companyIntroCopy,
+  barcelonaCopy,
+  stats,
+  services,
+  whyChooseUs,
+  quotes,
+  empresaCopy,
+  jobsCopy,
+  contactCopy,
+  clientAreaCopy,
+  blogPosts,
+  navLinks,
+  ui,
+};
+
+export default content;

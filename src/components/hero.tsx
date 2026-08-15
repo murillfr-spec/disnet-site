@@ -1,7 +1,10 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { motion, type Variants } from "motion/react";
-import { heroCopy, company } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import type { Locale } from "@/lib/i18n";
 import { MotionLink } from "@/components/motion-link";
 import { HeroSlider } from "@/components/hero-slider";
 import { RichText } from "@/components/rich-text";
@@ -21,6 +24,9 @@ const item = {
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 export function Hero() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { heroCopy, company, ui } = getContent(locale);
+
   return (
     <section className="relative isolate flex min-h-[36rem] items-center overflow-hidden md:min-h-[44rem]">
       <HeroSlider />
@@ -48,31 +54,31 @@ export function Hero() {
 
         <motion.div variants={item} className="mt-10 flex flex-wrap gap-3">
           <MotionLink
-            href="/contacto"
+            href={localeHref(locale, "/contacto")}
             whileTap={{ scale: 0.96 }}
             transition={press}
             className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground"
           >
-            Contacta con nosotros
+            {ui.heroCtaContact}
           </MotionLink>
           <MotionLink
-            href="/empresa"
+            href={localeHref(locale, "/empresa")}
             whileTap={{ scale: 0.96 }}
             transition={press}
             className="group inline-flex items-center gap-2 rounded-full bg-accent-secondary px-6 py-3 text-sm font-medium text-accent-secondary-foreground"
           >
-            ¡Visita nuestras instalaciones!
+            {ui.heroCtaVisit}
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-150 group-hover:translate-x-0.5">
               <path d="M9 6l6 6-6 6" />
             </svg>
           </MotionLink>
           <MotionLink
-            href="/servicios"
+            href={localeHref(locale, "/servicios")}
             whileTap={{ scale: 0.96 }}
             transition={press}
             className="rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white transition-colors duration-150 hover:border-white hover:bg-white/10"
           >
-            Ver servicios
+            {ui.heroCtaServices}
           </MotionLink>
         </motion.div>
       </motion.div>

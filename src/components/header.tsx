@@ -2,18 +2,23 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useParams } from "next/navigation";
 import { useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import { Menu } from "@base-ui/react/menu";
-import { navLinks, services, company } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import type { Locale } from "@/lib/i18n";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { MotionLink } from "@/components/motion-link";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 export function Header() {
   const pathname = usePathname();
+  const { locale } = useParams<{ locale: Locale }>();
+  const { navLinks, services, company, ui } = getContent(locale);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { scrollY } = useScroll();
   const edgeOpacity = useTransform(scrollY, [0, 24], [0, 1]);
@@ -26,7 +31,7 @@ export function Header() {
         className="pointer-events-none absolute inset-x-0 top-full h-px bg-gradient-to-r from-transparent via-border to-transparent"
       />
       <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2 rounded-xl bg-white p-2.5">
+        <Link href={localeHref(locale, "/")} className="flex items-center gap-2 rounded-xl bg-white p-2.5">
           <Image
             src="/images/logo-disnet.jpg"
             alt={company.name}
@@ -40,16 +45,16 @@ export function Header() {
 
         <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) =>
-            link.label === "Servicios" ? (
+            link.href === "/servicios" ? (
               <Menu.Root key={link.href}>
                 <Menu.Trigger
                   nativeButton={false}
                   openOnHover
                   delay={80}
                   closeDelay={0}
-                  render={<Link href={link.href} />}
+                  render={<Link href={localeHref(locale, link.href)} />}
                   className={`rounded-md px-3 py-2 text-sm transition-colors duration-150 hover:text-accent ${
-                    pathname.startsWith("/servicios") ? "text-accent" : "text-foreground/80"
+                    pathname.startsWith(localeHref(locale, "/servicios")) ? "text-accent" : "text-foreground/80"
                   }`}
                 >
                   {link.label}
@@ -61,7 +66,7 @@ export function Header() {
                         <Menu.LinkItem
                           key={service.slug}
                           closeOnClick
-                          render={<Link href={`/servicios/${service.slug}`} />}
+                          render={<Link href={localeHref(locale, `/servicios/${service.slug}`)} />}
                           className="rounded-lg px-3 py-2 text-sm text-foreground/80 outline-none transition-colors duration-150 data-[highlighted]:bg-muted data-[highlighted]:text-accent"
                         >
                           {service.name}
@@ -74,9 +79,9 @@ export function Header() {
             ) : (
               <Link
                 key={link.href}
-                href={link.href}
+                href={localeHref(locale, link.href)}
                 className={`rounded-md px-3 py-2 text-sm transition-colors duration-150 hover:text-accent ${
-                  pathname === link.href ? "text-accent" : "text-foreground/80"
+                  pathname === localeHref(locale, link.href) ? "text-accent" : "text-foreground/80"
                 }`}
               >
                 {link.label}
@@ -86,18 +91,19 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeToggle />
           <MotionLink
-            href="/contacto"
+            href={localeHref(locale, "/contacto")}
             whileTap={{ scale: 0.95 }}
             transition={press}
             className="hidden rounded-full bg-accent-secondary px-4 py-2 text-sm font-medium text-accent-secondary-foreground md:inline-block"
           >
-            Contacto
+            {ui.headerContact}
           </MotionLink>
           <button
             type="button"
-            aria-label="Abrir menú"
+            aria-label={ui.headerOpenMenu}
             onClick={() => setMobileOpen((v) => !v)}
             className="flex size-9 items-center justify-center rounded-full border border-border transition-transform duration-150 ease-out active:scale-90 md:hidden"
           >
@@ -121,21 +127,24 @@ export function Header() {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={localeHref(locale, link.href)}
                   onClick={() => setMobileOpen(false)}
                   className="rounded-md px-2 py-2 text-sm text-foreground/80 transition-colors duration-150 hover:text-accent"
                 >
                   {link.label}
                 </Link>
               ))}
+              <div className="mt-2 flex items-center gap-2">
+                <LanguageSwitcher />
+              </div>
               <MotionLink
-                href="/contacto"
+                href={localeHref(locale, "/contacto")}
                 onClick={() => setMobileOpen(false)}
                 whileTap={{ scale: 0.96 }}
                 transition={press}
                 className="mt-2 rounded-full bg-accent-secondary px-4 py-2 text-center text-sm font-medium text-accent-secondary-foreground"
               >
-                Contacto
+                {ui.headerContact}
               </MotionLink>
             </nav>
           </motion.div>

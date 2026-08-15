@@ -1,11 +1,16 @@
 "use client";
 
-import { whyChooseUs, quotes, barcelonaCopy } from "@/lib/content";
+import { useParams } from "next/navigation";
+import { getContent } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { WhyChooseShowcase } from "@/components/why-choose-showcase";
 import { RichText } from "@/components/rich-text";
 
 export function WhyChooseUs() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { whyChooseUs, quotes } = getContent(locale);
+
   return (
     <section className="border-b border-border bg-muted/40">
       <div className="mx-auto max-w-6xl px-6 py-20">
@@ -18,14 +23,6 @@ export function WhyChooseUs() {
                   <RichText text={p} />
                 </p>
               ))}
-            </div>
-
-            <div className="mt-10 rounded-2xl border border-border bg-card p-6">
-              <h3 className="text-h3">{barcelonaCopy.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                <RichText text={barcelonaCopy.paragraphs[0]} />
-              </p>
-              <p className="mt-4 text-sm font-medium text-accent">{barcelonaCopy.highlight}</p>
             </div>
           </Reveal>
 

@@ -13,6 +13,10 @@
   --accent-secondary: #1369cf;
   --accent-secondary-foreground: #ffffff;
   --ring: #cc0000;
+  --footer-bg: #1b1e24;
+  --footer-foreground: #e7e8ea;
+  --footer-muted: #9aa0aa;
+  --footer-border: #30343c;
 }
 
 :root[data-theme="dark"] {
@@ -60,6 +64,10 @@
   --color-accent-secondary: var(--accent-secondary);
   --color-accent-secondary-foreground: var(--accent-secondary-foreground);
   --color-ring: var(--ring);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-foreground: var(--footer-foreground);
+  --color-footer-muted: var(--footer-muted);
+  --color-footer-border: var(--footer-border);
   --font-sans: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);

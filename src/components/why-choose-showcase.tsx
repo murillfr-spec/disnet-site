@@ -1,12 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
-import { whyChooseUs } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
 const DURATION = 4500;
 
 export function WhyChooseShowcase() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { whyChooseUs } = getContent(locale);
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const [tick, setTick] = useState(0);

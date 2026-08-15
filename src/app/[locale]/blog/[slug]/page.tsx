@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { localeHref } from "@/lib/href";
+import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { CtaBanner } from "@/components/cta-banner";
 import { RichText } from "@/components/rich-text";
 
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
-}
-
-async function getPost(slug: string) {
-  return blogPosts.find((p) => p.slug === slug);
+export function generateStaticParams() {
+  const { blogPosts } = getContent("es");
+  return locales.flatMap((locale) => blogPosts.map((post) => ({ locale, slug: post.slug })));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPost(slug);
+  const { locale: rawLocale, slug } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { blogPosts } = getContent(locale);
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
     title: `${post.title} | Disnet`,
@@ -31,10 +32,12 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const post = await getPost(slug);
+  const { locale: rawLocale, slug } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { blogPosts, ui } = getContent(locale);
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
   const otherPosts = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
@@ -43,8 +46,8 @@ export default async function BlogPostPage({
     <>
       <article className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">
-          <Link href="/blog" className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
-            ← Volver al blog
+          <Link href={localeHref(locale, "/blog")} className="text-sm text-muted-foreground transition-colors duration-150 hover:text-accent">
+            {ui.backToBlog}
           </Link>
           <Reveal>
             <p className="mt-6 text-xs uppercase tracking-wide text-muted-foreground">{post.date}</p>
@@ -70,13 +73,13 @@ export default async function BlogPostPage({
       <section className="border-b border-border bg-muted/40">
         <div className="mx-auto max-w-6xl px-6 py-14">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Más artículos
+            {ui.moreArticles}
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             {otherPosts.map((p) => (
               <Link
                 key={p.slug}
-                href={`/blog/${p.slug}`}
+                href={localeHref(locale, `/blog/${p.slug}`)}
                 className="group rounded-2xl border border-border bg-card p-5 transition-colors duration-150 hover:border-accent"
               >
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">{p.date}</p>
@@ -89,7 +92,7 @@ export default async function BlogPostPage({
         </div>
       </section>
 
-      <CtaBanner />
+      <CtaBanner locale={locale} />
     </>
   );
 }
