@@ -105,6 +105,7 @@ const services: Content["services"] = [
         heading: "Gestió d'emmagatzematge a Barcelona",
         paragraphs: [
           "Cada negoci té necessitats úniques. A Disnet, ho sabem. Per això, t'oferim solucions d'emmagatzematge a mida que s'adapten perfectament al teu volum de negoci i tipus de mercaderia. Amb nosaltres, gaudiràs de la seguretat, eficiència i flexibilitat que necessites per fer créixer la teva empresa.",
+          "Treballem amb **logística tèxtil i de moda, logística de cosmètica i perfumeria**, i amb qualsevol altre sector que requereixi un emmagatzematge especialitzat. I si el que buscaves era simplement llogar un magatzem a Barcelona, amb Disnet obtens molt més: un servei logístic complet, sense la complexitat de gestionar tu mateix l'espai, el personal o la tecnologia.",
         ],
       },
     ],
@@ -213,7 +214,7 @@ const services: Content["services"] = [
     headline: "A Disnet, et garantim els millors terminis de lliurament",
     subheadline: "Fulfillment per a Shopify, WooCommerce i les principals plataformes",
     intro: [
-      "Seguint les tendències actuals del comerç, som especialistes en l'externalització de cadenes de subministrament per al sector de l'eCommerce. Amb **més de 25 anys d'experiència**, hem gestionat i preparat comandes, amb la capacitat d'atendre **més de 2.000.000 d'enviaments a l'any**.",
+      "Qui gestiona els enviaments de la teva botiga online? A Disnet ens encarreguem de tot el procés, des que la comanda entra a la teva web fins que arriba a la porta del client. Seguint les tendències actuals del comerç, som especialistes en l'externalització de cadenes de subministrament per al sector de l'eCommerce. Amb **més de 25 anys d'experiència**, hem gestionat i preparat comandes, amb la capacitat d'atendre **més de 2.000.000 d'enviaments a l'any**.",
     ],
     list: [
       "Optimitzar els terminis de lliurament.",
@@ -253,7 +254,7 @@ const whyChooseUs: Content["whyChooseUs"] = {
   title: "Per què triar Disnet?",
   intro: [
     "Disnet és un 3PL que ofereix **des de 1991 un servei flexible** adaptat a les necessitats de cada client. La raó de ser de Disnet és assumir tots els requeriments logístics dels nostres clients adaptant els nostres sistemes de treball, organització i instal·lacions per respondre a les seves expectatives amb la **màxima rapidesa i fiabilitat**.",
-    "La nostra dimensió i proximitat ens col·loca a l'abast de qualsevol organització, des de petites empreses d'àmbit local fins a organitzacions industrials de més dimensió.",
+    "La nostra dimensió i proximitat ens col·loca a l'abast de qualsevol organització, des de **pimes i petites empreses d'àmbit local** fins a organitzacions industrials de més dimensió.",
   ],
   points: [
     {
@@ -289,7 +290,7 @@ const quotes: Content["quotes"] = [
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – la logística com a filosofia de treball",
   intro: [
-    "Busques una empresa de logística a Barcelona fiable i eficient? A Disnet ens enorgulleix oferir **serveis de logística de primera classe**.",
+    "Busques una empresa de logística a Barcelona fiable i eficient? A Disnet ens enorgulleix oferir **serveis de logística de primera classe** des del nostre centre logístic a **Sabadell, al bell mig del Vallès Occidental**.",
     "Tant si necessites transport, emmagatzematge o distribució de mercaderies, el nostre equip altament capacitat i les nostres **solucions personalitzades** estan dissenyats per satisfer les teves necessitats específiques. Amb una sòlida xarxa de socis i una àmplia experiència en la indústria, estem compromesos a oferir-te **solucions logístiques integrals** que optimitzin les teves operacions i t'ajudin a assolir els teus objectius comercials.",
     "Confia en la nostra experiència local i en la nostra dedicació per proporcionar-te un servei fiable i eficient. Contacta amb nosaltres avui mateix i descobreix com podem impulsar l'èxit del teu negoci a Barcelona!",
   ],

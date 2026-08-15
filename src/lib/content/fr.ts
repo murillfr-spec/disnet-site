@@ -105,6 +105,7 @@ const services: Content["services"] = [
         heading: "Gestion du stockage à Barcelone",
         paragraphs: [
           "Chaque entreprise a des besoins uniques. Chez Disnet, nous le savons. C'est pourquoi nous vous proposons des solutions de stockage sur mesure, parfaitement adaptées à votre volume d'activité et au type de marchandise. Avec nous, vous profiterez de la sécurité, de l'efficacité et de la flexibilité dont vous avez besoin pour développer votre entreprise.",
+          "Nous travaillons avec la **logistique textile et mode, la logistique cosmétique et parfumerie**, et tout autre secteur nécessitant un stockage spécialisé. Et si vous cherchiez simplement à louer un entrepôt à Barcelone, avec Disnet vous obtenez bien plus : un service logistique complet, sans la complexité de gérer vous-même l'espace, le personnel ou la technologie.",
         ],
       },
     ],
@@ -213,7 +214,7 @@ const services: Content["services"] = [
     headline: "Chez Disnet, nous vous garantissons les meilleurs délais de livraison",
     subheadline: "Fulfillment pour Shopify, WooCommerce et les principales plateformes",
     intro: [
-      "En suivant les tendances actuelles du commerce, nous sommes spécialistes de l'externalisation des chaînes d'approvisionnement pour le secteur de l'eCommerce. Avec **plus de 25 ans d'expérience**, nous avons géré et préparé des commandes, avec la capacité de traiter **plus de 2 000 000 d'expéditions par an**.",
+      "Qui gère les livraisons de votre boutique en ligne ? Chez Disnet, nous prenons en charge tout le processus, de la commande passée sur votre site jusqu'à sa livraison chez le client. En suivant les tendances actuelles du commerce, nous sommes spécialistes de l'externalisation des chaînes d'approvisionnement pour le secteur de l'eCommerce. Avec **plus de 25 ans d'expérience**, nous avons géré et préparé des commandes, avec la capacité de traiter **plus de 2 000 000 d'expéditions par an**.",
     ],
     list: [
       "Optimiser les délais de livraison.",
@@ -253,7 +254,7 @@ const whyChooseUs: Content["whyChooseUs"] = {
   title: "Pourquoi choisir Disnet ?",
   intro: [
     "Disnet est un 3PL qui offre **depuis 1991 un service flexible** adapté aux besoins de chaque client. La raison d'être de Disnet est de prendre en charge toutes les exigences logistiques de nos clients en adaptant nos méthodes de travail, notre organisation et nos installations pour répondre à leurs attentes avec la **rapidité et la fiabilité maximales**.",
-    "Notre dimension et notre proximité nous rendent accessibles à toute organisation, des petites entreprises locales aux organisations industrielles de plus grande envergure.",
+    "Notre dimension et notre proximité nous rendent accessibles à toute organisation, des **PME et petites entreprises locales** aux organisations industrielles de plus grande envergure.",
   ],
   points: [
     {
@@ -289,7 +290,7 @@ const quotes: Content["quotes"] = [
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – la logistique comme philosophie de travail",
   intro: [
-    "Vous recherchez une entreprise de logistique fiable et efficace à Barcelone ? Chez Disnet, nous sommes fiers d'offrir des **services logistiques de première classe**.",
+    "Vous recherchez une entreprise de logistique fiable et efficace à Barcelone ? Chez Disnet, nous sommes fiers d'offrir des **services logistiques de première classe** depuis notre centre logistique à **Sabadell, en plein cœur du Vallès Occidental**.",
     "Que vous ayez besoin de transport, de stockage ou de distribution de marchandises, notre équipe hautement qualifiée et nos **solutions personnalisées** sont conçues pour répondre à vos besoins spécifiques. Grâce à un solide réseau de partenaires et à une vaste expérience dans le secteur, nous nous engageons à vous fournir des **solutions logistiques intégrales** qui optimisent vos opérations et vous aident à atteindre vos objectifs commerciaux.",
     "Faites confiance à notre expérience locale et à notre engagement à vous offrir un service fiable et efficace. Contactez-nous dès aujourd'hui et découvrez comment nous pouvons contribuer au succès de votre entreprise à Barcelone !",
   ],

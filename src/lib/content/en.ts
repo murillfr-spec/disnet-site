@@ -105,6 +105,7 @@ const services: Content["services"] = [
         heading: "Warehouse management in Barcelona",
         paragraphs: [
           "Every business has unique needs. At Disnet, we know it. That's why we offer tailor-made storage solutions that adapt perfectly to your business volume and type of goods. With us, you'll enjoy the security, efficiency and flexibility you need to grow your company.",
+          "We work with **fashion and textile logistics, cosmetics and perfume logistics**, and any other sector that requires specialized storage. And if you were simply looking to rent a warehouse in Barcelona, with Disnet you get much more: a complete logistics service, without the complexity of managing the space, staff or technology yourself.",
         ],
       },
     ],
@@ -213,7 +214,7 @@ const services: Content["services"] = [
     headline: "At Disnet, we guarantee the best delivery times",
     subheadline: "Fulfillment for Shopify, WooCommerce and the leading platforms",
     intro: [
-      "Following current trends in commerce, we specialize in outsourcing supply chains for the e-Commerce sector. With **more than 25 years of experience**, we have managed and prepared orders, with the capacity to handle **more than 2,000,000 shipments a year**.",
+      "Who manages the shipping for your online store? At Disnet, we handle the entire process, from the moment an order comes in on your website until it reaches the customer's door. Following current trends in commerce, we specialize in outsourcing supply chains for the e-Commerce sector. With **more than 25 years of experience**, we have managed and prepared orders, with the capacity to handle **more than 2,000,000 shipments a year**.",
     ],
     list: [
       "Optimize delivery times.",
@@ -253,7 +254,7 @@ const whyChooseUs: Content["whyChooseUs"] = {
   title: "Why choose Disnet?",
   intro: [
     "Disnet is a 3PL that has offered a **flexible service since 1991**, adapted to each client's needs. Disnet's purpose is to take on all of our clients' logistics requirements, adapting our working systems, organization and facilities to meet their expectations with **maximum speed and reliability**.",
-    "Our scale and proximity put us within reach of any organization, from small local businesses to larger industrial organizations.",
+    "Our scale and proximity put us within reach of any organization, from **SMEs and small local businesses** to larger industrial organizations.",
   ],
   points: [
     {
@@ -289,7 +290,7 @@ const quotes: Content["quotes"] = [
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – logistics as a working philosophy",
   intro: [
-    "Looking for a reliable and efficient logistics company in Barcelona? At Disnet, we're proud to offer **first-class logistics services**.",
+    "Looking for a reliable and efficient logistics company in Barcelona? At Disnet, we're proud to offer **first-class logistics services** from our logistics hub in **Sabadell, in the heart of the Vallès Occidental**.",
     "Whether you need transport, storage or distribution of goods, our highly trained team and **customized solutions** are designed to meet your specific needs. With a strong network of partners and extensive industry experience, we're committed to providing you with **comprehensive logistics solutions** that optimize your operations and help you achieve your business goals.",
     "Trust our local expertise and our dedication to providing a reliable and efficient service. Contact us today and discover how we can drive your business's success in Barcelona!",
   ],
