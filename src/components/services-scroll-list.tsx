@@ -33,7 +33,7 @@ function ServiceRow({
       initial={{ opacity: 0, x: fromX }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-15% 0px -15% 0px" }}
-      transition={{ duration: 2.2, ease: [0.23, 1, 0.32, 1] }}
+      transition={{ duration: 4, ease: [0.23, 1, 0.32, 1] }}
     >
       <motion.div whileHover="hover" whileTap={{ scale: 0.99 }} transition={press}>
         <Link
@@ -56,6 +56,11 @@ function ServiceRow({
               <h3 className="text-h3 sm:text-2xl">{service.name}</h3>
             </div>
             <p className="mt-1.5 max-w-md text-sm text-muted-foreground sm:text-base">{service.headline}</p>
+            {service.subheadline && (
+              <p className="mt-1 max-w-md text-xs font-medium uppercase tracking-wide text-accent">
+                {service.subheadline}
+              </p>
+            )}
             <motion.span
               variants={{ hover: { scaleX: 1 } }}
               initial={{ scaleX: 0 }}

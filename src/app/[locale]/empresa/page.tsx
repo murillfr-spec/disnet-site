@@ -32,7 +32,7 @@ export default async function EmpresaPage({ params }: { params: Promise<{ locale
     <>
       <section className="border-b border-border">
         <Reveal className="mx-auto max-w-6xl px-6 pt-20">
-          <YoutubeEmbed videoId="m9ItuwMbI8Y" title="Disnet Logística Barcelona" />
+          <YoutubeEmbed videoId="m9ItuwMbI8Y" title="Disnet Logística Barcelona" autoPlay />
         </Reveal>
 
         <div className="mx-auto max-w-4xl px-6">

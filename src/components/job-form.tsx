@@ -17,17 +17,25 @@ export function JobForm() {
   const { jobsCopy, ui } = getContent(locale);
   const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+    const formData = new FormData(form);
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      const res = await fetch("/api/jobs", { method: "POST", body: formData });
+      if (!res.ok) throw new Error("request failed");
       toast.success(ui.jobFormToastTitle, {
         description: ui.jobFormToastDescription,
       });
       form.reset();
-    }, 600);
+    } catch {
+      toast.error(ui.jobFormToastErrorTitle, {
+        description: ui.jobFormToastErrorDescription,
+      });
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -49,11 +57,11 @@ export function JobForm() {
       </label>
 
       <label className="flex items-start gap-2 text-sm text-muted-foreground sm:col-span-2">
-        <input required type="checkbox" className="mt-1 accent-[var(--color-accent)]" />
+        <input required type="checkbox" name="terms" className="mt-1 accent-[var(--color-accent)]" />
         {ui.jobFormTerms}
       </label>
       <label className="flex items-start gap-2 text-sm text-muted-foreground sm:col-span-2">
-        <input type="checkbox" className="mt-1 accent-[var(--color-accent)]" />
+        <input type="checkbox" name="marketing" className="mt-1 accent-[var(--color-accent)]" />
         {ui.jobFormMarketing}
       </label>
 

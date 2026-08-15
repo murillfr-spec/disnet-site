@@ -17,17 +17,29 @@ export function ContactForm() {
   const { ui } = getContent(locale);
   const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, terms: form.terms.checked }),
+      });
+      if (!res.ok) throw new Error("request failed");
       toast.success(ui.contactFormToastTitle, {
         description: ui.contactFormToastDescription,
       });
       form.reset();
-    }, 600);
+    } catch {
+      toast.error(ui.contactFormToastErrorTitle, {
+        description: ui.contactFormToastErrorDescription,
+      });
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -45,11 +57,11 @@ export function ContactForm() {
       />
 
       <label className="flex items-start gap-2 text-sm text-muted-foreground sm:col-span-2">
-        <input required type="checkbox" className="mt-1 accent-[var(--color-accent)]" />
+        <input required type="checkbox" name="terms" className="mt-1 accent-[var(--color-accent)]" />
         {ui.contactFormTerms}
       </label>
       <label className="flex items-start gap-2 text-sm text-muted-foreground sm:col-span-2">
-        <input type="checkbox" className="mt-1 accent-[var(--color-accent)]" />
+        <input type="checkbox" name="marketing" className="mt-1 accent-[var(--color-accent)]" />
         {ui.contactFormMarketing}
       </label>
 

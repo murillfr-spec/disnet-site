@@ -4,8 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
-export function YoutubeEmbed({ videoId, title }: { videoId: string; title: string }) {
-  const [playing, setPlaying] = useState(false);
+export function YoutubeEmbed({
+  videoId,
+  title,
+  autoPlay = false,
+}: {
+  videoId: string;
+  title: string;
+  autoPlay?: boolean;
+}) {
+  const [playing, setPlaying] = useState(autoPlay);
 
   return (
     <div className="relative aspect-video overflow-hidden rounded-2xl bg-black">
@@ -16,7 +24,7 @@ export function YoutubeEmbed({ videoId, title }: { videoId: string; title: strin
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
-            src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
+            src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1${autoPlay ? "&mute=1" : ""}`}
             title={title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

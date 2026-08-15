@@ -64,6 +64,8 @@ export type Ui = {
   contactFormSubmitting: string;
   contactFormToastTitle: string;
   contactFormToastDescription: string;
+  contactFormToastErrorTitle: string;
+  contactFormToastErrorDescription: string;
   jobFormName: string;
   jobFormEmail: string;
   jobFormPhone: string;
@@ -76,6 +78,8 @@ export type Ui = {
   jobFormSubmitting: string;
   jobFormToastTitle: string;
   jobFormToastDescription: string;
+  jobFormToastErrorTitle: string;
+  jobFormToastErrorDescription: string;
   ctaBannerTitle: string;
   ctaBannerSubtitle: string;
   addressLabel: string;
