@@ -31,6 +31,23 @@ export type BlogPost = {
 
 export type NavLink = { href: string; label: string };
 
+export type LegalBlock = { heading: string } | { text: string } | { list: string[] };
+
+export type LegalPageCopy = {
+  title: string;
+  lastUpdated: string;
+  body: LegalBlock[];
+};
+
+export type CookieConsentCopy = {
+  message: string;
+  moreInfo: string;
+  technical: string;
+  marketing: string;
+  reject: string;
+  accept: string;
+};
+
 export type Ui = {
   headerContact: string;
   headerOpenMenu: string;
@@ -99,6 +116,9 @@ export type Ui = {
   missionLabel: string;
   visionLabel: string;
   valuesLabel: string;
+  legalNoticePageTitle: string;
+  privacyPolicyPageTitle: string;
+  lastUpdatedLabel: string;
 };
 
 export type Content = {
@@ -124,7 +144,6 @@ export type Content = {
     intro: string[];
     points: { title: string; description: string }[];
   };
-  quotes: { text: string; author: string }[];
   empresaCopy: { title: string; intro: string[]; mission: string; vision: string; values: string };
   jobsCopy: { title: string; description: string; legal: string };
   contactCopy: { title: string; subtitle: string };
@@ -137,4 +156,7 @@ export type Content = {
   navLinks: NavLink[];
   ui: Ui;
   siteFaq: { title: string; items: { question: string; answer: string }[] };
+  legalNoticeCopy: LegalPageCopy;
+  privacyPolicyCopy: LegalPageCopy;
+  cookieConsent: CookieConsentCopy;
 };

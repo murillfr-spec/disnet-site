@@ -4,7 +4,16 @@ import { locales, defaultLocale } from "@/lib/i18n";
 import { localeHref } from "@/lib/href";
 import { getContent } from "@/lib/content";
 
-const staticPaths = ["/", "/empresa", "/servicios", "/blog", "/contacto", "/area-clientes"];
+const staticPaths = [
+  "/",
+  "/empresa",
+  "/servicios",
+  "/blog",
+  "/contacto",
+  "/area-clientes",
+  "/aviso-legal",
+  "/politica-de-privacidad",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Los slugs de servicios y posts son iguales en los 4 idiomas.

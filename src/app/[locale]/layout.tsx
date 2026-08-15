@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { AppToaster } from "@/components/app-toaster";
+import { CookieBanner } from "@/components/cookie-banner";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
 import { getContent } from "@/lib/content";
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <AppToaster />
+          <CookieBanner />
         </ThemeProvider>
       </body>
     </html>

@@ -460,17 +460,6 @@ const whyChooseUs: Content["whyChooseUs"] = {
   ],
 };
 
-const quotes: Content["quotes"] = [
-  {
-    text: "The longer you go without taking action, the more money you're leaving on the table.",
-    author: "Carrie Wilkerson",
-  },
-  {
-    text: "It does not matter how slowly you go as long as you do not stop.",
-    author: "Confucius",
-  },
-];
-
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – logistics as a working philosophy",
   intro: [
@@ -833,6 +822,110 @@ const ui: Content["ui"] = {
   missionLabel: "Mission",
   visionLabel: "Vision",
   valuesLabel: "Values",
+  legalNoticePageTitle: "Legal notice",
+  privacyPolicyPageTitle: "Privacy policy",
+  lastUpdatedLabel: "Last updated",
+};
+
+const legalNoticeCopy: Content["legalNoticeCopy"] = {
+  title: "Legal notice for www.disnet.es",
+  lastUpdated: "September 20, 2023",
+  body: [
+    { heading: "Introduction" },
+    {
+      text: "In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE), Disnet Sistemas de Distribución S.A. informs that it is the owner of this website. In accordance with the requirements of Article 10 of the aforementioned law, the following details are provided: legal representative Disnet Sistemas de Distribución S.A., Tax ID (NIF) A59843748, domain www.disnet.es, postal address Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona), email address annaturon@disnet.es, phone 657307224.",
+    },
+    { heading: "User status and liability regime" },
+    {
+      text: "Browsing, accessing and using the website of Disnet Sistemas de Distribución S.A. grants the status of user. The website provides a wide variety of information, services and data. The user assumes responsibility for the correct use of the website.",
+    },
+    { heading: "Linking policy and disclaimers of liability" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. is not responsible for the content of websites that the user may access through links established on its website, provided it has no effective knowledge that the activity or information referred to or recommended is illegal or infringes third-party assets or rights that could give rise to compensation.",
+    },
+    { heading: "Modifications" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. reserves the right to make any modifications it deems appropriate, without prior notice, to the content of its website, both regarding the content and the terms of use or the general contracting conditions. The changes referred to in this section will not affect contracts made prior to the publication date of such changes.",
+    },
+    { heading: "Price indication" },
+    {
+      text: "If prices for products and/or services are shown, those displayed on screen will be the prices in effect at that time. Prices will be indicated in euros and will include Value Added Tax (VAT).",
+    },
+    { heading: "Intellectual and industrial property" },
+    {
+      text: "Disnet Sistemas de Distribución S.A., itself or as assignee, owns all intellectual and industrial property rights to its website, as well as to the elements contained therein.",
+    },
+    { heading: "SSL Certificate (Secure Sockets Layer)" },
+    {
+      text: "The SSL certificate provides authentication, privacy and security of information between Disnet Sistemas de Distribución S.A. and the user.",
+    },
+    { heading: "Legal actions, applicable law and jurisdiction" },
+    {
+      text: "The relationship between the user and the provider will be governed by the regulations in force and applicable in Spanish territory. Should any dispute arise, the parties may submit their conflicts to arbitration or resort to ordinary jurisdiction, complying with the applicable rules on jurisdiction and competence.",
+    },
+  ],
+};
+
+const privacyPolicyCopy: Content["privacyPolicyCopy"] = {
+  title: "Privacy policy for www.disnet.es",
+  lastUpdated: "September 20, 2023",
+  body: [
+    { heading: "Website owner details" },
+    {
+      text: "Company name: Disnet Sistemas de Distribución S.A. Tax ID (NIF): A59843748. Domain: www.disnet.es. Postal address: Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona). Email address: annaturon@disnet.es. Phone: 657307224.",
+    },
+    {
+      text: "In accordance with current data protection regulations, we inform you that your data will be incorporated into the processing system owned by Disnet Sistemas de Distribución S.A., with Tax ID A59843748 and registered office at Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona).",
+    },
+    { heading: "Processing activities carried out" },
+    {
+      text: "Web form commercial actions — Purpose: capturing, recording and processing data to handle inquiries and/or requests, as well as advertising and commercial prospecting. Retention period: for as long as consent is maintained, unless otherwise required by law. Legal basis: the data subject's consent. Data types: full name, email address.",
+    },
+    {
+      text: "Website user management — Purpose: capturing, recording and processing user data. Retention period: for as long as consent is maintained, unless otherwise required by law. Legal basis: the data subject's consent. Data types: full name, email address.",
+    },
+    {
+      text: "Cookie installation — Purpose: management and installation of cookies. Retention period: for as long as consent is maintained. Legal basis: the data subject's consent. Data types: email address, IP address.",
+    },
+    {
+      text: "Web form management — Purpose: handling inquiries and/or requests. Retention period: for as long as consent is maintained. Legal basis: the data subject's consent. Data types: full name, email address, IP address.",
+    },
+    { heading: "Rights of data subjects" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. informs users that they may exercise the following rights before the data controller:",
+    },
+    {
+      list: [
+        "Right of access: the right to obtain confirmation as to whether your data is being processed and, if so, the specific personal data processed and legal information about the processing (purposes, legal basis, retention periods, transfers, data origin, etc.).",
+        "Right of rectification: the right to have inaccurate or incomplete data corrected.",
+        "Right to restriction of processing: the right to have the purposes of processing originally intended by the controller limited in certain cases.",
+        "Right of erasure: the right to have your personal data deleted, except for the exceptions provided for in the GDPR itself.",
+        "Right to portability: the right to receive the personal data you have provided in a structured, commonly used, machine-readable format, and to transmit it to another controller.",
+        "Right to object: the right to have the processing of your data stopped, or not carried out, when it is based on legitimate interest, public interest or direct marketing.",
+        "Right not to be subject to automated decisions, including profiling.",
+        "Right to withdraw consent at any time, free of charge, for any processing based on it.",
+      ],
+    },
+    { heading: "How to exercise your rights" },
+    {
+      text: "To exercise any of these rights, you may submit a written request addressed to Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona), for the attention of Disnet Sistemas de Distribución S.A., or send an email to annaturon@disnet.es, reliably identifying yourself and indicating which right you wish to exercise.",
+    },
+    {
+      text: "Finally, you have the right to file a complaint with the Spanish Data Protection Agency (AEPD) if you believe there has been a breach of applicable data protection regulations.",
+    },
+    {
+      text: "Disnet Sistemas de Distribución S.A. undertakes to adopt the necessary technical and organizational measures, appropriate to the level of risk of the processing carried out, to guarantee its integrity, confidentiality and availability.",
+    },
+  ],
+};
+
+const cookieConsent: Content["cookieConsent"] = {
+  message: "This website uses cookies to ensure you get the best experience on our site.",
+  moreInfo: "More info",
+  technical: "Technical",
+  marketing: "Marketing",
+  reject: "Reject",
+  accept: "Accept",
 };
 
 const content: Content = {
@@ -844,7 +937,6 @@ const content: Content = {
   stats,
   services,
   whyChooseUs,
-  quotes,
   empresaCopy,
   jobsCopy,
   contactCopy,
@@ -853,6 +945,9 @@ const content: Content = {
   navLinks,
   ui,
   siteFaq,
+  legalNoticeCopy,
+  privacyPolicyCopy,
+  cookieConsent,
 };
 
 export default content;

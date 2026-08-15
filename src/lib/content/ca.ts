@@ -460,17 +460,6 @@ const whyChooseUs: Content["whyChooseUs"] = {
   ],
 };
 
-const quotes: Content["quotes"] = [
-  {
-    text: "Com més temps passi sense que actuïs, més diners estàs deixant de guanyar.",
-    author: "Carrie Wilkerson",
-  },
-  {
-    text: "No importa com de lent avancis, mentre no t'aturis.",
-    author: "Confuci",
-  },
-];
-
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – la logística com a filosofia de treball",
   intro: [
@@ -833,6 +822,110 @@ const ui: Content["ui"] = {
   missionLabel: "Missió",
   visionLabel: "Visió",
   valuesLabel: "Valors",
+  legalNoticePageTitle: "Avís legal",
+  privacyPolicyPageTitle: "Política de privacitat",
+  lastUpdatedLabel: "Última actualització",
+};
+
+const legalNoticeCopy: Content["legalNoticeCopy"] = {
+  title: "Avís legal de www.disnet.es",
+  lastUpdated: "20 de setembre de 2023",
+  body: [
+    { heading: "Introducció" },
+    {
+      text: "En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE), Disnet Sistemas de Distribución S.A. informa que és titular del lloc web. D'acord amb l'exigència de l'article 10 de l'esmentada llei, es faciliten les dades següents: representant legal Disnet Sistemas de Distribución S.A., NIF A59843748, domini www.disnet.es, adreça postal Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona), adreça electrònica annaturon@disnet.es, telèfon 657307224.",
+    },
+    { heading: "Usuari i règim de responsabilitats" },
+    {
+      text: "La navegació, l'accés i l'ús del lloc web de Disnet Sistemas de Distribución S.A. confereix la condició d'usuari. El lloc web proporciona una gran diversitat d'informació, serveis i dades. L'usuari assumeix la seva responsabilitat en l'ús correcte del lloc web.",
+    },
+    { heading: "Política d'enllaços i exempcions de responsabilitat" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. no es fa responsable del contingut dels llocs web als quals l'usuari pugui accedir a través dels enllaços establerts en el seu lloc web, sempre que no tingui coneixement efectiu que l'activitat o la informació a la qual remet o recomana és il·lícita o que lesiona béns o drets d'un tercer susceptibles d'indemnització.",
+    },
+    { heading: "Modificacions" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. es reserva el dret de dur a terme les modificacions que consideri oportunes, sense avís previ, en el contingut del seu lloc web, tant pel que fa als continguts com a les condicions d'ús o a les condicions generals de contractació. Els canvis no afectaran les contractacions realitzades amb data anterior a la data de publicació d'aquests.",
+    },
+    { heading: "Indicació de preus" },
+    {
+      text: "En cas que es mostrin preus de productes i/o serveis, els indicats en pantalla seran els vigents en cada moment. Els preus s'indicaran en euros i inclouran l'Impost sobre el Valor Afegit (IVA).",
+    },
+    { heading: "Propietat intel·lectual i industrial" },
+    {
+      text: "Disnet Sistemas de Distribución S.A., per si mateixa o com a cessionària, és titular de tots els drets de propietat intel·lectual i industrial de la seva pàgina web, així com dels elements continguts en aquesta.",
+    },
+    { heading: "Certificat SSL (Secure Sockets Layer)" },
+    {
+      text: "El certificat SSL proporciona autenticació, privacitat i seguretat de la informació entre Disnet Sistemas de Distribución S.A. i l'usuari.",
+    },
+    { heading: "Accions legals, legislació aplicable i jurisdicció" },
+    {
+      text: "La relació entre l'usuari i el prestador es regirà per la normativa vigent i d'aplicació en el territori espanyol. Si sorgeix qualsevol controvèrsia, les parts podran sotmetre els seus conflictes a arbitratge o acudir a la jurisdicció ordinària complint amb les normes sobre jurisdicció i competència al respecte.",
+    },
+  ],
+};
+
+const privacyPolicyCopy: Content["privacyPolicyCopy"] = {
+  title: "Política de privacitat de www.disnet.es",
+  lastUpdated: "20 de setembre de 2023",
+  body: [
+    { heading: "Dades del propietari del web" },
+    {
+      text: "Raó social: Disnet Sistemas de Distribución S.A. NIF: A59843748. Domini: www.disnet.es. Adreça postal: Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona). Adreça electrònica: annaturon@disnet.es. Telèfon: 657307224.",
+    },
+    {
+      text: "De conformitat amb la normativa vigent i aplicable en protecció de dades de caràcter personal, us informem que les vostres dades seran incorporades al sistema de tractament titularitat de Disnet Sistemas de Distribución S.A., amb NIF A59843748 i domicili social a Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona).",
+    },
+    { heading: "Tractaments realitzats" },
+    {
+      text: "Accions comercials del formulari web — Finalitat: captació, registre i tractament de dades per atendre consultes i/o sol·licituds, així com publicitat i prospecció comercial. Termini de conservació: mentre es mantingui el consentiment prestat, llevat d'obligació legal. Base legítima: el consentiment de l'interessat. Tipologia de dades: nom i cognoms, adreça electrònica.",
+    },
+    {
+      text: "Gestió d'usuaris web — Finalitat: captació, registre i tractament de dades de l'usuari. Termini de conservació: mentre es mantingui el consentiment prestat, llevat d'obligació legal. Base legítima: el consentiment de l'interessat. Tipologia de dades: nom i cognoms, adreça electrònica.",
+    },
+    {
+      text: "Instal·lació de cookies — Finalitat: gestió i instal·lació de les cookies. Termini de conservació: mentre es mantingui el consentiment prestat. Base legítima: el consentiment de l'interessat. Tipologia de dades: adreça electrònica, adreça IP.",
+    },
+    {
+      text: "Gestió del formulari web — Finalitat: atendre consultes i/o sol·licituds. Termini de conservació: mentre es mantingui el consentiment prestat. Base legítima: el consentiment de l'interessat. Tipologia de dades: nom i cognoms, adreça electrònica, adreça IP.",
+    },
+    { heading: "Drets dels interessats" },
+    {
+      text: "Disnet Sistemas de Distribución S.A. informa els usuaris que poden exercir els drets següents davant el responsable del tractament:",
+    },
+    {
+      list: [
+        "Dret d'accés: obtenir confirmació sobre si s'estan tractant les vostres dades i, en tal cas, les dades concretes tractades i la informació legal del tractament (finalitats, base legitimadora, terminis de conservació, cessions, origen de les dades, etc.).",
+        "Dret de rectificació: modificar les dades que resultin inexactes o incompletes.",
+        "Dret a la limitació del tractament: limitar les finalitats del tractament previstes originalment pel responsable en determinats supòsits.",
+        "Dret de supressió: suprimir les dades de caràcter personal de l'usuari, llevat de les excepcions previstes en el mateix RGPD.",
+        "Dret a la portabilitat: rebre les dades personals facilitades en un format estructurat, d'ús comú i lectura mecànica, i transmetre-les a un altre responsable.",
+        "Dret d'oposició: que no es dugui a terme el tractament de les vostres dades, o que cessi, quan es basi en interès legítim, interès públic o màrqueting directe.",
+        "Dret a no ser objecte de decisions automatitzades, inclosa l'elaboració de perfils.",
+        "Dret a retirar el consentiment en qualsevol moment i de manera gratuïta, per a qualsevol tractament basat en aquest.",
+      ],
+    },
+    { heading: "Com exercir els vostres drets" },
+    {
+      text: "Per exercir qualsevol d'aquests drets, podeu presentar un escrit adreçat a Pla d'en Fonollar, 15, 08205 Sabadell (Barcelona), a l'atenció de Disnet Sistemas de Distribución S.A., o enviar un correu electrònic a annaturon@disnet.es, identificant-vos de forma fefaent i indicant el dret que desitgeu exercir.",
+    },
+    {
+      text: "Finalment, teniu dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (AEPD) si considereu que s'ha produït un incompliment de la normativa aplicable en matèria de protecció de dades.",
+    },
+    {
+      text: "Disnet Sistemas de Distribución S.A. es compromet a adoptar les mesures tècniques i organitzatives necessàries, d'acord amb el nivell de risc dels tractaments realitzats, per garantir-ne la integritat, confidencialitat i disponibilitat.",
+    },
+  ],
+};
+
+const cookieConsent: Content["cookieConsent"] = {
+  message: "Aquesta pàgina web utilitza cookies per assegurar que obtinguis la millor experiència al nostre lloc web.",
+  moreInfo: "Més informació",
+  technical: "Tècniques",
+  marketing: "Màrqueting",
+  reject: "Rebutjar",
+  accept: "Acceptar",
 };
 
 const content: Content = {
@@ -844,7 +937,6 @@ const content: Content = {
   stats,
   services,
   whyChooseUs,
-  quotes,
   empresaCopy,
   jobsCopy,
   contactCopy,
@@ -853,6 +945,9 @@ const content: Content = {
   navLinks,
   ui,
   siteFaq,
+  legalNoticeCopy,
+  privacyPolicyCopy,
+  cookieConsent,
 };
 
 export default content;

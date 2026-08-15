@@ -9,7 +9,7 @@ import { RichText } from "@/components/rich-text";
 
 export function WhyChooseUs() {
   const { locale } = useParams<{ locale: Locale }>();
-  const { whyChooseUs, quotes } = getContent(locale);
+  const { whyChooseUs } = getContent(locale);
 
   return (
     <section className="border-b border-border bg-muted/40">
@@ -30,15 +30,6 @@ export function WhyChooseUs() {
             <WhyChooseShowcase />
           </Reveal>
         </div>
-
-        <Reveal className="mt-16 grid gap-6 border-t border-border pt-12 sm:grid-cols-2">
-          {quotes.map((quote) => (
-            <blockquote key={quote.author} className="text-lg font-medium leading-snug text-balance">
-              “{quote.text}”
-              <footer className="mt-3 text-sm font-normal text-muted-foreground">— {quote.author}</footer>
-            </blockquote>
-          ))}
-        </Reveal>
       </div>
     </section>
   );

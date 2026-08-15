@@ -76,8 +76,12 @@ export function Footer() {
             © {new Date().getFullYear()} {company.legalName}. {ui.footerRights}
           </p>
           <div className="flex gap-4">
-            <span>{ui.footerLegalNotice}</span>
-            <span>{ui.footerPrivacyPolicy}</span>
+            <Link href={localeHref(locale, "/aviso-legal")} className="transition-colors duration-150 hover:text-accent">
+              {ui.footerLegalNotice}
+            </Link>
+            <Link href={localeHref(locale, "/politica-de-privacidad")} className="transition-colors duration-150 hover:text-accent">
+              {ui.footerPrivacyPolicy}
+            </Link>
           </div>
         </div>
       </div>
