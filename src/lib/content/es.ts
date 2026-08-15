@@ -707,6 +707,52 @@ const blogPosts: Content["blogPosts"] = [
   },
 ];
 
+const siteFaq: Content["siteFaq"] = {
+  title: "Preguntas frecuentes sobre Disnet",
+  items: [
+    {
+      question: "¿Qué es un operador logístico 3PL?",
+      answer:
+        "Es una empresa especializada que gestiona toda o parte de la cadena de suministro de otra empresa: recepción, almacenaje, preparación de pedidos, transporte y logística inversa. Externalizar estas funciones permite reducir costes fijos y centrar los recursos propios en el negocio principal.",
+    },
+    {
+      question: "¿Qué diferencia hay entre un operador 3PL y un 4PL?",
+      answer:
+        "Un 3PL como Disnet cuenta con infraestructura física propia (almacenes, personal, transporte) y ejecuta la operativa directamente. Un 4PL funciona a nivel de consultoría y coordinación digital, sin activos propios, subcontratando a su vez a operadores 3PL para la ejecución física.",
+    },
+    {
+      question: "¿Dónde está ubicado el almacén de Disnet?",
+      answer:
+        "El centro logístico de Disnet está en Sabadell (Vallès Occidental), con acceso rápido a las principales vías de comunicación de Barcelona, lo que permite tiempos de tránsito reducidos para distribución nacional e internacional.",
+    },
+    {
+      question: "¿Disnet trabaja con pequeñas empresas o solo con grandes cuentas?",
+      answer:
+        "Disnet atiende desde pymes y pequeñas empresas de ámbito local hasta grandes organizaciones industriales, adaptando el servicio, la tecnología y la estructura de costes al volumen y necesidades específicas de cada cliente.",
+    },
+    {
+      question: "¿Con qué plataformas de e-commerce se integra Disnet?",
+      answer:
+        "Disnet ofrece fulfillment con conectividad para Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
+    },
+    {
+      question: "¿Cómo puedo externalizar la logística de mi empresa?",
+      answer:
+        "Basta con contactar con Disnet para analizar tu volumen de pedidos, tipo de mercancía y necesidades específicas. A partir de ahí se diseña una solución a medida que cubre recepción, almacenaje, preparación de pedidos, transporte y logística inversa según lo que necesites.",
+    },
+    {
+      question: "¿Qué sectores atiende Disnet?",
+      answer:
+        "Disnet trabaja con logística textil y de moda, cosmética y perfumería, e-commerce y cualquier sector que requiera almacenaje especializado, adaptando sus procesos e infraestructura a las particularidades de cada tipo de producto.",
+    },
+    {
+      question: "¿Cuánto cuesta contratar un operador logístico como Disnet?",
+      answer:
+        "El coste depende del volumen de mercancía, el tipo de servicios contratados (almacenaje, picking, transporte...) y la frecuencia de envíos. Disnet ofrece presupuestos personalizados tras analizar las necesidades reales de cada cliente, sin compromisos ocultos.",
+    },
+  ],
+};
+
 const navLinks: Content["navLinks"] = [
   { href: "/", label: "Inicio" },
   { href: "/empresa", label: "Empresa" },
@@ -806,6 +852,7 @@ const content: Content = {
   blogPosts,
   navLinks,
   ui,
+  siteFaq,
 };
 
 export default content;

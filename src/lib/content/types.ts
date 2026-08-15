@@ -136,4 +136,5 @@ export type Content = {
   blogPosts: BlogPost[];
   navLinks: NavLink[];
   ui: Ui;
+  siteFaq: { title: string; items: { question: string; answer: string }[] };
 };

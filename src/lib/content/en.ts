@@ -707,6 +707,52 @@ const blogPosts: Content["blogPosts"] = [
   },
 ];
 
+const siteFaq: Content["siteFaq"] = {
+  title: "Frequently asked questions about Disnet",
+  items: [
+    {
+      question: "What is a 3PL logistics operator?",
+      answer:
+        "It's a specialized company that manages all or part of another company's supply chain: receiving, warehousing, order fulfillment, transport and reverse logistics. Outsourcing these functions helps reduce fixed costs and lets you focus your own resources on your core business.",
+    },
+    {
+      question: "What's the difference between a 3PL and a 4PL operator?",
+      answer:
+        "A 3PL like Disnet has its own physical infrastructure (warehouses, staff, transport) and carries out operations directly. A 4PL operates at a consulting and digital coordination level, without its own assets, in turn subcontracting 3PL operators for physical execution.",
+    },
+    {
+      question: "Where is Disnet's warehouse located?",
+      answer:
+        "Disnet's logistics center is located in Sabadell (Vallès Occidental), with quick access to Barcelona's main transport routes, enabling reduced transit times for national and international distribution.",
+    },
+    {
+      question: "Does Disnet work with small businesses or only large accounts?",
+      answer:
+        "Disnet serves everyone from local SMEs and small businesses to large industrial organizations, adapting the service, technology and cost structure to each client's specific volume and needs.",
+    },
+    {
+      question: "Which e-commerce platforms does Disnet integrate with?",
+      answer:
+        "Disnet offers fulfillment with connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart and other management systems, allowing offline logistics to work in harmony with your online store without technical friction.",
+    },
+    {
+      question: "How can I outsource my company's logistics?",
+      answer:
+        "Just get in touch with Disnet to review your order volume, type of merchandise and specific needs. From there, a tailored solution is designed covering receiving, warehousing, order fulfillment, transport and reverse logistics based on what you need.",
+    },
+    {
+      question: "Which sectors does Disnet serve?",
+      answer:
+        "Disnet works with textile and fashion logistics, cosmetics and perfumery, e-commerce and any sector that requires specialized warehousing, adapting its processes and infrastructure to the particularities of each type of product.",
+    },
+    {
+      question: "How much does it cost to hire a logistics operator like Disnet?",
+      answer:
+        "The cost depends on the volume of merchandise, the type of services contracted (warehousing, picking, transport...) and shipping frequency. Disnet offers personalized quotes after analyzing each client's actual needs, with no hidden commitments.",
+    },
+  ],
+};
+
 const navLinks: Content["navLinks"] = [
   { href: "/", label: "Home" },
   { href: "/empresa", label: "Company" },
@@ -806,6 +852,7 @@ const content: Content = {
   blogPosts,
   navLinks,
   ui,
+  siteFaq,
 };
 
 export default content;

@@ -5,6 +5,7 @@ import { BarcelonaSection } from "@/components/barcelona-section";
 import { Stats } from "@/components/stats";
 import { ServicesScrollList } from "@/components/services-scroll-list";
 import { WhyChooseUs } from "@/components/why-choose-us";
+import { SiteFaq } from "@/components/site-faq";
 import { ContactSection } from "@/components/contact-section";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { buildAlternates } from "@/lib/seo";
@@ -31,6 +32,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Stats />
       <ServicesScrollList />
       <WhyChooseUs />
+      <SiteFaq locale={locale} />
       <ContactSection locale={locale} />
     </>
   );
