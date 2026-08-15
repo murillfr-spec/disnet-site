@@ -10,6 +10,7 @@ import { MotionLink } from "@/components/motion-link";
 import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
 import { RichText } from "@/components/rich-text";
+import { buildAlternates } from "@/lib/seo";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
@@ -42,6 +43,7 @@ export async function generateMetadata({
   return {
     title: `${service.name} | Disnet`,
     description: service.headline,
+    alternates: buildAlternates(`/servicios/${slug}`, locale),
   };
 }
 

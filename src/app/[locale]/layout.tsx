@@ -6,6 +6,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { AppToaster } from "@/components/app-toaster";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
+import { siteUrl } from "@/lib/site";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -50,7 +51,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return metadataByLocale[isLocale(locale) ? locale : "es"];
+  return {
+    metadataBase: new URL(siteUrl),
+    ...metadataByLocale[isLocale(locale) ? locale : "es"],
+  };
 }
 
 export default async function LocaleLayout({

@@ -108,6 +108,7 @@ export type Content = {
     yearsExperience: number;
   };
   heroCopy: { eyebrow: string; title: string; paragraphs: string[] };
+  heroSlideAlts: string[];
   companyIntroCopy: { paragraphs: string[] };
   barcelonaCopy: { title: string; paragraphs: string[]; highlight: string };
   stats: { value: number; label: string }[];

@@ -24,6 +24,13 @@ const heroCopy: Content["heroCopy"] = {
   ],
 };
 
+const heroSlideAlts: Content["heroSlideAlts"] = [
+  "Installations de Disnet, opérateur logistique à Barcelone",
+  "Entrepôt Disnet en activité",
+  "Rayonnages de stockage Disnet",
+  "Panneaux solaires sur le site de Disnet",
+];
+
 const companyIntroCopy: Content["companyIntroCopy"] = {
   paragraphs: [
     "**Disnet** est composée de professionnels comptant **plus de 35 ans d'expérience dans la gestion logistique** de l'externalisation des chaînes d'approvisionnement. L'équipe gère les processus avec la connaissance et la rigueur nécessaires pour que l'externalisation des activités logistiques de toute organisation soit une réussite.",
@@ -595,6 +602,7 @@ const ui: Content["ui"] = {
 const content: Content = {
   company,
   heroCopy,
+  heroSlideAlts,
   companyIntroCopy,
   barcelonaCopy,
   stats,

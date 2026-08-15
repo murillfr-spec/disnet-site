@@ -4,6 +4,7 @@ import { isLocale, type Locale } from "@/lib/i18n";
 import { CtaBanner } from "@/components/cta-banner";
 import { ServiceCard } from "@/components/service-card";
 import { Reveal } from "@/components/reveal";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,6 +17,7 @@ export async function generateMetadata({
   return {
     title: ui.servicesPageTitle,
     description: ui.servicesPageDescription,
+    alternates: buildAlternates("/servicios", locale),
   };
 }
 

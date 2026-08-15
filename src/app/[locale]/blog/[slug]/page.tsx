@@ -7,6 +7,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { CtaBanner } from "@/components/cta-banner";
 import { RichText } from "@/components/rich-text";
+import { buildAlternates } from "@/lib/seo";
 
 export function generateStaticParams() {
   const { blogPosts } = getContent("es");
@@ -26,6 +27,7 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Disnet`,
     description: post.excerpt,
+    alternates: buildAlternates(`/blog/${slug}`, locale),
   };
 }
 

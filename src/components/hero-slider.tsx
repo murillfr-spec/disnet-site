@@ -1,29 +1,29 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { getContent } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
-const slides = [
-  { src: "/images/hero-1.webp", alt: "Instalaciones de Disnet, operador logístico en Barcelona" },
-  { src: "/images/hero-5.webp", alt: "Almacén de Disnet en operación" },
-  { src: "/images/hero-4-almacen.webp", alt: "Estanterías de almacenaje de Disnet" },
-  { src: "/images/hero-2.webp", alt: "Placas solares en las instalaciones de Disnet" },
-];
+const slideSrcs = ["/images/hero-1.webp", "/images/hero-5.webp", "/images/hero-4-almacen.webp", "/images/hero-2.webp"];
 
 export function HeroSlider() {
+  const { locale } = useParams<{ locale: Locale }>();
+  const { heroSlideAlts } = getContent(locale);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setIndex((i) => (i + 1) % slides.length), 5000);
+    const id = setInterval(() => setIndex((i) => (i + 1) % slideSrcs.length), 5000);
     return () => clearInterval(id);
   }, []);
 
   return (
     <div className="absolute inset-0 -z-10 overflow-hidden bg-foreground">
-      {slides.map((slide, i) => (
+      {slideSrcs.map((src, i) => (
         <motion.div
-          key={slide.src}
+          key={src}
           initial={false}
           animate={{ opacity: i === index ? 1 : 0, scale: i === index ? 1.06 : 1 }}
           transition={{
@@ -33,8 +33,8 @@ export function HeroSlider() {
           className="absolute inset-0"
         >
           <Image
-            src={slide.src}
-            alt={slide.alt}
+            src={src}
+            alt={heroSlideAlts[i]}
             fill
             priority={i === 0}
             sizes="100vw"

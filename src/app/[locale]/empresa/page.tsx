@@ -6,6 +6,7 @@ import { CtaBanner } from "@/components/cta-banner";
 import { Reveal } from "@/components/reveal";
 import { YoutubeEmbed } from "@/components/youtube-embed";
 import { RichText } from "@/components/rich-text";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,6 +19,7 @@ export async function generateMetadata({
   return {
     title: `${empresaCopy.title} | Disnet`,
     description: empresaCopy.intro[0],
+    alternates: buildAlternates("/empresa", locale),
   };
 }
 

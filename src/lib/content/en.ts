@@ -24,6 +24,13 @@ const heroCopy: Content["heroCopy"] = {
   ],
 };
 
+const heroSlideAlts: Content["heroSlideAlts"] = [
+  "Disnet facilities, logistics operator in Barcelona",
+  "Disnet warehouse in operation",
+  "Disnet storage racking",
+  "Solar panels at Disnet's facilities",
+];
+
 const companyIntroCopy: Content["companyIntroCopy"] = {
   paragraphs: [
     "**Disnet** is made up of professionals with **more than 35 years of experience in logistics management** for the outsourcing of supply chains. The team manages every process with the knowledge and rigor needed to make the outsourcing of any organization's logistics activities a success.",
@@ -595,6 +602,7 @@ const ui: Content["ui"] = {
 const content: Content = {
   company,
   heroCopy,
+  heroSlideAlts,
   companyIntroCopy,
   barcelonaCopy,
   stats,

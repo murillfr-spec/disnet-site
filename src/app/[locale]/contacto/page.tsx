@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getContent } from "@/lib/content";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { ContactSection } from "@/components/contact-section";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,6 +15,7 @@ export async function generateMetadata({
   return {
     title: ui.contactPageTitle,
     description: contactCopy.subtitle,
+    alternates: buildAlternates("/contacto", locale),
   };
 }
 

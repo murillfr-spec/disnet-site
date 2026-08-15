@@ -4,6 +4,7 @@ import { getContent } from "@/lib/content";
 import { localeHref } from "@/lib/href";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,6 +17,7 @@ export async function generateMetadata({
   return {
     title: `${ui.blogPageTitle} | Disnet`,
     description: ui.blogPageDescription,
+    alternates: buildAlternates("/blog", locale),
   };
 }
 
