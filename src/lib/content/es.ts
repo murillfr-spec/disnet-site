@@ -219,6 +219,80 @@ const services: Content["services"] = [
     ],
   },
   {
+    slug: "camara-frigorifica",
+    name: "Cámara frigorífica",
+    headline: "En Disnet, cuidamos la cadena de frío de tus productos con almacenaje en cámara frigorífica",
+    intro: [
+      "Además de nuestras naves de almacenaje convencional, disponemos de **cámara frigorífica con temperatura controlada** para mercancía que requiere condiciones especiales de conservación.",
+      "Gestionamos la **cadena de frío** de principio a fin, desde la recepción hasta la expedición, con el mismo **Sistema de Gestión de Almacén (SGA)** y control de trazabilidad que aplicamos al resto de nuestras operaciones.",
+    ],
+    sections: [
+      {
+        heading: "Almacenaje en frío para productos sensibles a la temperatura",
+        paragraphs: [
+          "Determinados productos, como los del sector de la alimentación, la cosmética o determinados artículos farmacéuticos y sanitarios, exigen condiciones de temperatura controlada durante todo el proceso logístico para conservar sus propiedades. En Disnet, integramos esta necesidad dentro de nuestra oferta de almacenaje, sin que tengas que recurrir a un proveedor distinto para tu mercancía convencional y tu mercancía refrigerada.",
+          "Al tratarse de una extensión de nuestro servicio de almacenaje habitual, tu mercancía en cámara frigorífica se beneficia de la misma ubicación estratégica en Sabadell y de la misma capacidad de coordinación con el resto de tu cadena de suministro.",
+        ],
+      },
+      {
+        heading: "Trazabilidad y control también en frío",
+        paragraphs: [
+          "Aplicamos el mismo rigor que en el resto de nuestras instalaciones: inventarios permanentes, control de stock en tiempo real a través de nuestro SGA, y comunicación inmediata ante cualquier incidencia detectada durante la recepción o el almacenaje.",
+        ],
+      },
+    ],
+    benefitsTitle: "Beneficios de nuestra cámara frigorífica",
+    benefits: [
+      {
+        title: "Cadena de frío garantizada",
+        description: "Condiciones de temperatura controlada durante todo el proceso, desde la recepción hasta la expedición.",
+      },
+      {
+        title: "Trazabilidad total",
+        description: "El mismo Sistema de Gestión de Almacén e inventarios permanentes que aplicamos en el resto de nuestras operaciones.",
+      },
+      {
+        title: "Un único operador logístico",
+        description: "Gestiona tu mercancía convencional y tu mercancía refrigerada con el mismo proveedor, sin fricciones ni intermediarios adicionales.",
+      },
+      {
+        title: "Ubicación estratégica",
+        description: "Fácil acceso a las principales vías de comunicación de Barcelona y conexión con los principales puertos y aeropuertos.",
+      },
+    ],
+    audienceTitle: "¿Para quién es este servicio?",
+    audience: [
+      "Empresas del sector alimentario que necesitan conservar producto refrigerado.",
+      "Marcas de cosmética y perfumería con productos sensibles a la temperatura.",
+      "Negocios que distribuyen productos farmacéuticos o sanitarios que exigen condiciones controladas.",
+      "Clientes que ya trabajan con Disnet y necesitan ampliar su almacenaje a mercancía refrigerada.",
+    ],
+    ctaLabel: "Solicita información sobre almacenaje en frío",
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        question: "¿Qué es el almacenaje en cámara frigorífica?",
+        answer:
+          "Es el almacenaje de mercancía en instalaciones con temperatura controlada, necesario para productos que pierden sus propiedades o caducan antes si se conservan a temperatura ambiente, como ciertos alimentos, cosméticos o productos farmacéuticos y sanitarios.",
+      },
+      {
+        question: "¿Qué tipo de mercancía se puede almacenar en la cámara frigorífica de Disnet?",
+        answer:
+          "Mercancía que requiere condiciones de temperatura controlada, como productos del sector de la alimentación, la cosmética y determinados artículos farmacéuticos y sanitarios. Consúltanos las condiciones específicas de tu producto para confirmar su idoneidad.",
+      },
+      {
+        question: "¿Cómo se garantiza la trazabilidad en almacenaje refrigerado?",
+        answer:
+          "Con el mismo Sistema de Gestión de Almacén (SGA) e inventarios permanentes que utilizamos en el resto de nuestras instalaciones, controlando la ubicación y el movimiento de cada producto en tiempo real.",
+      },
+      {
+        question: "¿Puedo combinar almacenaje convencional y en frío con Disnet?",
+        answer:
+          "Sí. La cámara frigorífica funciona como una extensión de nuestro servicio de almacenaje habitual, por lo que puedes gestionar tu mercancía convencional y tu mercancía refrigerada con un único operador logístico.",
+      },
+    ],
+  },
+  {
     slug: "preparacion-de-pedidos",
     name: "Preparación de pedidos",
     headline: "Disnet, especialistas en procesos de picking",
@@ -327,7 +401,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "En Disnet, te garantizamos los mejores tiempos de entrega",
-    subheadline: "Fulfillment para Shopify, WooCommerce y las principales plataformas",
+    subheadline: "Fulfillment para Shopify, WooCommerce, Amazon y las principales plataformas",
     intro: [
       "¿Quién gestiona los envíos de tu tienda online? En Disnet nos encargamos de todo el proceso, desde que el pedido entra en tu web hasta que llega a la puerta del cliente. Siguiendo las tendencias actuales del comercio, somos especialistas en la tercerización de cadenas de suministro para el sector del eCommerce. Con **más de 25 años de experiencia**, hemos gestionado y preparado pedidos, con la capacidad de atender **más de 2.000.000 de envíos al año**.",
     ],
@@ -337,14 +411,14 @@ const services: Content["services"] = [
       "Ofrecer flexibilidad en los horarios de entrega.",
     ],
     extra: [
-      "En Disnet entendemos que, para que un negocio de eCommerce prospere, la logística debe ofrecer una experiencia de compra excepcional. Solo así se logra aumentar la satisfacción del cliente. Por lo tanto, es esencial que el entorno en línea funcione en armonía con el mundo offline. Para lograrlo, mantenemos una conectividad fluida con los sistemas de gestión de la información más utilizados, como **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, y otros.",
+      "En Disnet entendemos que, para que un negocio de eCommerce prospere, la logística debe ofrecer una experiencia de compra excepcional. Solo así se logra aumentar la satisfacción del cliente. Por lo tanto, es esencial que el entorno en línea funcione en armonía con el mundo offline. Para lograrlo, mantenemos una conectividad fluida con los sistemas de gestión de la información más utilizados, como **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, marketplaces como **Amazon**, y otros.",
     ],
     faqTitle: "Preguntas frecuentes",
     faq: [
       {
         question: "¿Con qué plataformas de e-commerce se integra Disnet?",
         answer:
-          "Disnet ofrece fulfillment con conectividad fluida para Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
+          "Disnet ofrece fulfillment con conectividad fluida para Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces como Amazon y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
       },
       {
         question: "¿Cuántos envíos de e-commerce gestiona Disnet al año?",
@@ -405,7 +479,7 @@ const services: Content["services"] = [
     headline: "Gestión de devoluciones e incidencias con total fiabilidad",
     intro: [
       "En Disnet, no solo nos enfocamos en la gestión eficiente de las entregas, sino que también nos ocupamos de la logística inversa, lo que abarca la **gestión de devoluciones** y la resolución de cualquier incidencia que pueda surgir en el proceso.",
-      "Mantenemos conectividad con los sistemas de gestión de información más ampliamente utilizados, como Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros. Esto nos permite estar en sintonía con las plataformas de eCommerce y garantizar una integración sin problemas en todas las etapas de la cadena de suministro.",
+      "Mantenemos conectividad con los sistemas de gestión de información más ampliamente utilizados, como Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces como Amazon y otros. Esto nos permite estar en sintonía con las plataformas de eCommerce y garantizar una integración sin problemas en todas las etapas de la cadena de suministro.",
       "Reconocemos que ofrecer facilidad y rapidez en los procesos de reclamación y devolución es esencial para la satisfacción del cliente. Por lo tanto, hemos desarrollado varias alternativas de soporte diseñadas para simplificar y agilizar estos procedimientos. Nuestro objetivo es permitir que los clientes realicen devoluciones de manera confiable y sin costos que intimiden o afecten negativamente a su experiencia de compra o al negocio de nuestros clientes.",
     ],
     faqTitle: "Preguntas frecuentes",
@@ -418,7 +492,7 @@ const services: Content["services"] = [
       {
         question: "¿Con qué plataformas se integra la gestión de devoluciones?",
         answer:
-          "Disnet mantiene conectividad con Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión de e-commerce, garantizando una integración sin problemas en todas las etapas de la cadena de suministro, incluidas las devoluciones.",
+          "Disnet mantiene conectividad con Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces como Amazon y otros sistemas de gestión de e-commerce, garantizando una integración sin problemas en todas las etapas de la cadena de suministro, incluidas las devoluciones.",
       },
       {
         question: "¿Por qué es importante externalizar la logística inversa?",
@@ -685,7 +759,7 @@ const blogPosts: Content["blogPosts"] = [
       { text: "En Disnet entendemos que la logística debe adaptarse al cliente, no al revés, ofreciendo soluciones flexibles que mejoran la experiencia global." },
       { heading: "Desconexión entre sistemas online y logística" },
       { text: "Un e-commerce eficiente necesita que su plataforma online esté perfectamente integrada con la gestión logística. Errores comunes son los sistemas que no se sincronizan, los fallos en el stock y los retrasos en la preparación de pedidos." },
-      { text: "En Disnet trabajamos con integraciones fluidas con plataformas como Shopify, WooCommerce, Magento, PrestaShop u Opencart, garantizando una gestión conectada y sin errores." },
+      { text: "En Disnet trabajamos con integraciones fluidas con plataformas como Shopify, WooCommerce, Magento, PrestaShop u Opencart, además de marketplaces como Amazon, garantizando una gestión conectada y sin errores." },
       { heading: "No externalizar la logística a profesionales" },
       { text: "Intentar gestionar toda la logística internamente puede parecer rentable al inicio, pero a medida que crece el volumen de pedidos, se convierte en un problema: saturación operativa, errores en los envíos e incremento de costes ocultos." },
       { text: "La externalización permite escalar el negocio sin comprometer la calidad del servicio. Con más de 25 años de experiencia, Disnet ofrece soluciones especializadas en la gestión integral de la cadena de suministro para e-commerce." },
@@ -722,7 +796,7 @@ const siteFaq: Content["siteFaq"] = {
     {
       question: "¿Con qué plataformas de e-commerce se integra Disnet?",
       answer:
-        "Disnet ofrece fulfillment con conectividad para Shopify, WooCommerce, Magento, PrestaShop, Opencart y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
+        "Disnet ofrece fulfillment con conectividad para Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces como Amazon y otros sistemas de gestión, permitiendo que la logística offline funcione en armonía con la tienda online sin fricciones técnicas.",
     },
     {
       question: "¿Cómo puedo externalizar la logística de mi empresa?",

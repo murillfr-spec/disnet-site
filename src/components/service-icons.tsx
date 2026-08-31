@@ -100,10 +100,22 @@ export function ReverseLogisticsIcon(props: IconProps) {
   );
 }
 
+export function ColdStorageIcon(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M12 2v20" />
+      <path d="M4.5 6.5l15 11M19.5 6.5l-15 11" />
+      <path d="M12 2l-2 2M12 2l2 2M12 22l-2-2M12 22l2-2" />
+      <path d="M4.5 6.5l.5 2.7-2.7.5M4.5 17.5l.5-2.7-2.7-.5M19.5 6.5l-.5 2.7 2.7.5M19.5 17.5l-.5-2.7 2.7-.5" />
+    </Base>
+  );
+}
+
 export const serviceIconBySlug: Record<string, (props: IconProps) => JSX.Element> = {
   "recepcion-de-mercancias": ReceivingIcon,
   "manipulacion-de-mercancias": HandlingIcon,
   almacenaje: StorageIcon,
+  "camara-frigorifica": ColdStorageIcon,
   "preparacion-de-pedidos": PickingIcon,
   "empaqueado-packing": PackingIcon,
   "e-commerce": EcommerceIcon,
