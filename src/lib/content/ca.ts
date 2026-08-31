@@ -219,80 +219,6 @@ const services: Content["services"] = [
     ],
   },
   {
-    slug: "camara-frigorifica",
-    name: "Cambra frigorífica",
-    headline: "A Disnet, tenim cura de la cadena de fred dels teus productes amb emmagatzematge en cambra frigorífica",
-    intro: [
-      "A més de les nostres naus d'emmagatzematge convencional, disposem de **cambra frigorífica amb temperatura controlada** per a mercaderia que requereix condicions especials de conservació.",
-      "Gestionem la **cadena de fred** de principi a fi, des de la recepció fins a l'expedició, amb el mateix **Sistema de Gestió de Magatzem (SGA)** i control de traçabilitat que apliquem a la resta de les nostres operacions.",
-    ],
-    sections: [
-      {
-        heading: "Emmagatzematge en fred per a productes sensibles a la temperatura",
-        paragraphs: [
-          "Determinats productes, com els del sector de l'alimentació, la cosmètica o determinats articles farmacèutics i sanitaris, exigeixen condicions de temperatura controlada durant tot el procés logístic per conservar les seves propietats. A Disnet, integrem aquesta necessitat dins la nostra oferta d'emmagatzematge, sense que hagis de recórrer a un proveïdor diferent per a la teva mercaderia convencional i la teva mercaderia refrigerada.",
-          "En tractar-se d'una extensió del nostre servei d'emmagatzematge habitual, la teva mercaderia en cambra frigorífica es beneficia de la mateixa ubicació estratègica a Sabadell i de la mateixa capacitat de coordinació amb la resta de la teva cadena de subministrament.",
-        ],
-      },
-      {
-        heading: "Traçabilitat i control també en fred",
-        paragraphs: [
-          "Apliquem el mateix rigor que a la resta de les nostres instal·lacions: inventaris permanents, control d'estoc en temps real a través del nostre SGA, i comunicació immediata davant qualsevol incidència detectada durant la recepció o l'emmagatzematge.",
-        ],
-      },
-    ],
-    benefitsTitle: "Beneficis de la nostra cambra frigorífica",
-    benefits: [
-      {
-        title: "Cadena de fred garantida",
-        description: "Condicions de temperatura controlada durant tot el procés, des de la recepció fins a l'expedició.",
-      },
-      {
-        title: "Traçabilitat total",
-        description: "El mateix Sistema de Gestió de Magatzem i inventaris permanents que apliquem a la resta de les nostres operacions.",
-      },
-      {
-        title: "Un únic operador logístic",
-        description: "Gestiona la teva mercaderia convencional i la teva mercaderia refrigerada amb el mateix proveïdor, sense friccions ni intermediaris addicionals.",
-      },
-      {
-        title: "Ubicació estratègica",
-        description: "Fàcil accés a les principals vies de comunicació de Barcelona i connexió amb els principals ports i aeroports.",
-      },
-    ],
-    audienceTitle: "Per a qui és aquest servei?",
-    audience: [
-      "Empreses del sector alimentari que necessiten conservar producte refrigerat.",
-      "Marques de cosmètica i perfumeria amb productes sensibles a la temperatura.",
-      "Negocis que distribueixen productes farmacèutics o sanitaris que exigeixen condicions controlades.",
-      "Clients que ja treballen amb Disnet i necessiten ampliar el seu emmagatzematge a mercaderia refrigerada.",
-    ],
-    ctaLabel: "Sol·licita informació sobre emmagatzematge en fred",
-    faqTitle: "Preguntes freqüents",
-    faq: [
-      {
-        question: "Què és l'emmagatzematge en cambra frigorífica?",
-        answer:
-          "És l'emmagatzematge de mercaderia en instal·lacions amb temperatura controlada, necessari per a productes que perden les seves propietats o caduquen abans si es conserven a temperatura ambient, com certs aliments, cosmètics o productes farmacèutics i sanitaris.",
-      },
-      {
-        question: "Quin tipus de mercaderia es pot emmagatzemar a la cambra frigorífica de Disnet?",
-        answer:
-          "Mercaderia que requereix condicions de temperatura controlada, com productes del sector de l'alimentació, la cosmètica i determinats articles farmacèutics i sanitaris. Consulta'ns les condicions específiques del teu producte per confirmar-ne la idoneïtat.",
-      },
-      {
-        question: "Com es garanteix la traçabilitat en l'emmagatzematge refrigerat?",
-        answer:
-          "Amb el mateix Sistema de Gestió de Magatzem (SGA) i inventaris permanents que utilitzem a la resta de les nostres instal·lacions, controlant la ubicació i el moviment de cada producte en temps real.",
-      },
-      {
-        question: "Puc combinar emmagatzematge convencional i en fred amb Disnet?",
-        answer:
-          "Sí. La cambra frigorífica funciona com una extensió del nostre servei d'emmagatzematge habitual, de manera que pots gestionar la teva mercaderia convencional i la teva mercaderia refrigerada amb un únic operador logístic.",
-      },
-    ],
-  },
-  {
     slug: "preparacion-de-pedidos",
     name: "Preparació de comandes",
     headline: "Disnet, especialistes en processos de picking",
@@ -401,7 +327,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "A Disnet, et garantim els millors terminis de lliurament",
-    subheadline: "Fulfillment per a Shopify, WooCommerce, Amazon i les principals plataformes",
+    subheadline: "Fulfillment per a Shopify, WooCommerce i les principals plataformes",
     intro: [
       "Qui gestiona els enviaments de la teva botiga online? A Disnet ens encarreguem de tot el procés, des que la comanda entra a la teva web fins que arriba a la porta del client. Seguint les tendències actuals del comerç, som especialistes en l'externalització de cadenes de subministrament per al sector de l'eCommerce. Amb **més de 25 anys d'experiència**, hem gestionat i preparat comandes, amb la capacitat d'atendre **més de 2.000.000 d'enviaments a l'any**.",
     ],
@@ -411,14 +337,14 @@ const services: Content["services"] = [
       "Oferir flexibilitat en els horaris de lliurament.",
     ],
     extra: [
-      "A Disnet entenem que, perquè un negoci d'eCommerce prosperi, la logística ha d'oferir una experiència de compra excepcional. Només així s'aconsegueix augmentar la satisfacció del client. Per tant, és essencial que l'entorn en línia funcioni en harmonia amb el món offline. Per aconseguir-ho, mantenim una connectivitat fluida amb els sistemes de gestió de la informació més utilitzats, com **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, marketplaces com **Amazon**, i altres.",
+      "A Disnet entenem que, perquè un negoci d'eCommerce prosperi, la logística ha d'oferir una experiència de compra excepcional. Només així s'aconsegueix augmentar la satisfacció del client. Per tant, és essencial que l'entorn en línia funcioni en harmonia amb el món offline. Per aconseguir-ho, mantenim una connectivitat fluida amb els sistemes de gestió de la informació més utilitzats, com **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, i altres.",
     ],
     faqTitle: "Preguntes freqüents",
     faq: [
       {
         question: "Amb quines plataformes d'e-commerce s'integra Disnet?",
         answer:
-          "Disnet ofereix fulfillment amb connectivitat fluida per a Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces com Amazon i altres sistemes de gestió, permetent que la logística offline funcioni en harmonia amb la botiga en línia sense friccions tècniques.",
+          "Disnet ofereix fulfillment amb connectivitat fluida per a Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres sistemes de gestió, permetent que la logística offline funcioni en harmonia amb la botiga en línia sense friccions tècniques.",
       },
       {
         question: "Quants enviaments d'e-commerce gestiona Disnet a l'any?",
@@ -479,7 +405,7 @@ const services: Content["services"] = [
     headline: "Gestió de devolucions i incidències amb total fiabilitat",
     intro: [
       "A Disnet, no només ens enfoquem en la gestió eficient dels lliuraments, sinó que també ens ocupem de la logística inversa, la qual cosa engloba la **gestió de devolucions** i la resolució de qualsevol incidència que pugui sorgir en el procés.",
-      "Mantenim connectivitat amb els sistemes de gestió d'informació més àmpliament utilitzats, com Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces com Amazon i altres. Això ens permet estar en sintonia amb les plataformes d'eCommerce i garantir una integració sense problemes en totes les etapes de la cadena de subministrament.",
+      "Mantenim connectivitat amb els sistemes de gestió d'informació més àmpliament utilitzats, com Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres. Això ens permet estar en sintonia amb les plataformes d'eCommerce i garantir una integració sense problemes en totes les etapes de la cadena de subministrament.",
       "Reconeixem que oferir facilitat i rapidesa en els processos de reclamació i devolució és essencial per a la satisfacció del client. Per això, hem desenvolupat diverses alternatives de suport dissenyades per simplificar i agilitzar aquests procediments. El nostre objectiu és permetre que els clients facin devolucions de manera fiable i sense costos que intimidin o afectin negativament la seva experiència de compra o el negoci dels nostres clients.",
     ],
     faqTitle: "Preguntes freqüents",
@@ -492,7 +418,7 @@ const services: Content["services"] = [
       {
         question: "Amb quines plataformes s'integra la gestió de devolucions?",
         answer:
-          "Disnet manté connectivitat amb Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces com Amazon i altres sistemes de gestió d'e-commerce, garantint una integració sense problemes en totes les etapes de la cadena de subministrament, incloses les devolucions.",
+          "Disnet manté connectivitat amb Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres sistemes de gestió d'e-commerce, garantint una integració sense problemes en totes les etapes de la cadena de subministrament, incloses les devolucions.",
       },
       {
         question: "Per què és important externalitzar la logística inversa?",
@@ -759,7 +685,7 @@ const blogPosts: Content["blogPosts"] = [
       { text: "A Disnet entenem que la logística s'ha d'adaptar al client, no a l'inrevés, oferint solucions flexibles que milloren l'experiència global." },
       { heading: "Desconnexió entre sistemes en línia i logística" },
       { text: "Un e-commerce eficient necessita que la seva plataforma en línia estigui perfectament integrada amb la gestió logística. Errors comuns són els sistemes que no se sincronitzen, les fallades en l'estoc i els retards en la preparació de comandes." },
-      { text: "A Disnet treballem amb integracions fluides amb plataformes com Shopify, WooCommerce, Magento, PrestaShop o Opencart, així com marketplaces com Amazon, garantint una gestió connectada i sense errors." },
+      { text: "A Disnet treballem amb integracions fluides amb plataformes com Shopify, WooCommerce, Magento, PrestaShop o Opencart, garantint una gestió connectada i sense errors." },
       { heading: "No externalitzar la logística a professionals" },
       { text: "Intentar gestionar tota la logística internament pot semblar rendible al principi, però a mesura que creix el volum de comandes, es converteix en un problema: saturació operativa, errors en els enviaments i increment de costos ocults." },
       { text: "L'externalització permet escalar el negoci sense comprometre la qualitat del servei. Amb més de 25 anys d'experiència, Disnet ofereix solucions especialitzades en la gestió integral de la cadena de subministrament per a e-commerce." },
@@ -796,7 +722,7 @@ const siteFaq: Content["siteFaq"] = {
     {
       question: "Amb quines plataformes d'e-commerce s'integra Disnet?",
       answer:
-        "Disnet ofereix fulfillment amb connectivitat per a Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces com Amazon i altres sistemes de gestió, permetent que la logística offline funcioni en harmonia amb la botiga en línia sense friccions tècniques.",
+        "Disnet ofereix fulfillment amb connectivitat per a Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres sistemes de gestió, permetent que la logística offline funcioni en harmonia amb la botiga en línia sense friccions tècniques.",
     },
     {
       question: "Com puc externalitzar la logística de la meva empresa?",

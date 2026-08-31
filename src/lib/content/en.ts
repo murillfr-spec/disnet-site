@@ -219,80 +219,6 @@ const services: Content["services"] = [
     ],
   },
   {
-    slug: "camara-frigorifica",
-    name: "Cold storage",
-    headline: "At Disnet, we look after your products' cold chain with temperature-controlled cold storage",
-    intro: [
-      "In addition to our conventional storage facilities, we have **temperature-controlled cold storage** for goods that require special preservation conditions.",
-      "We manage the **cold chain** from start to finish, from receipt to dispatch, with the same **Warehouse Management System (WMS)** and traceability control we apply to the rest of our operations.",
-    ],
-    sections: [
-      {
-        heading: "Cold storage for temperature-sensitive products",
-        paragraphs: [
-          "Certain products, such as those in the food, cosmetics or specific pharmaceutical and healthcare sectors, require temperature-controlled conditions throughout the logistics process to preserve their properties. At Disnet, we integrate this need into our storage offering, so you don't need a separate provider for your conventional goods and your refrigerated goods.",
-          "As an extension of our regular storage service, your goods in cold storage benefit from the same strategic location in Sabadell and the same ability to coordinate with the rest of your supply chain.",
-        ],
-      },
-      {
-        heading: "Traceability and control, in the cold too",
-        paragraphs: [
-          "We apply the same rigor as in the rest of our facilities: permanent inventories, real-time stock control through our WMS, and immediate communication of any incident detected during receipt or storage.",
-        ],
-      },
-    ],
-    benefitsTitle: "Benefits of our cold storage",
-    benefits: [
-      {
-        title: "Guaranteed cold chain",
-        description: "Temperature-controlled conditions throughout the process, from receipt to dispatch.",
-      },
-      {
-        title: "Full traceability",
-        description: "The same Warehouse Management System and permanent inventories we apply across the rest of our operations.",
-      },
-      {
-        title: "A single logistics operator",
-        description: "Manage your conventional and refrigerated goods with the same provider, with no friction or extra intermediaries.",
-      },
-      {
-        title: "Strategic location",
-        description: "Easy access to Barcelona's main transport routes and connections to the main ports and airports.",
-      },
-    ],
-    audienceTitle: "Who is this service for?",
-    audience: [
-      "Food companies that need to keep refrigerated products in good condition.",
-      "Cosmetics and perfumery brands with temperature-sensitive products.",
-      "Businesses distributing pharmaceutical or healthcare products that require controlled conditions.",
-      "Existing Disnet clients who need to extend their storage to refrigerated goods.",
-    ],
-    ctaLabel: "Ask about cold storage",
-    faqTitle: "Frequently asked questions",
-    faq: [
-      {
-        question: "What is cold storage?",
-        answer:
-          "It's the storage of goods in temperature-controlled facilities, needed for products that lose their properties or expire sooner if kept at room temperature, such as certain foods, cosmetics or pharmaceutical and healthcare products.",
-      },
-      {
-        question: "What kind of goods can be stored in Disnet's cold storage?",
-        answer:
-          "Goods that require temperature-controlled conditions, such as products from the food, cosmetics and specific pharmaceutical and healthcare sectors. Get in touch to confirm the specific conditions for your product.",
-      },
-      {
-        question: "How is traceability guaranteed in refrigerated storage?",
-        answer:
-          "With the same Warehouse Management System (WMS) and permanent inventories we use across the rest of our facilities, tracking the location and movement of every product in real time.",
-      },
-      {
-        question: "Can I combine conventional and cold storage with Disnet?",
-        answer:
-          "Yes. Cold storage works as an extension of our regular storage service, so you can manage your conventional and refrigerated goods with a single logistics operator.",
-      },
-    ],
-  },
-  {
     slug: "preparacion-de-pedidos",
     name: "Order Preparation",
     headline: "Disnet, specialists in picking processes",
@@ -401,7 +327,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "At Disnet, we guarantee the best delivery times",
-    subheadline: "Fulfillment for Shopify, WooCommerce, Amazon and the leading platforms",
+    subheadline: "Fulfillment for Shopify, WooCommerce and the leading platforms",
     intro: [
       "Who manages the shipping for your online store? At Disnet, we handle the entire process, from the moment an order comes in on your website until it reaches the customer's door. Following current trends in commerce, we specialize in outsourcing supply chains for the e-Commerce sector. With **more than 25 years of experience**, we have managed and prepared orders, with the capacity to handle **more than 2,000,000 shipments a year**.",
     ],
@@ -411,14 +337,14 @@ const services: Content["services"] = [
       "Offer flexibility in delivery schedules.",
     ],
     extra: [
-      "At Disnet, we understand that for an e-Commerce business to thrive, logistics must deliver an exceptional shopping experience. Only then can customer satisfaction truly increase. It's therefore essential that the online environment works in harmony with the offline world. To achieve this, we maintain seamless connectivity with the most widely used information management systems, such as **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, marketplaces like **Amazon**, and others.",
+      "At Disnet, we understand that for an e-Commerce business to thrive, logistics must deliver an exceptional shopping experience. Only then can customer satisfaction truly increase. It's therefore essential that the online environment works in harmony with the offline world. To achieve this, we maintain seamless connectivity with the most widely used information management systems, such as **Shopify, WooCommerce, Magento, PrestaShop, Opencart**, and others.",
     ],
     faqTitle: "Frequently asked questions",
     faq: [
       {
         question: "Which e-commerce platforms does Disnet integrate with?",
         answer:
-          "Disnet offers fulfillment with seamless connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces like Amazon and other management systems, allowing offline logistics to work in harmony with the online store without technical friction.",
+          "Disnet offers fulfillment with seamless connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart and other management systems, allowing offline logistics to work in harmony with the online store without technical friction.",
       },
       {
         question: "How many e-commerce shipments does Disnet handle per year?",
@@ -479,7 +405,7 @@ const services: Content["services"] = [
     headline: "Returns and incident management with total reliability",
     intro: [
       "At Disnet, we don't just focus on efficient delivery management — we also handle reverse logistics, which covers **returns management** and the resolution of any incidents that may arise during the process.",
-      "We maintain connectivity with the most widely used information management systems, such as Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces like Amazon and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
+      "We maintain connectivity with the most widely used information management systems, such as Shopify, WooCommerce, Magento, PrestaShop, Opencart and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
       "We recognize that offering ease and speed in claims and returns processes is essential for customer satisfaction. That's why we've developed several support options designed to simplify and speed up these procedures. Our goal is to let customers make returns reliably and without costs that might discourage them or negatively affect their shopping experience or our clients' business.",
     ],
     faqTitle: "Frequently asked questions",
@@ -492,7 +418,7 @@ const services: Content["services"] = [
       {
         question: "Which platforms does returns management integrate with?",
         answer:
-          "Disnet maintains connectivity with Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces like Amazon and other e-commerce management systems, guaranteeing seamless integration at every stage of the supply chain, including returns.",
+          "Disnet maintains connectivity with Shopify, WooCommerce, Magento, PrestaShop, Opencart and other e-commerce management systems, guaranteeing seamless integration at every stage of the supply chain, including returns.",
       },
       {
         question: "Why is it important to outsource reverse logistics?",
@@ -759,7 +685,7 @@ const blogPosts: Content["blogPosts"] = [
       { text: "At Disnet, we understand that logistics should adapt to the customer, not the other way around, offering flexible solutions that improve the overall experience." },
       { heading: "Disconnect between online systems and logistics" },
       { text: "An efficient e-commerce business needs its online platform to be perfectly integrated with logistics management. Common mistakes include systems that don't sync, stock errors and delays in order preparation." },
-      { text: "At Disnet, we work with seamless integrations with platforms like Shopify, WooCommerce, Magento, PrestaShop and Opencart, as well as marketplaces like Amazon, guaranteeing connected, error-free management." },
+      { text: "At Disnet, we work with seamless integrations with platforms like Shopify, WooCommerce, Magento, PrestaShop and Opencart, guaranteeing connected, error-free management." },
       { heading: "Not outsourcing logistics to professionals" },
       { text: "Trying to manage all logistics in-house may seem cost-effective at first, but as order volume grows, it becomes a problem: operational overload, shipping errors and rising hidden costs." },
       { text: "Outsourcing allows the business to scale without compromising service quality. With more than 25 years of experience, Disnet offers specialized solutions for the comprehensive management of the e-commerce supply chain." },
@@ -796,7 +722,7 @@ const siteFaq: Content["siteFaq"] = {
     {
       question: "Which e-commerce platforms does Disnet integrate with?",
       answer:
-        "Disnet offers fulfillment with connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart, marketplaces like Amazon and other management systems, allowing offline logistics to work in harmony with your online store without technical friction.",
+        "Disnet offers fulfillment with connectivity for Shopify, WooCommerce, Magento, PrestaShop, Opencart and other management systems, allowing offline logistics to work in harmony with your online store without technical friction.",
     },
     {
       question: "How can I outsource my company's logistics?",
