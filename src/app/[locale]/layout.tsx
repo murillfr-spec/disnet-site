@@ -49,6 +49,11 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+// Ver robots.ts: mientras se sirva desde el dominio temporal de Vercel,
+// también se marca noindex a nivel de página (el disallow de robots.txt no
+// garantiza por sí solo que una URL enlazada externamente no se indexe).
+const isTemporaryPreviewDomain = siteUrl.includes("vercel.app");
+
 export async function generateMetadata({
   params,
 }: {
@@ -58,6 +63,9 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(siteUrl),
     ...metadataByLocale[isLocale(locale) ? locale : "es"],
+    ...(isTemporaryPreviewDomain && {
+      robots: { index: false, follow: false },
+    }),
   };
 }
 

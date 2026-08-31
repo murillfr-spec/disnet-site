@@ -73,7 +73,9 @@ export default async function BlogPostPage({
             {ui.backToBlog}
           </Link>
           <Reveal>
-            <p className="mt-6 text-xs uppercase tracking-wide text-muted-foreground">{post.date}</p>
+            <time dateTime={dateISO} className="mt-6 block text-xs uppercase tracking-wide text-muted-foreground">
+              {post.date}
+            </time>
             <h1 className="text-h1 mt-3">{post.title}</h1>
 
             <div className="mt-8 space-y-5 text-muted-foreground">
