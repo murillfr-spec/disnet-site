@@ -9,7 +9,7 @@ import { buildAlternates } from "@/lib/seo";
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 const portalImages = {
-  MyDLS: "/images/portal-mydls.jpg",
+  MyDLS: "/images/portal-mydls.png",
   B2B: "/images/portal-b2b.jpg",
 } as const;
 
