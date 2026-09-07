@@ -488,7 +488,11 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
   title: "Espace clients Disnet",
   description: "Pour votre confort et votre contrôle maximal, Disnet vous propose son « Espace clients », où vous aurez accès à toutes vos informations importantes en ligne et en temps réel.",
   portals: [
-    { name: "MyDLS", description: "Disnet Logistic System", href: "https://websrv2.disnet.es:3000/" },
+    {
+      name: "MyDLS",
+      description: "Disnet Logistic System",
+      href: "https://websrv2.disnet.es:3000/users/login?error=Se%20requiere%20iniciar%20sesi%C3%B3n%20para%20acceder%20a%20esta%20ruta.",
+    },
     { name: "B2B", description: "Disnet B2B", href: "https://b2b.disnet.es/SignUP.php" },
   ],
 };
