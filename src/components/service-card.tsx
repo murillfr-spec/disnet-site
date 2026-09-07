@@ -36,6 +36,7 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
 
   return (
     <motion.div
+      className="h-full"
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", damping: 1, duration: 0.3 }}
@@ -44,7 +45,7 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
         ref={ref}
         href={localeHref(locale, `/servicios/${service.slug}`)}
         onMouseMove={handleMouseMove}
-        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 transition-colors duration-150 hover:border-accent"
+        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-foreground/15 bg-card p-6 transition-colors duration-150 hover:border-accent"
       >
         <Spotlight x={sx} y={sy} />
 

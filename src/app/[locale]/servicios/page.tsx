@@ -38,7 +38,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
       <section className="border-b border-border">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-6 py-16 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
-            <Reveal key={service.slug} delay={(i % 3) * 0.06}>
+            <Reveal key={service.slug} delay={(i % 3) * 0.06} className="h-full">
               <ServiceCard service={service} index={i} />
             </Reveal>
           ))}
