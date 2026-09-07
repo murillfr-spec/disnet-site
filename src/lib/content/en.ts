@@ -52,7 +52,7 @@ const barcelonaCopy: Content["barcelonaCopy"] = {
 const stats: Content["stats"] = [
   { value: 12000, label: "Rack storage locations" },
   { value: 15000, label: "Picking locations" },
-  { value: 100000, label: "E-commerce order capacity" },
+  { value: 1000000, label: "E-commerce order capacity" },
 ];
 
 const services: Content["services"] = [
@@ -493,7 +493,6 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
       description: "Disnet Logistic System",
       href: "https://websrv2.disnet.es:3000/users/login?error=Se%20requiere%20iniciar%20sesi%C3%B3n%20para%20acceder%20a%20esta%20ruta.",
     },
-    { name: "B2B", description: "Disnet B2B", href: "https://b2b.disnet.es/SignUP.php" },
   ],
 };
 

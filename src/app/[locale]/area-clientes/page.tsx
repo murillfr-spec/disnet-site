@@ -10,7 +10,6 @@ const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 const portalImages = {
   MyDLS: "/images/portal-mydls.png",
-  B2B: "/images/portal-b2b.jpg",
 } as const;
 
 export async function generateMetadata({
@@ -46,7 +45,7 @@ export default async function AreaClientesPage({ params }: { params: Promise<{ l
             <Reveal
               key={portal.name}
               delay={i * 0.08}
-              className="group overflow-hidden rounded-2xl border border-border bg-card transition-colors duration-150 hover:border-accent"
+              className="group max-w-md overflow-hidden rounded-2xl border border-border bg-card transition-colors duration-150 hover:border-accent"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image

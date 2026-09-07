@@ -43,11 +43,7 @@ export function Stats() {
             delay={i * 0.1}
             className="flex flex-col items-center border-border text-center sm:border-l sm:first:border-l-0"
           >
-            <div
-              className={`text-4xl font-semibold tracking-tight md:text-5xl ${
-                i % 2 === 0 ? "text-accent" : "text-accent-secondary"
-              }`}
-            >
+            <div className="text-4xl font-semibold tracking-tight text-accent md:text-5xl">
               <Counter value={stat.value} locale={locale} />
             </div>
             <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
