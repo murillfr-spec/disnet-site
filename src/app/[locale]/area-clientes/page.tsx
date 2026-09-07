@@ -35,17 +35,17 @@ export default async function AreaClientesPage({ params }: { params: Promise<{ l
   return (
     <section>
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <Reveal className="max-w-2xl">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <h1 className="text-h1">{clientAreaCopy.title}</h1>
           <p className="mt-4 text-muted-foreground">{clientAreaCopy.description}</p>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="mt-12 flex justify-center">
           {clientAreaCopy.portals.map((portal, i) => (
             <Reveal
               key={portal.name}
               delay={i * 0.08}
-              className="group max-w-md overflow-hidden rounded-2xl border border-border bg-card transition-colors duration-150 hover:border-accent"
+              className="group w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card text-center transition-colors duration-150 hover:border-accent"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
