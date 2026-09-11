@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getContent } from "@/lib/content";
 import { isLocale, type Locale } from "@/lib/i18n";
-import { JobForm } from "@/components/job-form";
 import { CtaBanner } from "@/components/cta-banner";
 import { Reveal } from "@/components/reveal";
 import { YoutubeEmbed } from "@/components/youtube-embed";
@@ -26,7 +25,7 @@ export async function generateMetadata({
 export default async function EmpresaPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { empresaCopy, jobsCopy, ui } = getContent(locale);
+  const { empresaCopy, ui } = getContent(locale);
 
   return (
     <>
@@ -59,18 +58,6 @@ export default async function EmpresaPage({ params }: { params: Promise<{ locale
             <div className="rounded-2xl border border-border bg-card p-6">
               <h2 className="text-sm font-semibold uppercase tracking-wide text-accent">{ui.valuesLabel}</h2>
               <p className="mt-3 text-sm leading-relaxed">{empresaCopy.values}</p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section id="trabaja-con-nosotros" className="scroll-mt-24 border-b border-border bg-muted/40">
-        <div className="mx-auto max-w-3xl px-6 py-20">
-          <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight">{jobsCopy.title}</h2>
-            <p className="mt-3 text-muted-foreground">{jobsCopy.description}</p>
-            <div className="mt-10 rounded-2xl border border-border bg-card p-8">
-              <JobForm />
             </div>
           </Reveal>
         </div>

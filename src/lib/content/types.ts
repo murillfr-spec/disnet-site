@@ -85,20 +85,6 @@ export type Ui = {
   contactFormToastDescription: string;
   contactFormToastErrorTitle: string;
   contactFormToastErrorDescription: string;
-  jobFormName: string;
-  jobFormEmail: string;
-  jobFormPhone: string;
-  jobFormSubject: string;
-  jobFormMessage: string;
-  jobFormCv: string;
-  jobFormTerms: string;
-  jobFormMarketing: string;
-  jobFormSubmit: string;
-  jobFormSubmitting: string;
-  jobFormToastTitle: string;
-  jobFormToastDescription: string;
-  jobFormToastErrorTitle: string;
-  jobFormToastErrorDescription: string;
   ctaBannerTitle: string;
   ctaBannerSubtitle: string;
   addressLabel: string;
@@ -145,7 +131,6 @@ export type Content = {
     points: { title: string; description: string }[];
   };
   empresaCopy: { title: string; intro: string[]; mission: string; vision: string; values: string };
-  jobsCopy: { title: string; description: string; legal: string };
   contactCopy: { title: string; subtitle: string };
   clientAreaCopy: {
     title: string;

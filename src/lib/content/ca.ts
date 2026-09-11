@@ -472,13 +472,6 @@ const empresaCopy: Content["empresaCopy"] = {
   values: "Professionalitat, integritat, confiança, eficàcia i eficiència…",
 };
 
-const jobsCopy: Content["jobsCopy"] = {
-  title: "Treballa amb nosaltres",
-  description: "Vols formar part de l'equip de Disnet? Envia'ns les teves dades i el teu currículum i ens posarem en contacte amb tu.",
-  legal:
-    "Les seves dades seran tractades per Disnet Sistemas de Distribución S.A. i es conservaran durant 5 anys, d'acord amb la Llei orgànica 3/2018, de 5 de desembre, de protecció de dades de caràcter personal, amb la finalitat de gestionar processos de selecció de personal. Pot exercir els seus drets d'accés, rectificació i cancel·lació en els termes que estableix la llei.",
-};
-
 const contactCopy: Content["contactCopy"] = {
   title: "Contacta amb Disnet",
   subtitle: "La nostra flexibilitat amb els nostres clients ens fa adaptar-nos a les teves necessitats",
@@ -750,7 +743,6 @@ const navLinks: Content["navLinks"] = [
   { href: "/empresa", label: "Empresa" },
   { href: "/servicios", label: "Serveis" },
   { href: "/blog", label: "Blog" },
-  { href: "/empresa#trabaja-con-nosotros", label: "Treballa amb nosaltres" },
   { href: "/area-clientes", label: "Àrea de clients" },
 ];
 
@@ -792,20 +784,6 @@ const ui: Content["ui"] = {
   contactFormToastDescription: "Gràcies per contactar amb Disnet, et respondrem tan aviat com sigui possible.",
   contactFormToastErrorTitle: "No s'ha pogut enviar",
   contactFormToastErrorDescription: "Hi ha hagut un error. Torna-ho a provar o escriu-nos directament a info@disnet.es.",
-  jobFormName: "Nom i cognoms *",
-  jobFormEmail: "Correu electrònic *",
-  jobFormPhone: "Telèfon de contacte",
-  jobFormSubject: "Assumpte *",
-  jobFormMessage: "Missatge *",
-  jobFormCv: "Currículum (doc | pdf màx. 5Mb)",
-  jobFormTerms: "Accepto els termes en fer clic aquí.",
-  jobFormMarketing: "Vull rebre informació que pugui ser del meu interès.",
-  jobFormSubmit: "Enviar candidatura",
-  jobFormSubmitting: "Enviant…",
-  jobFormToastTitle: "Sol·licitud enviada",
-  jobFormToastDescription: "Gràcies pel teu interès, l'equip de Disnet revisarà la teva candidatura.",
-  jobFormToastErrorTitle: "No s'ha pogut enviar",
-  jobFormToastErrorDescription: "Hi ha hagut un error. Torna-ho a provar o escriu-nos directament a info@disnet.es.",
   ctaBannerTitle: "Parlem de la teva cadena de subministrament?",
   ctaBannerSubtitle: "Escriu-nos i t'ajudem a trobar la solució logística adequada per al teu negoci.",
   addressLabel: "Adreça",
@@ -941,7 +919,6 @@ const content: Content = {
   services,
   whyChooseUs,
   empresaCopy,
-  jobsCopy,
   contactCopy,
   clientAreaCopy,
   blogPosts,
