@@ -75,7 +75,7 @@ const legacyRedirects = [
       "/blog/preparacion-de-pedidos-cosas-que-debes-tener-en-cuenta-antes-de-contratar-este-servicio",
   },
 
-  // --- Posts de blog antiguos sin réplica en la web nueva -> índice del blog ---
+  // --- Posts de blog antiguos que ahora SÍ tienen réplica exacta en /blog ---
   ...[
     "importancia-contar-almacen-logistico-ecommerce",
     "ventajas-optimizar-logistica-e-commerce",
@@ -121,7 +121,7 @@ const legacyRedirects = [
     "errores-comunes-en-la-recepcion-de-mercancias-y-como-evitarlos",
     "5-claves-del-sistema-3pl-que-debes-conocer-antes-de-contratarlo",
     "empresa-logistica-4pl",
-  ].map((slug) => ({ source: `/${slug}/`, destination: "/blog" })),
+  ].map((slug) => ({ source: `/${slug}/`, destination: `/blog/${slug}` })),
 
   // --- Archivos de categoría del blog antiguo -> índice del blog ---
   { source: "/category/actualidad/", destination: "/blog" },
