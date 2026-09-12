@@ -30,6 +30,9 @@ export type BlogPost = {
   excerpt: string;
   /** SEO meta description (150-160 chars), only set when excerpt is out of range — falls back to excerpt otherwise. */
   metaDescription?: string;
+  /** Featured image path (real photo already used elsewhere on the site) — optional, only set on some posts. */
+  image?: string;
+  imageAlt?: string;
   body: BlogBlock[];
 };
 

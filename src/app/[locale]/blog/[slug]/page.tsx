@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getContent } from "@/lib/content";
 import { localeHref } from "@/lib/href";
@@ -78,6 +79,18 @@ export default async function BlogPostPage({
               {post.date}
             </time>
             <h1 className="text-h1 mt-3">{post.title}</h1>
+
+            {post.image && (
+              <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
+                <Image
+                  src={post.image}
+                  alt={post.imageAlt ?? post.title}
+                  fill
+                  sizes="(min-width: 768px) 672px, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            )}
 
             <div className="mt-8 space-y-5 text-muted-foreground">
               {post.body.map((block, i) =>

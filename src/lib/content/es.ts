@@ -514,6 +514,8 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
 const blogPosts: Content["blogPosts"] = [
   {
     slug: "operador-logistico-barcelona",
+    image: "/images/hero-5.webp",
+    imageAlt: "Almacén de Disnet con carretillas elevadoras en movimiento",
     date: "10 de julio de 2026",
     title: "Operador logístico en Barcelona: aspectos clave que debes tener en cuenta antes de contratar",
     metaDescription:
@@ -542,6 +544,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "operador-logistico-3pl-barcelona",
+    image: "/images/hero-4-almacen.webp",
+    imageAlt: "Pasillo de picking en el almacén de Disnet",
     date: "11 de junio de 2026",
     title: "Operador logístico 3PL: el aliado estratégico para delegar tu logística y escalar tu negocio",
     metaDescription:
@@ -575,6 +579,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "empresas-de-logistica-tecnologia-inteligencia-artificial",
+    image: "/images/hero-5.webp",
+    imageAlt: "Almacén de Disnet con carretillas elevadoras en movimiento",
     date: "4 de mayo de 2026",
     title: "¿Cómo la tecnología y la inteligencia artificial están transformando las empresas de logística?",
     metaDescription:
@@ -598,6 +604,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "operador-logistico-vs-logistica-propia",
+    image: "/images/hero-1.webp",
+    imageAlt: "Nave logística de Disnet en Sabadell",
     date: "27 de abril de 2026",
     title: "Operador logístico vs logística propia: ¿qué opción impulsa realmente el crecimiento de tu empresa?",
     metaDescription:
@@ -625,6 +633,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "preparacion-de-pedidos-cosas-que-debes-tener-en-cuenta-antes-de-contratar-este-servicio",
+    image: "/images/svc-manipulacion.jpg",
+    imageAlt: "Manipulación de mercancías en el almacén de Disnet",
     date: "20 de abril de 2026",
     title: "Preparación de pedidos: cosas que debes tener en cuenta antes de contratar este servicio",
     metaDescription:
@@ -661,6 +671,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "aspectos-clave-a-valorar-antes-de-contratar-un-servicio-de-fulfillment",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "Preparación de pedidos de e-commerce en Disnet",
     date: "13 de abril de 2026",
     title: "Aspectos clave a valorar antes de contratar un servicio de fulfillment",
     metaDescription:
@@ -698,6 +710,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "errores-que-perjudican-la-logistica-en-tu-e-commerce",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "Preparación de pedidos de e-commerce en Disnet",
     date: "7 de abril de 2026",
     title: "Errores que perjudican la logística en tu e-commerce",
     metaDescription:
@@ -728,6 +742,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "empresa-logistica-4pl",
+    image: "/images/hero-1.webp",
+    imageAlt: "Nave logística de Disnet en Sabadell",
     date: "13 de agosto de 2026",
     title: "Empresa logística 4PL: las industrias donde más potencia la cadena de suministro",
     metaDescription:
@@ -776,6 +792,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "5-claves-del-sistema-3pl-que-debes-conocer-antes-de-contratarlo",
+    image: "/images/hero-4-almacen.webp",
+    imageAlt: "Pasillo de picking en el almacén de Disnet",
     date: "30 de marzo de 2026",
     title: "5 claves del sistema 3PL que debes conocer antes de contratarlo",
     metaDescription:
@@ -813,6 +831,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "errores-comunes-en-la-recepcion-de-mercancias-y-como-evitarlos",
+    image: "/images/svc-recepcion.jpg",
+    imageAlt: "Recepción de mercancías en el almacén de Disnet",
     date: "26 de marzo de 2026",
     title: "Errores comunes en la recepción de mercancías y cómo evitarlos",
     excerpt: "La recepción de mercancías es una de las fases más importantes dentro del proceso logístico. Es el punto donde se verifica que todo…",
@@ -846,6 +866,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "5-consejos-imprescindibles-para-gestionar-la-logistica-en-tu-e-commerce",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "Preparación de pedidos de e-commerce en Disnet",
     date: "17 de marzo de 2026",
     title: "5 consejos imprescindibles para gestionar la logística en tu e-commerce",
     excerpt: "La logística es uno de los pilares fundamentales para el éxito de cualquier negocio online. Una gestión eficaz no solo mejora…",
@@ -871,6 +893,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "logistica-inversa-optimizar-procesos-de-devolucion",
+    image: "/images/svc-inversa.jpg",
+    imageAlt: "Gestión de logística inversa en Disnet",
     date: "11 de marzo de 2026",
     title: "Cómo la logística inversa puede optimizar tus procesos de devolución",
     excerpt: "La logística inversa es el proceso de gestionar el retorno de productos desde el consumidor hasta el fabricante o distribuidor…",
@@ -906,6 +930,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "convierte-el-packaging-en-experiencia-de-marca",
+    image: "/images/svc-empaquetado.jpg",
+    imageAlt: "Proceso de empaquetado en el almacén de Disnet",
     date: "2 de julio de 2025",
     title: "Convierte tu packaging en una experiencia de marca",
     metaDescription:
@@ -934,6 +960,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "despega-tu-startup-en-barcelona-logistica-escalable",
+    image: "/images/hero-1.webp",
+    imageAlt: "Nave logística de Disnet en Sabadell",
     date: "4 de junio de 2025",
     title: "Despega tu startup en Barcelona: logística escalable",
     excerpt: "Barcelona se ha consolidado como un importante hub para startups, y el sector logístico no es una excepción. Con un ecosistema…",
@@ -958,6 +986,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "recepcion-eficiente-e-impacto-en-cadena-de-suministro",
+    image: "/images/svc-recepcion.jpg",
+    imageAlt: "Recepción de mercancías en el almacén de Disnet",
     date: "5 de mayo de 2025",
     title: "Cómo una recepción eficiente impacta en toda tu cadena de suministro",
     excerpt: "La recepción eficiente de la mercancía es un aspecto crucial en cualquier cadena de suministro. Desde que los productos llegan a tu…",

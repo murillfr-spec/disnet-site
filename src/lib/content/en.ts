@@ -514,6 +514,8 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
 const blogPosts: Content["blogPosts"] = [
   {
     slug: "operador-logistico-barcelona",
+    image: "/images/hero-5.webp",
+    imageAlt: "Disnet's warehouse with forklifts in motion",
     date: "July 10, 2026",
     title: "Logistics operator in Barcelona: key aspects to consider before hiring",
     metaDescription:
@@ -542,6 +544,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "operador-logistico-3pl-barcelona",
+    image: "/images/hero-4-almacen.webp",
+    imageAlt: "Picking aisle inside Disnet's warehouse",
     date: "June 11, 2026",
     title: "3PL logistics operator: the strategic ally to delegate your logistics and scale your business",
     metaDescription:
@@ -575,6 +579,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "empresas-de-logistica-tecnologia-inteligencia-artificial",
+    image: "/images/hero-5.webp",
+    imageAlt: "Disnet's warehouse with forklifts in motion",
     date: "May 4, 2026",
     title: "How are technology and artificial intelligence transforming logistics companies?",
     metaDescription:
@@ -598,6 +604,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "operador-logistico-vs-logistica-propia",
+    image: "/images/hero-1.webp",
+    imageAlt: "Disnet's logistics warehouse building in Sabadell",
     date: "April 27, 2026",
     title: "Logistics operator vs. in-house logistics: which option really drives your company's growth?",
     metaDescription:
@@ -625,6 +633,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "preparacion-de-pedidos-cosas-que-debes-tener-en-cuenta-antes-de-contratar-este-servicio",
+    image: "/images/svc-manipulacion.jpg",
+    imageAlt: "Goods handling at Disnet's warehouse",
     date: "April 20, 2026",
     title: "Order preparation: things to consider before hiring this service",
     metaDescription:
@@ -661,6 +671,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "aspectos-clave-a-valorar-antes-de-contratar-un-servicio-de-fulfillment",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "E-commerce order preparation at Disnet",
     date: "April 13, 2026",
     title: "Key aspects to consider before hiring a fulfillment service",
     metaDescription:
@@ -698,6 +710,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "errores-que-perjudican-la-logistica-en-tu-e-commerce",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "E-commerce order preparation at Disnet",
     date: "April 7, 2026",
     title: "Mistakes that hurt your e-commerce logistics",
     metaDescription:
@@ -728,6 +742,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "empresa-logistica-4pl",
+    image: "/images/hero-1.webp",
+    imageAlt: "Disnet's logistics warehouse building in Sabadell",
     date: "August 13, 2026",
     title: "4PL Logistics Company: The Industries Where It Powers the Supply Chain the Most",
     metaDescription:
@@ -776,6 +792,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "5-claves-del-sistema-3pl-que-debes-conocer-antes-de-contratarlo",
+    image: "/images/hero-4-almacen.webp",
+    imageAlt: "Picking aisle inside Disnet's warehouse",
     date: "March 30, 2026",
     title: "5 Key Things to Know About the 3PL System Before Hiring One",
     metaDescription:
@@ -813,6 +831,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "errores-comunes-en-la-recepcion-de-mercancias-y-como-evitarlos",
+    image: "/images/svc-recepcion.jpg",
+    imageAlt: "Goods receiving at Disnet's warehouse",
     date: "March 26, 2026",
     title: "Common Mistakes in Goods Receiving and How to Avoid Them",
     excerpt: "Goods receiving is one of the most important stages in the logistics process. It's the point where everything that arrives…",
@@ -846,6 +866,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "5-consejos-imprescindibles-para-gestionar-la-logistica-en-tu-e-commerce",
+    image: "/images/svc-ecommerce.jpg",
+    imageAlt: "E-commerce order preparation at Disnet",
     date: "March 17, 2026",
     title: "5 Essential Tips for Managing Logistics in Your E-Commerce Business",
     excerpt: "Logistics is one of the fundamental pillars behind the success of any online business. Effective management not only improves…",
@@ -871,6 +893,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "logistica-inversa-optimizar-procesos-de-devolucion",
+    image: "/images/svc-inversa.jpg",
+    imageAlt: "Reverse logistics management at Disnet",
     date: "March 11, 2026",
     title: "How Reverse Logistics Can Optimize Your Returns Process",
     excerpt: "Reverse logistics is the process of managing the return of products from the consumer back to the manufacturer or distributor…",
@@ -906,6 +930,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "convierte-el-packaging-en-experiencia-de-marca",
+    image: "/images/svc-empaquetado.jpg",
+    imageAlt: "Packaging process at Disnet's warehouse",
     date: "July 2, 2025",
     title: "Turn Your Packaging Into a Brand Experience",
     metaDescription:
@@ -934,6 +960,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "despega-tu-startup-en-barcelona-logistica-escalable",
+    image: "/images/hero-1.webp",
+    imageAlt: "Disnet's logistics warehouse building in Sabadell",
     date: "June 4, 2025",
     title: "Launch Your Startup in Barcelona: Scalable Logistics",
     excerpt: "Barcelona has established itself as an important hub for startups, and the logistics sector is no exception. With a constantly…",
@@ -958,6 +986,8 @@ const blogPosts: Content["blogPosts"] = [
   },
   {
     slug: "recepcion-eficiente-e-impacto-en-cadena-de-suministro",
+    image: "/images/svc-recepcion.jpg",
+    imageAlt: "Goods receiving at Disnet's warehouse",
     date: "May 5, 2025",
     title: "How Efficient Receiving Impacts Your Entire Supply Chain",
     excerpt: "Efficient receiving of goods is a crucial aspect of any supply chain. From the moment products arrive at your warehouse until…",
