@@ -30,8 +30,8 @@ export function Header() {
         style={{ opacity: edgeOpacity }}
         className="pointer-events-none absolute inset-x-0 top-full h-px bg-gradient-to-r from-transparent via-border to-transparent"
       />
-      <div className="mx-auto grid h-24 max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6">
-        <Link href={localeHref(locale, "/")} className="flex w-fit items-center gap-2 rounded-xl bg-white p-2 justify-self-start md:p-2.5">
+      <div className="mx-auto flex h-28 max-w-6xl items-center justify-between gap-4 px-6 md:grid md:h-24 md:grid-cols-[1fr_auto_1fr]">
+        <Link href={localeHref(locale, "/")} className="flex w-fit shrink-0 items-center gap-2 rounded-xl bg-white p-2 justify-self-start md:p-2.5">
           <Image
             src="/images/logo-disnet.jpg"
             alt={company.name}
@@ -39,7 +39,7 @@ export function Header() {
             height={843}
             priority
             fetchPriority="high"
-            className="h-20 w-auto md:h-16"
+            className="h-24 w-auto md:h-16"
           />
         </Link>
 
@@ -90,7 +90,7 @@ export function Header() {
           )}
         </nav>
 
-        <div className="flex items-center justify-self-end gap-2">
+        <div className="flex shrink-0 items-center justify-self-end gap-2">
           <div className="hidden md:flex">
             <LanguageSwitcher />
           </div>
