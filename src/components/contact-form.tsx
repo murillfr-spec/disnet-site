@@ -26,7 +26,7 @@ export function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, terms: form.terms.checked }),
+        body: JSON.stringify({ ...data, terms: form.terms.checked, locale }),
       });
       if (!res.ok) throw new Error("request failed");
       toast.success(ui.contactFormToastTitle, {
