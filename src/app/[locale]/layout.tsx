@@ -89,6 +89,7 @@ export async function generateMetadata({
       images: [OG_IMAGE.url],
     },
     verification: {
+      google: "JLPuFEXNzS_0lufqs6Mw5-HLLz0IpJ6yv3WZKQ_acDU",
       other: {
         "msvalidate.01": "6632F16CDAB48B7A6C795832D80C2D9C",
       },
