@@ -38,6 +38,7 @@ export function Header() {
             width={1400}
             height={843}
             priority
+            fetchPriority="high"
             className="h-16 w-auto"
           />
         </Link>
