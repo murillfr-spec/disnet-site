@@ -18,6 +18,26 @@ function getTransporter() {
   });
 }
 
+const EMAIL_RE = /^[^\s@"'<>]+@[^\s@"'<>]+\.[^\s@"'<>]+$/;
+const DEFAULT_FROM_EMAIL = "info@disnet.es";
+
+/**
+ * Gmail rechaza cualquier mensaje sin cabecera "From" válida (RFC 5322).
+ * Si SMTP_FROM/SMTP_USER llega mal configurado en Vercel (comillas pegadas,
+ * espacios, variable vacía), nodemailer puede acabar generando un From vacío.
+ * Se sanea y valida aquí para garantizar siempre un remitente válido.
+ */
+function getFromAddress(): string {
+  const raw = (process.env.SMTP_FROM || process.env.SMTP_USER || "").trim().replace(/^["']|["']$/g, "");
+  const email = EMAIL_RE.test(raw) ? raw : DEFAULT_FROM_EMAIL;
+  if (email !== raw) {
+    console.warn(
+      `SMTP_FROM/SMTP_USER no es una dirección de email válida ("${raw}"). Usando remitente por defecto: ${DEFAULT_FROM_EMAIL}.`
+    );
+  }
+  return `Disnet <${email}>`;
+}
+
 // Colores de marca (ver src/app/globals.css: --accent / --accent-secondary)
 const BRAND = {
   red: "#cc0000",
@@ -105,7 +125,7 @@ async function send(options: {
 
 /** Notificación interna para el equipo de Disnet (y CC) con los datos del formulario. */
 export async function sendContactNotification(submission: ContactSubmission) {
-  const from = process.env.SMTP_FROM || process.env.SMTP_USER!;
+  const from = getFromAddress();
   const to = process.env.CONTACT_TO_EMAIL || "teomediavilla@disnet.es";
   const cc = process.env.CONTACT_CC_EMAIL || "murillfr@gmail.com";
   const fullName = `${submission.name} ${submission.surname || ""}`.trim();
@@ -188,7 +208,7 @@ export async function sendContactConfirmation(submission: ContactSubmission, raw
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const copy = CONFIRMATION_COPY[locale];
   const { company } = getContent(locale);
-  const from = process.env.SMTP_FROM || process.env.SMTP_USER!;
+  const from = getFromAddress();
 
   const bodyHtml = `
     <p style="margin:0 0 16px;font-size:15px;color:${BRAND.ink};">${escapeHtml(copy.greeting(submission.name))}</p>
