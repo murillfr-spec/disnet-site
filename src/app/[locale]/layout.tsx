@@ -33,22 +33,22 @@ const metadataByLocale: Record<Locale, { title: string; description: string }> =
   es: {
     title: "Disnet | Operador Logístico 3PL en Barcelona",
     description:
-      "Disnet es un operador logístico 3PL en Barcelona con más de 35 años de experiencia: recepción, almacenaje, picking, packing, e-commerce, transporte y logística inversa.",
+      "Disnet, operador logístico 3PL en Barcelona con más de 35 años de experiencia: recepción, almacenaje, picking, packing, e-commerce, transporte y logística inversa.",
   },
   en: {
     title: "Disnet | 3PL Logistics Operator in Barcelona",
     description:
-      "Disnet is a 3PL logistics operator in Barcelona with over 35 years of experience: goods receipt, storage, picking, packing, e-commerce, transport and reverse logistics.",
+      "Disnet, a 3PL logistics operator in Barcelona with over 35 years of experience: goods receipt, storage, picking, packing, e-commerce, transport, reverse logistics.",
   },
   ca: {
     title: "Disnet | Operador Logístic 3PL a Barcelona",
     description:
-      "Disnet és un operador logístic 3PL a Barcelona amb més de 35 anys d'experiència: recepció, emmagatzematge, picking, packing, e-commerce, transport i logística inversa.",
+      "Disnet, operador logístic 3PL a Barcelona amb més de 35 anys d'experiència: recepció, emmagatzematge, picking, packing, e-commerce, transport i logística inversa.",
   },
   fr: {
     title: "Disnet | Opérateur Logistique 3PL à Barcelone",
     description:
-      "Disnet est un opérateur logistique 3PL à Barcelone avec plus de 35 ans d'expérience : réception, stockage, picking, packing, e-commerce, transport et logistique inverse.",
+      "Disnet, opérateur logistique 3PL à Barcelone avec plus de 35 ans d'expérience : réception, stockage, picking, packing, e-commerce, transport et logistique inverse.",
   },
 };
 
