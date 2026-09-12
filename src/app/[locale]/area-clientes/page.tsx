@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
 const portalImages = {
-  MyDLS: "/images/portal-mydls.png",
+  MyDLS: "/images/portal-mydls.webp",
 } as const;
 
 export async function generateMetadata({

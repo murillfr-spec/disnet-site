@@ -16,7 +16,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
         <div>
           <Link href={localeHref(locale, "/")} className="inline-flex items-center gap-2 rounded-xl bg-white p-2.5">
-            <Image src="/images/logo-disnet.jpg" alt={company.name} width={1400} height={843} quality={100} className="h-16 w-auto" />
+            <Image src="/images/logo-disnet.jpg" alt={company.name} width={1400} height={843} className="h-16 w-auto" />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-footer-muted">
             {company.tagline}
