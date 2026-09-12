@@ -88,6 +88,11 @@ export async function generateMetadata({
       description,
       images: [OG_IMAGE.url],
     },
+    verification: {
+      other: {
+        "msvalidate.01": "6632F16CDAB48B7A6C795832D80C2D9C",
+      },
+    },
     ...(isTemporaryPreviewDomain && {
       robots: { index: false, follow: false },
     }),
