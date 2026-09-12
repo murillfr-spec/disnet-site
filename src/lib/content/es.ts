@@ -2043,6 +2043,8 @@ const ui: Content["ui"] = {
   heroCtaVisit: "¡Visita nuestras instalaciones!",
   heroCtaServices: "Ver servicios",
   readMore: "Leer más",
+  readMoreAboutCompany: "Leer más sobre Disnet",
+  readMoreAboutBarcelona: "Leer más sobre nuestra logística en Barcelona",
   requestQuote: "Pedir presupuesto",
   contactUs: "Contacta con nosotros",
   backToServices: "← Volver a servicios",

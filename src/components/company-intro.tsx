@@ -21,6 +21,7 @@ export function CompanyIntro({ locale }: { locale: Locale }) {
         </div>
         <Link
           href={localeHref(locale, "/empresa")}
+          aria-label={ui.readMoreAboutCompany}
           className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
         >
           {ui.readMore}

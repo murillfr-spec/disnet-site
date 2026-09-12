@@ -63,6 +63,8 @@ export type Ui = {
   heroCtaVisit: string;
   heroCtaServices: string;
   readMore: string;
+  readMoreAboutCompany: string;
+  readMoreAboutBarcelona: string;
   requestQuote: string;
   contactUs: string;
   backToServices: string;

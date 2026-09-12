@@ -23,6 +23,7 @@ export function BarcelonaSection({ locale }: { locale: Locale }) {
         <p className="mt-4 text-sm font-medium text-accent">{barcelonaCopy.highlight}</p>
         <Link
           href={localeHref(locale, "/empresa")}
+          aria-label={ui.readMoreAboutBarcelona}
           className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
         >
           {ui.readMore}
