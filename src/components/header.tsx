@@ -91,13 +91,15 @@ export function Header() {
         </nav>
 
         <div className="flex items-center justify-self-end gap-2">
-          <LanguageSwitcher />
+          <div className="hidden md:flex">
+            <LanguageSwitcher />
+          </div>
           <ThemeToggle />
           <MotionLink
             href={localeHref(locale, "/contacto")}
             whileTap={{ scale: 0.95 }}
             transition={press}
-            className="hidden rounded-full bg-accent-secondary px-4 py-2 text-sm font-medium text-accent-secondary-foreground md:inline-block"
+            className="inline-block rounded-full bg-accent-secondary px-4 py-2 text-sm font-medium text-accent-secondary-foreground"
           >
             {ui.headerContact}
           </MotionLink>
