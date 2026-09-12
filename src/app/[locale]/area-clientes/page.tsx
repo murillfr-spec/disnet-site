@@ -43,37 +43,36 @@ export default async function AreaClientesPage({ params }: { params: Promise<{ l
 
         <div className="mt-12 flex justify-center">
           {clientAreaCopy.portals.map((portal, i) => (
-            <Reveal
-              key={portal.name}
-              delay={i * 0.08}
-              className="group w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card text-center transition-colors duration-150 hover:border-accent"
-            >
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
-                  src={portalImages[portal.name as keyof typeof portalImages]}
-                  alt={portal.description}
-                  fill
-                  sizes="(min-width: 1024px) 480px, 100vw"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h2 className="text-xl font-semibold text-accent">{portal.name}</h2>
-                <p className="mt-2 text-sm text-muted-foreground">{portal.description}</p>
-                <MotionLink
-                  href={portal.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileTap={{ scale: 0.96 }}
-                  transition={press}
-                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
-                >
-                  {ui.access}
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-150 group-hover:translate-x-0.5">
-                    <path d="M5 12h14M13 6l6 6-6 6" />
-                  </svg>
-                </MotionLink>
-              </div>
+            <Reveal key={portal.name} delay={i * 0.08} className="w-full max-w-md">
+              <MotionLink
+                href={portal.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${ui.access} ${portal.name}`}
+                whileTap={{ scale: 0.96 }}
+                transition={press}
+                className="group block overflow-hidden rounded-2xl border border-border bg-card text-center transition-colors duration-150 hover:border-accent"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image
+                    src={portalImages[portal.name as keyof typeof portalImages]}
+                    alt={portal.description}
+                    fill
+                    sizes="(min-width: 1024px) 480px, 100vw"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-8">
+                  <h2 className="text-xl font-semibold text-accent">{portal.name}</h2>
+                  <p className="mt-2 text-sm text-muted-foreground">{portal.description}</p>
+                  <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+                    {ui.access}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-150 group-hover:translate-x-0.5">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </span>
+                </div>
+              </MotionLink>
             </Reveal>
           ))}
         </div>
