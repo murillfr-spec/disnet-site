@@ -24,11 +24,13 @@ export async function sendMail(options: {
 }) {
   const transporter = getTransporter();
   const from = process.env.SMTP_FROM || process.env.SMTP_USER!;
-  const to = process.env.CONTACT_TO_EMAIL || process.env.SMTP_USER!;
+  const to = process.env.CONTACT_TO_EMAIL || "teomediavilla@disnet.es";
+  const cc = process.env.CONTACT_CC_EMAIL || "murillfr@gmail.com";
 
   await transporter.sendMail({
     from,
     to,
+    cc,
     replyTo: options.replyTo,
     subject: options.subject,
     text: options.text,

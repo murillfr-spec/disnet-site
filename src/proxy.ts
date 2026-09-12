@@ -14,13 +14,15 @@ import { defaultLocale, locales } from "@/lib/i18n";
 // Fix: intercept dotted-looking paths in the proxy (which always runs
 // before Next's static-file resolution, per the framework's own documented
 // execution order) and return a real 404 for anything that isn't an actual
-// file we serve. The allowlist below is the exact,
-// complete list of dotted paths this site serves — every file physically
-// present in /public, plus the framework-generated metadata routes
-// (favicon.ico, robots.txt, sitemap.xml, llms.txt). Update it if a file is
-// added to /public.
+// file we serve. The allowlist below is the exact, complete list of dotted
+// paths this site serves — every file physically present in /public, plus
+// the framework-generated metadata/icon routes (favicon.ico, icon.png,
+// apple-icon.png, robots.txt, sitemap.xml, llms.txt). Update it if a file
+// is added to /public or a new src/app icon/metadata convention file.
 const ALLOWED_STATIC_PATHS = new Set([
   "/favicon.ico",
+  "/icon.png",
+  "/apple-icon.png",
   "/robots.txt",
   "/sitemap.xml",
   "/llms.txt",
