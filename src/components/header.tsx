@@ -30,8 +30,8 @@ export function Header() {
         style={{ opacity: edgeOpacity }}
         className="pointer-events-none absolute inset-x-0 top-full h-px bg-gradient-to-r from-transparent via-border to-transparent"
       />
-      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-6">
-        <Link href={localeHref(locale, "/")} className="flex items-center gap-2 rounded-xl bg-white p-2.5">
+      <div className="mx-auto grid h-24 max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6">
+        <Link href={localeHref(locale, "/")} className="flex w-fit items-center gap-2 rounded-xl bg-white p-2.5 justify-self-start">
           <Image
             src="/images/logo-disnet.jpg"
             alt={company.name}
@@ -53,8 +53,8 @@ export function Header() {
                   delay={80}
                   closeDelay={0}
                   render={<Link href={localeHref(locale, link.href)} />}
-                  className={`rounded-md px-3 py-2 text-sm transition-colors duration-150 hover:text-accent ${
-                    pathname.startsWith(localeHref(locale, "/servicios")) ? "text-accent" : "text-foreground/80"
+                  className={`rounded-md px-3 py-2 text-sm font-semibold transition-colors duration-150 hover:text-accent ${
+                    pathname.startsWith(localeHref(locale, "/servicios")) ? "text-accent" : "text-foreground"
                   }`}
                 >
                   {link.label}
@@ -67,7 +67,7 @@ export function Header() {
                           key={service.slug}
                           closeOnClick
                           render={<Link href={localeHref(locale, `/servicios/${service.slug}`)} />}
-                          className="rounded-lg px-3 py-2 text-sm text-foreground/80 outline-none transition-colors duration-150 data-[highlighted]:bg-muted data-[highlighted]:text-accent"
+                          className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 outline-none transition-colors duration-150 data-[highlighted]:bg-muted data-[highlighted]:text-accent"
                         >
                           {service.name}
                         </Menu.LinkItem>
@@ -80,8 +80,8 @@ export function Header() {
               <Link
                 key={link.href}
                 href={localeHref(locale, link.href)}
-                className={`rounded-md px-3 py-2 text-sm transition-colors duration-150 hover:text-accent ${
-                  pathname === localeHref(locale, link.href) ? "text-accent" : "text-foreground/80"
+                className={`rounded-md px-3 py-2 text-sm font-semibold transition-colors duration-150 hover:text-accent ${
+                  pathname === localeHref(locale, link.href) ? "text-accent" : "text-foreground"
                 }`}
               >
                 {link.label}
@@ -90,7 +90,7 @@ export function Header() {
           )}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-self-end gap-2">
           <LanguageSwitcher />
           <ThemeToggle />
           <MotionLink
@@ -129,7 +129,7 @@ export function Header() {
                   key={link.href}
                   href={localeHref(locale, link.href)}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-md px-2 py-2 text-sm text-foreground/80 transition-colors duration-150 hover:text-accent"
+                  className="rounded-md px-2 py-2 text-sm font-semibold text-foreground transition-colors duration-150 hover:text-accent"
                 >
                   {link.label}
                 </Link>
