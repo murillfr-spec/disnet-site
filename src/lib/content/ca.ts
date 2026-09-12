@@ -2047,6 +2047,7 @@ const ui: Content["ui"] = {
   contactUs: "Contacta amb nosaltres",
   backToServices: "← Tornar a serveis",
   backToBlog: "← Tornar al blog",
+  blogAuthorByline: "Publicat per l'equip de Disnet",
   otherServices: "Altres serveis",
   moreArticles: "Més articles",
   readArticle: "Llegir article",

@@ -79,6 +79,13 @@ export default async function BlogPostPage({
               {post.date}
             </time>
             <h1 className="text-h1 mt-3">{post.title}</h1>
+            <p className="mt-3 text-sm text-muted-foreground">
+              {ui.blogAuthorByline.split("Disnet")[0]}
+              <Link href={localeHref(locale, "/empresa")} className="font-medium text-foreground transition-colors duration-150 hover:text-accent">
+                Disnet
+              </Link>
+              {ui.blogAuthorByline.split("Disnet")[1]}
+            </p>
 
             {post.image && (
               <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">

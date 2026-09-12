@@ -67,6 +67,7 @@ export type Ui = {
   contactUs: string;
   backToServices: string;
   backToBlog: string;
+  blogAuthorByline: string;
   otherServices: string;
   moreArticles: string;
   readArticle: string;
