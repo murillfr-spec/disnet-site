@@ -29,7 +29,7 @@ export async function generateMetadata({
   if (!post) return {};
   return buildMetadata({
     title: `${post.title} | Disnet`,
-    description: post.excerpt,
+    description: post.metaDescription ?? post.excerpt,
     path: `/blog/${slug}`,
     locale,
   });

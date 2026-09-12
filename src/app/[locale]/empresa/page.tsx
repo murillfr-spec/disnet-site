@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { empresaCopy } = getContent(locale);
   return buildMetadata({
     title: `${empresaCopy.title} | Disnet`,
-    description: empresaCopy.intro[0],
+    description: empresaCopy.metaDescription ?? empresaCopy.intro[0],
     path: "/empresa",
     locale,
   });

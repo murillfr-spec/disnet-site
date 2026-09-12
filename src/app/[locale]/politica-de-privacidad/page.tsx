@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { privacyPolicyCopy, ui } = getContent(locale);
   return buildMetadata({
     title: `${ui.privacyPolicyPageTitle} | Disnet`,
-    description: privacyPolicyCopy.title,
+    description: privacyPolicyCopy.metaDescription ?? privacyPolicyCopy.title,
     path: "/politica-de-privacidad",
     locale,
   });

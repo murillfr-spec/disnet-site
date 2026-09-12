@@ -5,6 +5,8 @@ export type Service = {
   slug: string;
   name: string;
   headline: string;
+  /** SEO meta description (150-160 chars), only set when headline is out of range — falls back to headline otherwise. */
+  metaDescription?: string;
   subheadline?: string;
   intro: string[];
   extra?: string[];
@@ -26,6 +28,8 @@ export type BlogPost = {
   date: string;
   title: string;
   excerpt: string;
+  /** SEO meta description (150-160 chars), only set when excerpt is out of range — falls back to excerpt otherwise. */
+  metaDescription?: string;
   body: BlogBlock[];
 };
 
@@ -37,6 +41,7 @@ export type LegalPageCopy = {
   title: string;
   lastUpdated: string;
   body: LegalBlock[];
+  metaDescription?: string;
 };
 
 export type CookieConsentCopy = {
@@ -130,11 +135,19 @@ export type Content = {
     intro: string[];
     points: { title: string; description: string }[];
   };
-  empresaCopy: { title: string; intro: string[]; mission: string; vision: string; values: string };
-  contactCopy: { title: string; subtitle: string };
+  empresaCopy: {
+    title: string;
+    intro: string[];
+    mission: string;
+    vision: string;
+    values: string;
+    metaDescription?: string;
+  };
+  contactCopy: { title: string; subtitle: string; metaDescription?: string };
   clientAreaCopy: {
     title: string;
     description: string;
+    metaDescription?: string;
     portals: { name: string; description: string; href: string }[];
   };
   blogPosts: BlogPost[];

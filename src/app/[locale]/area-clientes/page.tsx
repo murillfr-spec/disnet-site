@@ -22,7 +22,7 @@ export async function generateMetadata({
   const { clientAreaCopy } = getContent(locale);
   return buildMetadata({
     title: `${clientAreaCopy.title} | Disnet`,
-    description: clientAreaCopy.description,
+    description: clientAreaCopy.metaDescription ?? clientAreaCopy.description,
     path: "/area-clientes",
     locale,
   });

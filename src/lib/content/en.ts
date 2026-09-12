@@ -60,6 +60,8 @@ const services: Content["services"] = [
     slug: "recepcion-de-mercancias",
     name: "Goods Receiving",
     headline: "With Disnet, your company's goods are always safe",
+    metaDescription:
+      "Goods receiving with logistics quality control and incident management, in line with agreed specifications. 3PL logistics operator in Barcelona.",
     intro: [
       "We manage the receipt of goods in accordance with the **specifications** previously agreed with clients.",
       "We also carry out **logistics quality controls** and inform the client and/or supplier of any incidents detected.",
@@ -93,6 +95,8 @@ const services: Content["services"] = [
     slug: "manipulacion-de-mercancias",
     name: "Goods Handling",
     headline: "Disnet, guaranteed traceability across all our processes",
+    metaDescription:
+      "Goods handling with full process traceability, from small lots to large volumes with semi-automated sequences, in Barcelona.",
     intro: [
       "We carry out any handling operation agreed with the client, guaranteeing **full traceability of the process**.",
       "We handle goods regardless of batch size — from small batches with minimal automation, to **large batches with semi-automated sequences**.",
@@ -132,6 +136,8 @@ const services: Content["services"] = [
     slug: "almacenaje",
     name: "Storage",
     headline: "At Disnet, we have the most advanced technology for storing your goods",
+    metaDescription:
+      "Storage with over 6,000 rack locations and 15,000 picking locations across 6,500 m² in Barcelona. Advanced technology to preserve your goods.",
     intro: [
       "We have the capacity to store multiple types of load units (pallets, boxes, coils, etc.) in accordance with the **most demanding handling standards**. All to guarantee their proper preservation.",
       "We have **more than 6,000 conventional pallet rack locations** and **more than 15,000 picking locations** in a 6,500 m² storage facility.",
@@ -222,6 +228,8 @@ const services: Content["services"] = [
     slug: "preparacion-de-pedidos",
     name: "Order Preparation",
     headline: "Disnet, specialists in picking processes",
+    metaDescription:
+      "Order preparation (picking) with careful planning to choose the most suitable method for each case. 3PL logistics operator in Barcelona.",
     intro: [
       "At Disnet, we are **experts in carrying out picking operations**, which consist of preparing orders using stored materials before shipping them to the recipient.",
       "Our meticulous planning allows us to select the most appropriate optimization method in each case.",
@@ -293,6 +301,8 @@ const services: Content["services"] = [
     slug: "empaqueado-packing",
     name: "Packaging – Packing",
     headline: "At Disnet, we guarantee the best packaging for your goods",
+    metaDescription:
+      "Packaging with the most advanced sustainability, safety and traceability criteria, plus WMS recommendations for every shipment in Barcelona.",
     intro: [
       "In our packaging operations, known as \"packing\", we prepare all the transport units in which orders will be shipped. During this process, we apply the **most advanced criteria in sustainability, safety and traceability**.",
       "Our Warehouse Management System (WMS) provides us with **recommendations on the most suitable packaging** for each shipment, ensuring efficient and appropriate preparation.",
@@ -327,6 +337,8 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "At Disnet, we guarantee the best delivery times",
+    metaDescription:
+      "Fulfillment for Shopify, WooCommerce and the leading platforms. Over 25 years managing shipments, with capacity for 2,000,000 orders a year.",
     subheadline: "Fulfillment for Shopify, WooCommerce and the leading platforms",
     intro: [
       "Who manages the shipping for your online store? At Disnet, we handle the entire process, from the moment an order comes in on your website until it reaches the customer's door. Following current trends in commerce, we specialize in outsourcing supply chains for the e-Commerce sector. With **more than 25 years of experience**, we have managed and prepared orders, with the capacity to handle **more than 2,000,000 shipments a year**.",
@@ -367,6 +379,8 @@ const services: Content["services"] = [
     slug: "transporte-de-mercancias",
     name: "Goods Transport",
     headline: "At Disnet, we offer the best prices for transporting your goods",
+    metaDescription:
+      "Goods transport with logistics quality control before every load, fast delivery and always on time. The best prices in Barcelona.",
     subheadline: "Fast delivery, always on time",
     intro: [
       "In line with our procedures, we always carry out **logistics quality control** on the shipment before loading the goods onto the transport.",
@@ -403,6 +417,8 @@ const services: Content["services"] = [
     slug: "logistica-inversa",
     name: "Reverse Logistics",
     headline: "Returns and incident management with total reliability",
+    metaDescription:
+      "Reverse logistics: returns and incident management with total reliability, integrated with Shopify, WooCommerce, Magento, PrestaShop and Opencart.",
     intro: [
       "At Disnet, we don't just focus on efficient delivery management — we also handle reverse logistics, which covers **returns management** and the resolution of any incidents that may arise during the process.",
       "We maintain connectivity with the most widely used information management systems, such as Shopify, WooCommerce, Magento, PrestaShop, Opencart and others. This allows us to stay in sync with e-Commerce platforms and guarantee seamless integration at every stage of the supply chain.",
@@ -462,6 +478,8 @@ const whyChooseUs: Content["whyChooseUs"] = {
 
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – logistics as a working philosophy",
+  metaDescription:
+    "Logistics company in Barcelona based in Sabadell. Transport, storage and distribution with customized solutions and over 35 years of experience.",
   intro: [
     "Looking for a reliable and efficient logistics company in Barcelona? At Disnet, we're proud to offer **first-class logistics services** from our logistics hub in **Sabadell, in the heart of the Vallès Occidental**.",
     "Whether you need transport, storage or distribution of goods, our highly trained team and **customized solutions** are designed to meet your specific needs. With a strong network of partners and extensive industry experience, we're committed to providing you with **comprehensive logistics solutions** that optimize your operations and help you achieve your business goals.",
@@ -475,11 +493,15 @@ const empresaCopy: Content["empresaCopy"] = {
 const contactCopy: Content["contactCopy"] = {
   title: "Contact Disnet",
   subtitle: "Our flexibility with our clients allows us to adapt to your needs",
+  metaDescription:
+    "Contact Disnet, a 3PL logistics operator in Barcelona. Full flexibility to adapt to your company's transport and storage needs.",
 };
 
 const clientAreaCopy: Content["clientAreaCopy"] = {
   title: "Disnet Client Area",
   description: "For your maximum convenience and control, Disnet offers you its \"Client Area\", where you'll have access to all your important information online and in real time.",
+  metaDescription:
+    "Disnet client area: access all your shipment and logistics operation information online, in real time, conveniently and securely.",
   portals: [
     {
       name: "MyDLS",
@@ -494,6 +516,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-barcelona",
     date: "July 10, 2026",
     title: "Logistics operator in Barcelona: key aspects to consider before hiring",
+    metaDescription:
+      "Key aspects to consider before hiring a logistics operator in Barcelona: what to avoid and how to choose the right supply chain partner.",
     excerpt: "Managing a company's supply chain in-house can quickly become a real operational bottleneck. As a business scales, critical tasks such as…",
     body: [
       { text: "Managing a company's supply chain in-house can quickly become a **real operational bottleneck**. As a business scales, critical tasks such as storage, inventory control and goods dispatch consume human resources and valuable time that should instead be invested in sales and brand strategy. In this scenario, delegating processes to a logistics operator in Barcelona isn't just a cost-saving alternative — it's an **essential strategic decision**." },
@@ -520,6 +544,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-3pl-barcelona",
     date: "June 11, 2026",
     title: "3PL logistics operator: the strategic ally to delegate your logistics and scale your business",
+    metaDescription:
+      "Discover how a 3PL logistics operator can become the strategic ally to delegate your logistics and scale your business smoothly.",
     excerpt: "Managing a company's supply chain, storage and shipping can quickly become a real headache. When volume grows, the time you should be spending…",
     body: [
       { text: "Managing a company's supply chain, storage and shipping can quickly become a **real headache**. When volume grows, the time you should be spending selling and growing your brand gets swallowed up by boxes, inventories and delivery notes." },
@@ -551,6 +577,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "empresas-de-logistica-tecnologia-inteligencia-artificial",
     date: "May 4, 2026",
     title: "How are technology and artificial intelligence transforming logistics companies?",
+    metaDescription:
+      "How technology and artificial intelligence are transforming logistics companies, gaining precision, speed and operational efficiency.",
     excerpt: "Logistics companies have evolved far beyond simply transporting goods. Today, the key lies in integrating technology that allows them to work with greater precision, speed and…",
     body: [
       { text: "Logistics companies have evolved far beyond simply transporting goods. Today, the key lies in integrating technology that allows them to work with **greater precision, speed and control**. The incorporation of advanced tools such as **artificial intelligence and automation** is completely changing the way orders, shipments and storage are managed." },
@@ -572,6 +600,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-vs-logistica-propia",
     date: "April 27, 2026",
     title: "Logistics operator vs. in-house logistics: which option really drives your company's growth?",
+    metaDescription:
+      "Logistics operator vs. in-house logistics: we compare both options to see which one really drives your company's growth.",
     excerpt: "Properly managing a company's logistics goes far beyond storing products or shipping them on time. Today, supply chain efficiency can make the difference between…",
     body: [
       { text: "Properly managing a company's logistics goes far beyond storing products or shipping them on time. Today, **supply chain efficiency** can make the difference between a competitive company and one that loses profitability, time and opportunities." },
@@ -597,6 +627,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "preparacion-de-pedidos-cosas-que-debes-tener-en-cuenta-antes-de-contratar-este-servicio",
     date: "April 20, 2026",
     title: "Order preparation: things to consider before hiring this service",
+    metaDescription:
+      "What to consider before hiring an order preparation (picking) service for your company: key points for choosing well.",
     excerpt: "Order preparation is one of the most critical processes in the logistics of any company that manages shipments. Efficient picking management not only impacts delivery speed, but also…",
     body: [
       { text: "Order preparation is one of the **most critical processes** in the logistics of any company that manages shipments. Efficient picking management not only impacts delivery speed, but also customer satisfaction, error reduction and business profitability." },
@@ -631,6 +663,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "aspectos-clave-a-valorar-antes-de-contratar-un-servicio-de-fulfillment",
     date: "April 13, 2026",
     title: "Key aspects to consider before hiring a fulfillment service",
+    metaDescription:
+      "Key aspects to consider before hiring a professional fulfillment service to optimize your online business operations.",
     excerpt: "Delegating logistics is one of the most important steps for any online business looking to optimize its operations and scale efficiently. A professional fulfillment service does not…",
     body: [
       { text: "Delegating logistics is one of the most important steps for any online business looking to optimize its operations and scale efficiently. A professional fulfillment service doesn't just store and ship products — it becomes a **strategic ally** that directly impacts the customer experience and e-commerce profitability." },
@@ -666,6 +700,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "errores-que-perjudican-la-logistica-en-tu-e-commerce",
     date: "April 7, 2026",
     title: "Mistakes that hurt your e-commerce logistics",
+    metaDescription:
+      "The most common mistakes that hurt e-commerce logistics and how to avoid them to improve delivery times and customer satisfaction.",
     excerpt: "Logistics is one of the fundamental pillars of success for any e-commerce business. Poor management not only affects delivery times, but also directly impacts customer satisfaction…",
     body: [
       { text: "Logistics is one of the **fundamental pillars** of success for any e-commerce business. Poor management not only affects delivery times, but also directly impacts customer satisfaction, reviews and, consequently, your sales." },
@@ -694,6 +730,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "empresa-logistica-4pl",
     date: "August 13, 2026",
     title: "4PL Logistics Company: The Industries Where It Powers the Supply Chain the Most",
+    metaDescription:
+      "4PL logistics company: discover which industries benefit the most from immediacy and cost optimization in the supply chain.",
     excerpt: "In a global business environment where speed, cost optimization and full visibility are non-negotiable requirements…",
     body: [
       { text: "In a global business environment where speed, cost optimization and full visibility are non-negotiable requirements, traditional logistics management is no longer enough. To meet these demands, more and more companies are making the leap toward advanced outsourced management models. Bringing in a **4PL logistics company** turns the supply chain into a genuine competitive advantage, freeing organizations from operational overhead so they can focus 100% on growing their business." },
@@ -740,6 +778,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "5-claves-del-sistema-3pl-que-debes-conocer-antes-de-contratarlo",
     date: "March 30, 2026",
     title: "5 Key Things to Know About the 3PL System Before Hiring One",
+    metaDescription:
+      "5 key things to know about the 3PL system before hiring one, so you can focus on your business without losing control of logistics.",
     excerpt: "In an increasingly demanding logistics environment, companies need solutions that let them focus on their business without…",
     body: [
       { text: "In an increasingly demanding logistics environment, companies need solutions that let them focus on their business without losing efficiency or control. The **3PL system** (Third Party Logistics) has become a strategic ally for those looking to optimize their supply chain by delegating to a specialized operator." },
@@ -868,6 +908,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "convierte-el-packaging-en-experiencia-de-marca",
     date: "July 2, 2025",
     title: "Turn Your Packaging Into a Brand Experience",
+    metaDescription:
+      "Turn your packaging into a brand experience that builds customer loyalty beyond the product itself.",
     excerpt: "In today's competitive market, your product is only the beginning. Brand experience is what really builds customer loyalty…",
     body: [
       { text: "In today's competitive market, your product is only the beginning. **Brand experience** is what really builds customer loyalty, and in a world where e-commerce reigns supreme, packaging has become one of your most powerful ambassadors. For business owners in Barcelona, this represents a unique opportunity to stand out and leave a lasting impression." },
@@ -1249,6 +1291,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "logistica-integral-barcelona",
     date: "May 24, 2024",
     title: "Integrated Logistics in Barcelona: Its Importance in the Supply Chain",
+    metaDescription:
+      "Integrated logistics in Barcelona: why it is a fundamental concept for any company's supply chain.",
     excerpt: "Integrated logistics is a fundamental concept in today's business world, especially when it comes to the supply chain…",
     body: [
       { text: "Integrated logistics is a **fundamental** concept in today's business world, especially when it comes to the supply chain. In this article, we'll explore what integrated logistics involves and why it's so important for companies, focusing on the role it plays in optimizing logistics processes." },
@@ -1293,6 +1337,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "almacen-logistico-en-barcelona",
     date: "March 12, 2024",
     title: "Logistics Warehouse in Barcelona",
+    metaDescription:
+      "Logistics warehouse in Barcelona: why having your own is key to your company's success in a globalized world.",
     excerpt: "In a world as globalized as today's, logistics plays a fundamental role in the success of any company. Having an…",
     body: [
       { heading: "Logistics warehouse in Barcelona" },
@@ -1391,6 +1437,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "trazabilidad-en-tiempo-real",
     date: "December 7, 2023",
     title: "Real-Time Traceability: Innovations in Logistics",
+    metaDescription:
+      "Real-time traceability: what it is and how this logistics innovation lets you track a product from origin to destination.",
     excerpt: "Real-time traceability is the ability to track a product from its origin to its final destination, in real time…",
     body: [
       { heading: "What is real-time traceability?" },
@@ -1417,6 +1465,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "servicio-de-picking-barcelona",
     date: "November 7, 2023",
     title: "Picking or Order Preparation Service in Barcelona",
+    metaDescription:
+      "Picking or order preparation service in Barcelona: why it is one of the most important areas of logistics.",
     excerpt: "In today's business world, one of the most important areas for the success of any business is logistics. The order…",
     body: [
       { heading: "Picking or order preparation service in Barcelona" },
@@ -1479,6 +1529,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "logistica-4pl",
     date: "September 12, 2023",
     title: "Disnet Evolves: What Is 4PL Logistics?",
+    metaDescription:
+      "Disnet evolves: what 4PL logistics is and how it helps optimize and gain efficiency in the supply chain.",
     excerpt: "The world of logistics is a constantly evolving landscape. The pursuit of supply chain efficiency and optimization has…",
     body: [
       { heading: "Disnet evolves: what is 4PL logistics?" },
@@ -1590,6 +1642,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "fulfillment-ecommerce",
     date: "May 11, 2023",
     title: "Fulfillment for E-Commerce",
+    metaDescription:
+      "Fulfillment for e-commerce: why good logistics is key to meeting the needs of your online customers.",
     excerpt: "The success of an online store depends largely on its ability to meet its customers' needs. Logistics is a key…",
     body: [
       { heading: "Fulfillment for e-commerce" },
@@ -1693,6 +1747,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "proceso-expedicion-paquetes",
     date: "October 7, 2022",
     title: "The Package Dispatch Process",
+    metaDescription:
+      "The package dispatch process: one of the key functions of any logistics warehouse and how to optimize it.",
     excerpt: "Package dispatch is one of the key functions any type of warehouse must carry out. The main goal is to make sure that…",
     body: [
       { text: "Package dispatch is one of **the key functions** any type of warehouse must carry out. The main goal is to make sure that the product or products requested by the customer head out toward the address they've provided. To achieve this, strategy and logistics organization are vitally important for meeting the required deadlines and, above all, ensuring the goods reach their destination safely." },
@@ -1743,6 +1799,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "funciones-principales-logistica",
     date: "August 9, 2022",
     title: "The Main Functions of Logistics",
+    metaDescription:
+      "The main functions of logistics: the key operations every logistics system carries out to achieve its goals.",
     excerpt: "Every company has a logistics system whose main purpose is to achieve a goal. To do this, a series of logistics…",
     body: [
       { text: "Every company has a logistics system whose main purpose is to **achieve a goal**. To do this, a series of logistics-type operations are carried out. All these operations are known as logistics functions. In Barcelona, logistics is one of companies' top priorities." },
@@ -1997,7 +2055,7 @@ const ui: Content["ui"] = {
     "Receiving, handling, storage, order preparation, packaging, e-commerce, transport and reverse logistics.",
   blogPageTitle: "Logistics blog",
   blogPageDescription:
-    "News, insights and advice from the Disnet team on logistics operations and supply chain.",
+    "News, insights and practical advice from the Disnet team on logistics operations, warehousing and supply chain management.",
   changeToSpanish: "Switch to Spanish",
   changeToEnglish: "Switch to English",
   changeToCatalan: "Switch to Catalan",
@@ -2012,6 +2070,8 @@ const ui: Content["ui"] = {
 
 const legalNoticeCopy: Content["legalNoticeCopy"] = {
   title: "Legal notice for www.disnet.es",
+  metaDescription:
+    "Legal notice for www.disnet.es: identifying details, terms of use and legal terms of Disnet's website, a logistics operator in Barcelona.",
   lastUpdated: "September 20, 2023",
   body: [
     { heading: "Introduction" },
@@ -2051,6 +2111,8 @@ const legalNoticeCopy: Content["legalNoticeCopy"] = {
 
 const privacyPolicyCopy: Content["privacyPolicyCopy"] = {
   title: "Privacy policy for www.disnet.es",
+  metaDescription:
+    "Privacy policy for www.disnet.es: how Disnet collects, processes and protects your personal data under GDPR and current regulations.",
   lastUpdated: "September 20, 2023",
   body: [
     { heading: "Website owner details" },

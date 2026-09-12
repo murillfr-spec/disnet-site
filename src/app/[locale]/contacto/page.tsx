@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { contactCopy, ui } = getContent(locale);
   return buildMetadata({
     title: ui.contactPageTitle,
-    description: contactCopy.subtitle,
+    description: contactCopy.metaDescription ?? contactCopy.subtitle,
     path: "/contacto",
     locale,
   });

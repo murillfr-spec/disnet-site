@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { legalNoticeCopy, ui } = getContent(locale);
   return buildMetadata({
     title: `${ui.legalNoticePageTitle} | Disnet`,
-    description: legalNoticeCopy.title,
+    description: legalNoticeCopy.metaDescription ?? legalNoticeCopy.title,
     path: "/aviso-legal",
     locale,
   });

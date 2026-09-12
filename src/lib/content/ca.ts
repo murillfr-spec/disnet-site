@@ -60,6 +60,8 @@ const services: Content["services"] = [
     slug: "recepcion-de-mercancias",
     name: "Recepció de mercaderies",
     headline: "Amb Disnet, la mercaderia de la teva empresa està sempre segura",
+    metaDescription:
+      "Recepció de mercaderies amb control de qualitat logístic i gestió d'incidències, segons els plecs acordats. Operador logístic 3PL a Barcelona.",
     intro: [
       "Gestionem la recepció de mercaderies d'acord amb els **plecs de condicions** prèviament acordats amb els clients.",
       "També realitzem els **controls de qualitat logístics** i informem el client i/o proveïdor de totes les incidències detectades.",
@@ -93,6 +95,8 @@ const services: Content["services"] = [
     slug: "manipulacion-de-mercancias",
     name: "Manipulació de mercaderies",
     headline: "Disnet, traçabilitat garantida en tots els nostres processos",
+    metaDescription:
+      "Manipulació de mercaderies amb traçabilitat total del procés, des de lots petits fins a grans volums amb seqüències semiautomatitzades a Barcelona.",
     intro: [
       "Realitzem qualsevol operació de manipulació acordada amb el client garantint la **traçabilitat total del procés**.",
       "Realitzem manipulacions independentment de la mida del lot. Des de lots petits amb poca automatització, fins a **grans lots amb seqüències semiautomatitzades**.",
@@ -132,6 +136,8 @@ const services: Content["services"] = [
     slug: "almacenaje",
     name: "Emmagatzematge",
     headline: "A Disnet, tenim la tecnologia més avançada per a l'emmagatzematge de les teves mercaderies",
+    metaDescription:
+      "Emmagatzematge amb més de 6.000 ubicacions en racks i 15.000 de picking en 6.500 m² a Barcelona. Tecnologia avançada per conservar la teva mercaderia.",
     intro: [
       "Tenim la capacitat per emmagatzemar múltiples tipologies d'unitats de càrrega (palets, caixes, bobines, etc.) d'acord amb els **estàndards més exigents de la manutenció**. Tot això per garantir-ne la correcta conservació.",
       "Disposem de **més de 6.000 ubicacions en racks** convencionals de palet, **més de 15.000 ubicacions de picking** en una instal·lació de 6.500 m2 per a emmagatzematge.",
@@ -222,6 +228,8 @@ const services: Content["services"] = [
     slug: "preparacion-de-pedidos",
     name: "Preparació de comandes",
     headline: "Disnet, especialistes en processos de picking",
+    metaDescription:
+      "Preparació de comandes (picking) amb planificació acurada per triar el mètode més adequat en cada cas. Operador logístic 3PL a Barcelona.",
     intro: [
       "A Disnet, som **experts en l'execució d'operacions de picking**, que consisteixen en la preparació de comandes utilitzant el material emmagatzemat abans del seu enviament al destinatari.",
       "La nostra planificació acurada ens permet seleccionar el mètode d'optimització més adequat en cada cas.",
@@ -293,6 +301,8 @@ const services: Content["services"] = [
     slug: "empaqueado-packing",
     name: "Empaquetat – Packing",
     headline: "A Disnet, et garantim el millor empaquetat per a la teva mercaderia",
+    metaDescription:
+      "Empaquetat amb els criteris més avançats en sostenibilitat, seguretat i traçabilitat, i recomanacions del nostre SGA per a cada enviament a Barcelona.",
     intro: [
       "En les nostres operacions d'empaquetat, conegudes com a «packing», ens encarreguem de preparar totes les unitats de transport en què seran enviades les comandes. Durant aquest procés, apliquem els **criteris més avançats en sostenibilitat, seguretat i traçabilitat**.",
       "El nostre sistema de gestió de magatzem (SGA) ens ofereix **recomanacions sobre l'embalatge més adequat** per a cada enviament, assegurant una preparació eficient i apropiada.",
@@ -327,6 +337,8 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "A Disnet, et garantim els millors terminis de lliurament",
+    metaDescription:
+      "Fulfillment per a Shopify, WooCommerce i les principals plataformes. Més de 25 anys gestionant enviaments, amb capacitat per a 2.000.000 de comandes l'any.",
     subheadline: "Fulfillment per a Shopify, WooCommerce i les principals plataformes",
     intro: [
       "Qui gestiona els enviaments de la teva botiga online? A Disnet ens encarreguem de tot el procés, des que la comanda entra a la teva web fins que arriba a la porta del client. Seguint les tendències actuals del comerç, som especialistes en l'externalització de cadenes de subministrament per al sector de l'eCommerce. Amb **més de 25 anys d'experiència**, hem gestionat i preparat comandes, amb la capacitat d'atendre **més de 2.000.000 d'enviaments a l'any**.",
@@ -367,6 +379,8 @@ const services: Content["services"] = [
     slug: "transporte-de-mercancias",
     name: "Transport de mercaderies",
     headline: "A Disnet, oferim els millors preus per al transport de la teva mercaderia",
+    metaDescription:
+      "Transport de mercaderies amb control de qualitat logística abans de cada càrrega, lliurament ràpid i sempre a temps. Els millors preus a Barcelona.",
     subheadline: "Lliurament ràpid i sempre a temps",
     intro: [
       "D'acord amb els nostres procediments, sempre efectuem el **control de la qualitat logística** de l'expedició abans d'efectuar la càrrega de la mercaderia al transport.",
@@ -403,6 +417,8 @@ const services: Content["services"] = [
     slug: "logistica-inversa",
     name: "Logística inversa",
     headline: "Gestió de devolucions i incidències amb total fiabilitat",
+    metaDescription:
+      "Logística inversa: gestió de devolucions i incidències amb total fiabilitat, integrada amb Shopify, WooCommerce, Magento, PrestaShop i Opencart.",
     intro: [
       "A Disnet, no només ens enfoquem en la gestió eficient dels lliuraments, sinó que també ens ocupem de la logística inversa, la qual cosa engloba la **gestió de devolucions** i la resolució de qualsevol incidència que pugui sorgir en el procés.",
       "Mantenim connectivitat amb els sistemes de gestió d'informació més àmpliament utilitzats, com Shopify, WooCommerce, Magento, PrestaShop, Opencart i altres. Això ens permet estar en sintonia amb les plataformes d'eCommerce i garantir una integració sense problemes en totes les etapes de la cadena de subministrament.",
@@ -462,6 +478,8 @@ const whyChooseUs: Content["whyChooseUs"] = {
 
 const empresaCopy: Content["empresaCopy"] = {
   title: "Disnet – la logística com a filosofia de treball",
+  metaDescription:
+    "Empresa de logística a Barcelona amb seu a Sabadell. Transport, emmagatzematge i distribució amb solucions personalitzades i més de 35 anys d'experiència.",
   intro: [
     "Busques una empresa de logística a Barcelona fiable i eficient? A Disnet ens enorgulleix oferir **serveis de logística de primera classe** des del nostre centre logístic a **Sabadell, al bell mig del Vallès Occidental**.",
     "Tant si necessites transport, emmagatzematge o distribució de mercaderies, el nostre equip altament capacitat i les nostres **solucions personalitzades** estan dissenyats per satisfer les teves necessitats específiques. Amb una sòlida xarxa de socis i una àmplia experiència en la indústria, estem compromesos a oferir-te **solucions logístiques integrals** que optimitzin les teves operacions i t'ajudin a assolir els teus objectius comercials.",
@@ -475,11 +493,15 @@ const empresaCopy: Content["empresaCopy"] = {
 const contactCopy: Content["contactCopy"] = {
   title: "Contacta amb Disnet",
   subtitle: "La nostra flexibilitat amb els nostres clients ens fa adaptar-nos a les teves necessitats",
+  metaDescription:
+    "Contacta amb Disnet, operador logístic 3PL a Barcelona. Flexibilitat total per adaptar-nos a les necessitats de transport i emmagatzematge de la teva empresa.",
 };
 
 const clientAreaCopy: Content["clientAreaCopy"] = {
   title: "Àrea de clients Disnet",
   description: "Per a la teva màxima comoditat i control, Disnet t'ofereix la seva «Àrea de clients», on tindràs accés a tota la teva informació important en línia i en temps real.",
+  metaDescription:
+    "Àrea de clients de Disnet: accedeix en línia i en temps real a tota la informació dels teus enviaments i operacions logístiques de forma còmoda i segura.",
   portals: [
     {
       name: "MyDLS",
@@ -494,6 +516,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-barcelona",
     date: "10 de juliol de 2026",
     title: "Operador logístic a Barcelona: aspectes clau que has de tenir en compte abans de contractar",
+    metaDescription:
+      "Aspectes clau a valorar abans de contractar un operador logístic a Barcelona: què evitar i com triar el partner adequat.",
     excerpt: "Gestionar la cadena de subministrament d'una empresa de forma interna pot convertir-se ràpidament en un veritable coll d'ampolla operatiu. A mesura que un negoci escala, tasques crítiques com…",
     body: [
       { text: "Gestionar la cadena de subministrament d'una empresa de forma interna pot convertir-se ràpidament en un **veritable coll d'ampolla operatiu**. A mesura que un negoci escala, tasques crítiques com l'emmagatzematge, el control d'inventari i el despatx de mercaderies absorbeixen recursos humans i temps valuós que s'hauria d'invertir en vendes i estratègies de marca. En aquest escenari, delegar els processos en un operador logístic a Barcelona no és només una alternativa d'estalvi, sinó una **decisió estratègica indispensable**." },
@@ -520,6 +544,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-3pl-barcelona",
     date: "11 de juny de 2026",
     title: "Operador logístic 3PL: l'aliat estratègic per delegar la teva logística i escalar el teu negoci",
+    metaDescription:
+      "Descobreix com un operador logístic 3PL pot ser l'aliat estratègic per delegar la teva logística i escalar el teu negoci.",
     excerpt: "Gestionar la cadena de subministrament, l'emmagatzematge i els enviaments d'una empresa pot convertir-se ràpidament en un veritable maldecap. Quan el volum creix, el temps que hauries…",
     body: [
       { text: "Gestionar la cadena de subministrament, l'emmagatzematge i els enviaments d'una empresa pot convertir-se ràpidament en un **veritable maldecap**. Quan el volum creix, el temps que hauries de dedicar a vendre i a fer créixer la teva marca es dilueix entre caixes, inventaris i albarans." },
@@ -551,6 +577,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "empresas-de-logistica-tecnologia-inteligencia-artificial",
     date: "4 de maig de 2026",
     title: "Com la tecnologia i la intel·ligència artificial estan transformant les empreses de logística?",
+    metaDescription:
+      "Com la tecnologia i la intel·ligència artificial estan transformant les empreses de logística, guanyant precisió i eficiència.",
     excerpt: "Les empreses de logística han evolucionat molt més enllà del simple transport de mercaderies. Avui, la clau està a integrar tecnologia que permeti treballar amb més precisió, rapidesa i…",
     body: [
       { text: "Les empreses de logística han evolucionat molt més enllà del simple transport de mercaderies. Avui, la clau està a integrar tecnologia que permeti treballar amb **més precisió, rapidesa i control**. La incorporació d'eines avançades com la **intel·ligència artificial i l'automatització** està canviant completament la forma en què es gestionen les comandes, els enviaments i l'emmagatzematge." },
@@ -572,6 +600,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "operador-logistico-vs-logistica-propia",
     date: "27 d'abril de 2026",
     title: "Operador logístic vs logística pròpia: quina opció impulsa realment el creixement de la teva empresa?",
+    metaDescription:
+      "Operador logístic o logística pròpia: comparem ambdues opcions per saber quina impulsa realment el creixement de la teva empresa.",
     excerpt: "Gestionar correctament la logística d'una empresa va molt més enllà d'emmagatzemar productes o enviar-los a temps. Avui, l'eficiència en la cadena de subministrament pot marcar la diferència entre…",
     body: [
       { text: "Gestionar correctament la logística d'una empresa va molt més enllà d'emmagatzemar productes o enviar-los a temps. Avui, **l'eficiència en la cadena de subministrament** pot marcar la diferència entre una empresa competitiva i una altra que perd rendibilitat, temps i oportunitats." },
@@ -597,6 +627,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "preparacion-de-pedidos-cosas-que-debes-tener-en-cuenta-antes-de-contratar-este-servicio",
     date: "20 d'abril de 2026",
     title: "Preparació de comandes: coses que has de tenir en compte abans de contractar aquest servei",
+    metaDescription:
+      "Què has de tenir en compte abans de contractar un servei de preparació de comandes (picking) per a la teva empresa.",
     excerpt: "La preparació de comandes és un dels processos més crítics dins la logística de qualsevol empresa que gestioni enviaments. Una gestió eficient del picking no només impacta en la rapidesa de…",
     body: [
       { text: "La preparació de comandes és un dels **processos més crítics** dins la logística de qualsevol empresa que gestioni enviaments. Una gestió eficient del picking no només impacta en la rapidesa dels lliuraments, sinó també en la satisfacció del client, la reducció d'errors i la rendibilitat del negoci." },
@@ -631,6 +663,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "aspectos-clave-a-valorar-antes-de-contratar-un-servicio-de-fulfillment",
     date: "13 d'abril de 2026",
     title: "Aspectes clau a valorar abans de contractar un servei de fulfillment",
+    metaDescription:
+      "Aspectes clau a valorar abans de contractar un servei de fulfillment professional per optimitzar el teu negoci online.",
     excerpt: "Delegar la logística és un dels passos més importants per a qualsevol negoci en línia que busca optimitzar la seva operativa i escalar de forma eficient. Un servei de fulfillment professional no…",
     body: [
       { text: "Delegar la logística és un dels passos més importants per a qualsevol negoci en línia que busca optimitzar la seva operativa i escalar de forma eficient. Un servei de fulfillment professional no només s'encarrega d'emmagatzemar i enviar productes, sinó que es converteix en un **aliat estratègic** que impacta directament en l'experiència del client i en la rendibilitat de l'e-commerce." },
@@ -666,6 +700,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "errores-que-perjudican-la-logistica-en-tu-e-commerce",
     date: "7 d'abril de 2026",
     title: "Errors que perjudiquen la logística en el teu e-commerce",
+    metaDescription:
+      "Els errors més comuns que perjudiquen la logística d'un e-commerce i com evitar-los per millorar l'entrega i la satisfacció.",
     excerpt: "La logística és un dels pilars fonamentals per a l'èxit de qualsevol e-commerce. Una mala gestió no només afecta els temps de lliurament, sinó que impacta directament en la satisfacció…",
     body: [
       { text: "La logística és un dels **pilars fonamentals** per a l'èxit de qualsevol e-commerce. Una mala gestió no només afecta els temps de lliurament, sinó que impacta directament en la satisfacció del client, les valoracions i, en conseqüència, en les teves vendes." },
@@ -694,6 +730,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "empresa-logistica-4pl",
     date: "13 d'agost de 2026",
     title: "Empresa logística 4PL: les indústries on més potencia la cadena de subministrament",
+    metaDescription:
+      "Empresa logística 4PL: descobreix en quines indústries potencia més la cadena de subministrament.",
     excerpt: "En un entorn empresarial global on la immediatesa, l'optimització de costos i la visibilitat total són requisits indispensables…",
     body: [
       { text: "En un entorn empresarial global on la immediatesa, l'optimització de costos i la visibilitat total són requisits indispensables, la gestió logística tradicional ja no és suficient. Per respondre a aquestes exigències, cada vegada més companyies fan el salt cap a models avançats de gestió externa. Integrar els serveis d'una **empresa logística 4PL** permet transformar la cadena de subministrament en un avantatge competitiu real, alliberant les organitzacions de la càrrega operativa per centrar-se al 100% en el creixement del seu negoci." },
@@ -740,6 +778,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "5-claves-del-sistema-3pl-que-debes-conocer-antes-de-contratarlo",
     date: "30 de març de 2026",
     title: "5 claus del sistema 3PL que has de conèixer abans de contractar-lo",
+    metaDescription:
+      "5 claus del sistema 3PL que has de conèixer abans de contractar-lo per centrar-te en el teu negoci sense perdre el control.",
     excerpt: "En un entorn logístic cada vegada més exigent, les empreses necessiten solucions que els permetin centrar-se en el seu negoci sense perdre…",
     body: [
       { text: "En un entorn logístic cada vegada més exigent, les empreses necessiten solucions que els permetin centrar-se en el seu negoci sense perdre eficiència ni control. El **sistema 3PL** (Third Party Logistics) s'ha convertit en un aliat estratègic per a qui busca optimitzar la seva cadena de subministrament delegant en un operador especialitzat." },
@@ -868,6 +908,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "convierte-el-packaging-en-experiencia-de-marca",
     date: "2 de juliol de 2025",
     title: "Converteix el teu packaging en una experiència de marca",
+    metaDescription:
+      "Converteix el teu packaging en una experiència de marca que fidelitza els teus clients més enllà del producte.",
     excerpt: "En el competitiu mercat d'avui, el teu producte és només el començament. L'experiència de marca és el que realment fidelitza els teus…",
     body: [
       { text: "En el competitiu mercat d'avui, el teu producte és només el començament. L'**experiència de marca** és el que realment fidelitza els teus clients, i en un món on el comerç electrònic és el rei, el packaging s'ha convertit en un dels teus ambaixadors més poderosos. Per als empresaris de Barcelona, això significa una oportunitat única per diferenciar-te i deixar una impressió duradora." },
@@ -1249,6 +1291,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "logistica-integral-barcelona",
     date: "24 de maig de 2024",
     title: "Logística integral a Barcelona: la seva importància en la cadena de subministrament",
+    metaDescription:
+      "Logística integral a Barcelona: per què és un concepte fonamental per a la cadena de subministrament de qualsevol empresa.",
     excerpt: "La logística integral és un concepte fonamental en el món empresarial actual, especialment en l'àmbit de la cadena de subministrament…",
     body: [
       { text: "La logística integral és un concepte **fonamental** en el món empresarial actual, especialment en l'àmbit de la cadena de subministrament. En aquest article, explorarem en què consisteix la logística integral i per què és tan important per a les empreses, centrant-nos en el paper que té en l'optimització dels processos logístics." },
@@ -1293,6 +1337,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "almacen-logistico-en-barcelona",
     date: "12 de març de 2024",
     title: "Magatzem logístic a Barcelona",
+    metaDescription:
+      "Magatzem logístic a Barcelona: per què tenir-ne un propi és clau per a l'èxit de la teva empresa en un món globalitzat.",
     excerpt: "En un món tan globalitzat com l'actual, la logística té un paper fonamental en l'èxit de qualsevol empresa. Comptar amb un magatzem…",
     body: [
       { heading: "Magatzem logístic a Barcelona" },
@@ -1391,6 +1437,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "trazabilidad-en-tiempo-real",
     date: "7 de desembre de 2023",
     title: "Traçabilitat en temps real: innovacions en logística",
+    metaDescription:
+      "Traçabilitat en temps real: què és i com aquesta innovació logística permet seguir un producte des de l'origen fins al destí.",
     excerpt: "La traçabilitat en temps real és la capacitat de seguir el rastre d'un producte des del seu origen fins a la seva destinació final, en temps real…",
     body: [
       { heading: "Què és la traçabilitat en temps real?" },
@@ -1417,6 +1465,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "servicio-de-picking-barcelona",
     date: "7 de novembre de 2023",
     title: "Servei de picking o preparació de comandes a Barcelona",
+    metaDescription:
+      "Servei de picking o preparació de comandes a Barcelona: per què és una de les àrees més importants de la logística.",
     excerpt: "En el món empresarial actual, una de les àrees més importants per a l'èxit de qualsevol negoci és la logística. El procés de preparació…",
     body: [
       { heading: "Servei de picking o preparació de comandes a Barcelona" },
@@ -1479,6 +1529,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "logistica-4pl",
     date: "12 de setembre de 2023",
     title: "Disnet evoluciona: què és la logística 4PL?",
+    metaDescription:
+      "Disnet evoluciona: què és la logística 4PL i com ajuda a optimitzar i guanyar eficiència a la cadena de subministrament.",
     excerpt: "El món de la logística és un escenari en constant evolució. La cerca d'eficiència i optimització de la cadena de subministrament ha portat…",
     body: [
       { heading: "Disnet evoluciona: què és la logística 4PL?" },
@@ -1590,6 +1642,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "fulfillment-ecommerce",
     date: "11 de maig de 2023",
     title: "Fulfillment per a ecommerce",
+    metaDescription:
+      "Fulfillment per a ecommerce: per què una bona logística és clau per satisfer les necessitats dels teus clients online.",
     excerpt: "L'èxit d'una botiga en línia depèn en gran mesura de la seva capacitat per satisfer les necessitats dels seus clients. La logística és un factor…",
     body: [
       { heading: "Fulfillment per a ecommerce" },
@@ -1693,6 +1747,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "proceso-expedicion-paquetes",
     date: "7 d'octubre de 2022",
     title: "Procés d'expedició de paquets",
+    metaDescription:
+      "Procés d'expedició de paquets: una de les funcions clau de qualsevol magatzem logístic i com optimitzar-la.",
     excerpt: "L'expedició de paquets és una de les funcions clau que ha de dur a terme qualsevol tipus de magatzem. L'objectiu principal és aconseguir que…",
     body: [
       { text: "L'expedició de paquets és una de **les funcions clau** que ha de dur a terme qualsevol tipus de magatzem. L'objectiu principal és aconseguir que el producte o els productes sol·licitats pel client surtin cap a l'adreça que hagi indicat. Per a això, l'estratègia i l'organització logística són de vital importància per complir els terminis requerits i, sobretot, perquè la mercaderia arribi a bon port." },
@@ -1743,6 +1799,8 @@ const blogPosts: Content["blogPosts"] = [
     slug: "funciones-principales-logistica",
     date: "9 d'agost de 2022",
     title: "Funcions principals de la logística",
+    metaDescription:
+      "Funcions principals de la logística: les operacions clau que tot sistema logístic desenvolupa per assolir els seus objectius.",
     excerpt: "Tota empresa té un sistema logístic la finalitat principal del qual és assolir un objectiu. Per a això, es desenvolupen una sèrie d'operacions…",
     body: [
       { text: "Tota empresa té un sistema logístic la finalitat principal del qual és **assolir un objectiu**. Per a això, es desenvolupen una sèrie d'operacions de tipus logístic. Totes aquestes operacions es coneixen com a funcions de la logística. A Barcelona la logística és una de les principals prioritats de les companyies." },
@@ -2012,6 +2070,8 @@ const ui: Content["ui"] = {
 
 const legalNoticeCopy: Content["legalNoticeCopy"] = {
   title: "Avís legal de www.disnet.es",
+  metaDescription:
+    "Avís legal de www.disnet.es: dades identificatives, condicions d'ús i termes legals del lloc web de Disnet, operador logístic a Barcelona.",
   lastUpdated: "20 de setembre de 2023",
   body: [
     { heading: "Introducció" },
@@ -2051,6 +2111,8 @@ const legalNoticeCopy: Content["legalNoticeCopy"] = {
 
 const privacyPolicyCopy: Content["privacyPolicyCopy"] = {
   title: "Política de privacitat de www.disnet.es",
+  metaDescription:
+    "Política de privacitat de www.disnet.es: com Disnet recull, tracta i protegeix les teves dades personals segons el RGPD i la normativa vigent.",
   lastUpdated: "20 de setembre de 2023",
   body: [
     { heading: "Dades del propietari del web" },

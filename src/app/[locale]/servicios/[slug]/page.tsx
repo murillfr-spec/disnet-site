@@ -44,7 +44,7 @@ export async function generateMetadata({
   if (!service) return {};
   return buildMetadata({
     title: `${service.name} | Disnet`,
-    description: service.headline,
+    description: service.metaDescription ?? service.headline,
     path: `/servicios/${slug}`,
     locale,
   });
