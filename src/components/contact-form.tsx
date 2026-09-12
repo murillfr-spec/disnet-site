@@ -32,6 +32,8 @@ export function ContactForm() {
       toast.success(ui.contactFormToastTitle, {
         description: ui.contactFormToastDescription,
       });
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "contact_form_success" });
       form.reset();
     } catch {
       toast.error(ui.contactFormToastErrorTitle, {
