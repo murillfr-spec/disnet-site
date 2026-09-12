@@ -31,7 +31,7 @@ export function Header() {
         className="pointer-events-none absolute inset-x-0 top-full h-px bg-gradient-to-r from-transparent via-border to-transparent"
       />
       <div className="mx-auto grid h-24 max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6">
-        <Link href={localeHref(locale, "/")} className="flex w-fit items-center gap-2 rounded-xl bg-white p-2.5 justify-self-start">
+        <Link href={localeHref(locale, "/")} className="flex w-fit items-center gap-2 rounded-xl bg-white p-2 justify-self-start md:p-2.5">
           <Image
             src="/images/logo-disnet.jpg"
             alt={company.name}
@@ -39,7 +39,7 @@ export function Header() {
             height={843}
             priority
             fetchPriority="high"
-            className="h-16 w-auto"
+            className="h-20 w-auto md:h-16"
           />
         </Link>
 
