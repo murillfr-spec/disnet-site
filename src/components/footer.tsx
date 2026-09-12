@@ -39,7 +39,7 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-footer-foreground">{ui.footerServices}</h3>
           <ul className="mt-4 space-y-2">
-            {services.slice(0, 5).map((service) => (
+            {services.map((service) => (
               <li key={service.slug}>
                 <Link
                   href={localeHref(locale, `/servicios/${service.slug}`)}
