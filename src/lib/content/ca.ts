@@ -747,7 +747,7 @@ const blogPosts: Content["blogPosts"] = [
     date: "13 d'agost de 2026",
     title: "Empresa logística 4PL: les indústries on més potencia la cadena de subministrament",
     metaDescription:
-      "Empresa logística 4PL: descobreix en quines indústries potencia més la cadena de subministrament.",
+      "Empresa logística 4PL: descobreix com coordina proveïdors, optimitza rutes i aporta visibilitat total a la cadena de subministrament en sectors clau.",
     excerpt: "En un entorn empresarial global on la immediatesa, l'optimització de costos i la visibilitat total són requisits indispensables…",
     body: [
       { text: "En un entorn empresarial global on la immediatesa, l'optimització de costos i la visibilitat total són requisits indispensables, la gestió logística tradicional ja no és suficient. Per respondre a aquestes exigències, cada vegada més companyies fan el salt cap a models avançats de gestió externa. Integrar els serveis d'una **empresa logística 4PL** permet transformar la cadena de subministrament en un avantatge competitiu real, alliberant les organitzacions de la càrrega operativa per centrar-se al 100% en el creixement del seu negoci." },
