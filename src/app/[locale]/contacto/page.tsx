@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getContent } from "@/lib/content";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { ContactSection } from "@/components/contact-section";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { contactCopy, ui } = getContent(locale);
-  return {
+  return buildMetadata({
     title: ui.contactPageTitle,
     description: contactCopy.subtitle,
-    alternates: buildAlternates("/contacto", locale),
-  };
+    path: "/contacto",
+    locale,
+  });
 }
 
 export default async function ContactoPage({ params }: { params: Promise<{ locale: string }> }) {

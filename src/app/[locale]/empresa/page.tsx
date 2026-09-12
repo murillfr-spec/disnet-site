@@ -5,7 +5,7 @@ import { CtaBanner } from "@/components/cta-banner";
 import { Reveal } from "@/components/reveal";
 import { YoutubeEmbed } from "@/components/youtube-embed";
 import { RichText } from "@/components/rich-text";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -15,11 +15,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { empresaCopy } = getContent(locale);
-  return {
+  return buildMetadata({
     title: `${empresaCopy.title} | Disnet`,
     description: empresaCopy.intro[0],
-    alternates: buildAlternates("/empresa", locale),
-  };
+    path: "/empresa",
+    locale,
+  });
 }
 
 export default async function EmpresaPage({ params }: { params: Promise<{ locale: string }> }) {

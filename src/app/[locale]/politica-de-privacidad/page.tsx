@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getContent } from "@/lib/content";
 import { isLocale, type Locale } from "@/lib/i18n";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { LegalPage } from "@/components/legal-page";
 
 export async function generateMetadata({
@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { privacyPolicyCopy, ui } = getContent(locale);
-  return {
+  return buildMetadata({
     title: `${ui.privacyPolicyPageTitle} | Disnet`,
     description: privacyPolicyCopy.title,
-    alternates: buildAlternates("/politica-de-privacidad", locale),
-  };
+    path: "/politica-de-privacidad",
+    locale,
+  });
 }
 
 export default async function PoliticaDePrivacidadPage({ params }: { params: Promise<{ locale: string }> }) {

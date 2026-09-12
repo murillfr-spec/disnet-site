@@ -4,7 +4,7 @@ import { getContent } from "@/lib/content";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { MotionLink } from "@/components/motion-link";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
@@ -20,11 +20,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { clientAreaCopy } = getContent(locale);
-  return {
+  return buildMetadata({
     title: `${clientAreaCopy.title} | Disnet`,
     description: clientAreaCopy.description,
-    alternates: buildAlternates("/area-clientes", locale),
-  };
+    path: "/area-clientes",
+    locale,
+  });
 }
 
 export default async function AreaClientesPage({ params }: { params: Promise<{ locale: string }> }) {

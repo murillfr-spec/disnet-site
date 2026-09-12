@@ -4,7 +4,7 @@ import { isLocale, type Locale } from "@/lib/i18n";
 import { CtaBanner } from "@/components/cta-banner";
 import { ServiceCard } from "@/components/service-card";
 import { Reveal } from "@/components/reveal";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,11 +14,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { ui } = getContent(locale);
-  return {
+  return buildMetadata({
     title: ui.servicesPageTitle,
     description: ui.servicesPageDescription,
-    alternates: buildAlternates("/servicios", locale),
-  };
+    path: "/servicios",
+    locale,
+  });
 }
 
 export default async function ServiciosPage({ params }: { params: Promise<{ locale: string }> }) {

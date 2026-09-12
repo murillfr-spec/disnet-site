@@ -7,7 +7,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { CtaBanner } from "@/components/cta-banner";
 import { RichText } from "@/components/rich-text";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { blogPostingSchema, extractFaqItems, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { parseSpanishDate } from "@/lib/blog-date";
 import { JsonLd } from "@/components/json-ld";
@@ -27,11 +27,12 @@ export async function generateMetadata({
   const { blogPosts } = getContent(locale);
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
-  return {
+  return buildMetadata({
     title: `${post.title} | Disnet`,
     description: post.excerpt,
-    alternates: buildAlternates(`/blog/${slug}`, locale),
-  };
+    path: `/blog/${slug}`,
+    locale,
+  });
 }
 
 export default async function BlogPostPage({

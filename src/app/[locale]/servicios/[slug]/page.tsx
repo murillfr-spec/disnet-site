@@ -10,7 +10,7 @@ import { MotionLink } from "@/components/motion-link";
 import { serviceIconBySlug } from "@/components/service-icons";
 import { Reveal } from "@/components/reveal";
 import { RichText } from "@/components/rich-text";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { serviceSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/json-ld";
 
@@ -42,11 +42,12 @@ export async function generateMetadata({
   const { services } = getContent(locale);
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
-  return {
+  return buildMetadata({
     title: `${service.name} | Disnet`,
     description: service.headline,
-    alternates: buildAlternates(`/servicios/${slug}`, locale),
-  };
+    path: `/servicios/${slug}`,
+    locale,
+  });
 }
 
 export default async function ServiceDetailPage({

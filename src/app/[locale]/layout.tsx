@@ -6,11 +6,18 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { AppToaster } from "@/components/app-toaster";
 import { CookieBanner } from "@/components/cookie-banner";
-import { locales, isLocale, type Locale } from "@/lib/i18n";
+import { locales, isLocale, localeIntlTag, type Locale } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
 import { getContent } from "@/lib/content";
 import { organizationSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/json-ld";
+
+const OG_IMAGE = {
+  url: "/images/og-image.png",
+  width: 1200,
+  height: 630,
+  alt: "Disnet — Operador Logístico 3PL en Barcelona",
+};
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -22,7 +29,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const metadataByLocale: Record<Locale, Metadata> = {
+const metadataByLocale: Record<Locale, { title: string; description: string }> = {
   es: {
     title: "Disnet | Operador Logístico 3PL en Barcelona",
     description:
@@ -59,10 +66,28 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { title, description } = metadataByLocale[locale];
   return {
     metadataBase: new URL(siteUrl),
-    ...metadataByLocale[isLocale(locale) ? locale : "es"],
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: siteUrl,
+      siteName: "Disnet",
+      images: [OG_IMAGE],
+      locale: localeIntlTag[locale],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE.url],
+    },
     ...(isTemporaryPreviewDomain && {
       robots: { index: false, follow: false },
     }),

@@ -4,7 +4,7 @@ import { getContent } from "@/lib/content";
 import { localeHref } from "@/lib/href";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
-import { buildAlternates } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,11 +14,12 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { ui } = getContent(locale);
-  return {
+  return buildMetadata({
     title: `${ui.blogPageTitle} | Disnet`,
     description: ui.blogPageDescription,
-    alternates: buildAlternates("/blog", locale),
-  };
+    path: "/blog",
+    locale,
+  });
 }
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
