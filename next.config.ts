@@ -248,8 +248,7 @@ const nextConfig: NextConfig = {
             value: "camera=(), microphone=(), geolocation=()",
           },
           {
-            // Report-Only: solo registra violaciones, no bloquea nada todavía.
-            key: "Content-Security-Policy-Report-Only",
+            key: "Content-Security-Policy",
             value:
               "default-src 'self'; img-src 'self' data: https://img.youtube.com; frame-src https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';",
           },
