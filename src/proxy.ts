@@ -36,6 +36,7 @@ const ALLOWED_STATIC_PATHS = new Set([
   "/images/hero-4-almacen.webp",
   "/images/hero-5.webp",
   "/images/logo-disnet.jpg",
+  "/images/og-image.png",
   "/images/portal-mydls.png",
   "/images/svc-ecommerce.jpg",
   "/images/svc-empaquetado.jpg",
