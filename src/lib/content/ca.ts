@@ -506,7 +506,7 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
     {
       name: "MyDLS",
       description: "Disnet Logistic System",
-      href: "https://websrv2.disnet.es:3000/users/login?error=Se%20requiere%20iniciar%20sesi%C3%B3n%20para%20acceder%20a%20esta%20ruta.",
+      href: "https://mydls.disnet.es/",
     },
   ],
 };
