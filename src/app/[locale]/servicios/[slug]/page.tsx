@@ -13,6 +13,7 @@ import { RichText } from "@/components/rich-text";
 import { buildMetadata } from "@/lib/seo";
 import { serviceSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/json-ld";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
@@ -66,20 +67,17 @@ export default async function ServiceDetailPage({
   const image = serviceImageBySlug[service.slug];
   const servicesLabel = navLinks.find((l) => l.href === "/servicios")?.label ?? "Servicios";
   const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
+  const breadcrumbItems = [
+    { name: homeLabel, path: "/" },
+    { name: servicesLabel, path: "/servicios" },
+    { name: service.name, path: `/servicios/${slug}` },
+  ];
 
   return (
     <>
       <JsonLd data={serviceSchema(service, locale)} />
-      <JsonLd
-        data={breadcrumbSchema(
-          [
-            { name: homeLabel, path: "/" },
-            { name: servicesLabel, path: "/servicios" },
-            { name: service.name, path: `/servicios/${slug}` },
-          ],
-          locale
-        )}
-      />
+      <JsonLd data={breadcrumbSchema(breadcrumbItems, locale)} />
+      <Breadcrumb items={breadcrumbItems} locale={locale} />
       {service.faq && service.faq.length > 0 && (
         <JsonLd
           data={faqPageSchema(

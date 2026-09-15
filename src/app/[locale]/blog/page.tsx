@@ -6,6 +6,9 @@ import { localeHref } from "@/lib/href";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { buildMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/json-ld";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -26,10 +29,18 @@ export async function generateMetadata({
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { blogPosts, ui } = getContent(locale);
+  const { blogPosts, ui, navLinks } = getContent(locale);
+  const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
+  const blogLabel = navLinks.find((l) => l.href === "/blog")?.label ?? "Blog";
+  const breadcrumbItems = [
+    { name: homeLabel, path: "/" },
+    { name: blogLabel, path: "/blog" },
+  ];
 
   return (
     <section>
+      <JsonLd data={breadcrumbSchema(breadcrumbItems, locale)} />
+      <Breadcrumb items={breadcrumbItems} locale={locale} />
       <div className="mx-auto max-w-3xl px-6 py-20">
         <Reveal>
           <h1 className="text-h1">{ui.blogPageTitle}</h1>

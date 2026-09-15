@@ -5,6 +5,9 @@ import { CtaBanner } from "@/components/cta-banner";
 import { ServiceCard } from "@/components/service-card";
 import { Reveal } from "@/components/reveal";
 import { buildMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/json-ld";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -25,10 +28,18 @@ export async function generateMetadata({
 export default async function ServiciosPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { services, ui } = getContent(locale);
+  const { services, ui, navLinks } = getContent(locale);
+  const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
+  const servicesLabel = navLinks.find((l) => l.href === "/servicios")?.label ?? "Servicios";
+  const breadcrumbItems = [
+    { name: homeLabel, path: "/" },
+    { name: servicesLabel, path: "/servicios" },
+  ];
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema(breadcrumbItems, locale)} />
+      <Breadcrumb items={breadcrumbItems} locale={locale} />
       <section className="border-b border-border">
         <Reveal className="mx-auto max-w-3xl px-6 py-20">
           <h1 className="text-h1">{ui.servicesOffered}</h1>

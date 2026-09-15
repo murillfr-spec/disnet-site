@@ -12,6 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 import { blogPostingSchema, extractFaqItems, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { parseSpanishDate } from "@/lib/blog-date";
 import { JsonLd } from "@/components/json-ld";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export function generateStaticParams() {
   const { blogPosts } = getContent("es");
@@ -54,20 +55,17 @@ export default async function BlogPostPage({
   const faqItems = extractFaqItems(post);
   const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
   const blogLabel = navLinks.find((l) => l.href === "/blog")?.label ?? "Blog";
+  const breadcrumbItems = [
+    { name: homeLabel, path: "/" },
+    { name: blogLabel, path: "/blog" },
+    { name: post.title, path: `/blog/${slug}` },
+  ];
 
   return (
     <>
       <JsonLd data={blogPostingSchema(post, locale, dateISO)} />
-      <JsonLd
-        data={breadcrumbSchema(
-          [
-            { name: homeLabel, path: "/" },
-            { name: blogLabel, path: "/blog" },
-            { name: post.title, path: `/blog/${slug}` },
-          ],
-          locale
-        )}
-      />
+      <JsonLd data={breadcrumbSchema(breadcrumbItems, locale)} />
+      <Breadcrumb items={breadcrumbItems} locale={locale} />
       {faqItems.length > 0 && <JsonLd data={faqPageSchema(faqItems)} />}
       <article className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-20">

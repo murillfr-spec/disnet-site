@@ -5,6 +5,9 @@ import { isLocale, type Locale } from "@/lib/i18n";
 import { Reveal } from "@/components/reveal";
 import { MotionLink } from "@/components/motion-link";
 import { buildMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/json-ld";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 const press = { type: "spring", damping: 1, duration: 0.3 } as const;
 
@@ -31,10 +34,18 @@ export async function generateMetadata({
 export default async function AreaClientesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: rawLocale } = await params;
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
-  const { clientAreaCopy, ui } = getContent(locale);
+  const { clientAreaCopy, ui, navLinks } = getContent(locale);
+  const homeLabel = navLinks.find((l) => l.href === "/")?.label ?? "Home";
+  const areaLabel = navLinks.find((l) => l.href === "/area-clientes")?.label ?? clientAreaCopy.title;
+  const breadcrumbItems = [
+    { name: homeLabel, path: "/" },
+    { name: areaLabel, path: "/area-clientes" },
+  ];
 
   return (
     <section>
+      <JsonLd data={breadcrumbSchema(breadcrumbItems, locale)} />
+      <Breadcrumb items={breadcrumbItems} locale={locale} />
       <div className="mx-auto max-w-5xl px-6 py-20">
         <Reveal className="mx-auto max-w-2xl text-center">
           <h1 className="text-h1">{clientAreaCopy.title}</h1>
