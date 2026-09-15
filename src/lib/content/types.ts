@@ -7,6 +7,8 @@ export type Service = {
   headline: string;
   /** SEO meta description (150-160 chars), only set when headline is out of range — falls back to headline otherwise. */
   metaDescription?: string;
+  /** SEO <title> (50-60 chars, keyword-focused), only set when it should differ from `${name} | Disnet` — falls back to that otherwise. */
+  metaTitle?: string;
   subheadline?: string;
   intro: string[];
   extra?: string[];
@@ -106,6 +108,8 @@ export type Ui = {
   servicesPageDescription: string;
   blogPageTitle: string;
   blogPageDescription: string;
+  /** SEO <title>, only set when it should differ from `${blogPageTitle} | Disnet` — falls back to that otherwise. */
+  blogPageMetaTitle?: string;
   changeToSpanish: string;
   changeToEnglish: string;
   changeToCatalan: string;
@@ -154,6 +158,8 @@ export type Content = {
     title: string;
     description: string;
     metaDescription?: string;
+    /** SEO <title>, only set when it should differ from `${title} | Disnet` — falls back to that otherwise. */
+    metaTitle?: string;
     portals: { name: string; description: string; href: string }[];
   };
   blogPosts: BlogPost[];

@@ -16,7 +16,7 @@ export async function generateMetadata({
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { ui } = getContent(locale);
   return buildMetadata({
-    title: `${ui.blogPageTitle} | Disnet`,
+    title: ui.blogPageMetaTitle ?? `${ui.blogPageTitle} | Disnet`,
     description: ui.blogPageDescription,
     path: "/blog",
     locale,

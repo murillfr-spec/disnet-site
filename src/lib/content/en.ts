@@ -60,6 +60,7 @@ const services: Content["services"] = [
     slug: "recepcion-de-mercancias",
     name: "Goods Receiving",
     headline: "With Disnet, your company's goods are always safe",
+    metaTitle: "Goods Receiving Services in Barcelona | Disnet",
     metaDescription:
       "Goods receiving with logistics quality control and incident management, in line with agreed specifications. 3PL logistics operator in Barcelona.",
     intro: [
@@ -95,6 +96,7 @@ const services: Content["services"] = [
     slug: "manipulacion-de-mercancias",
     name: "Goods Handling",
     headline: "Disnet, guaranteed traceability across all our processes",
+    metaTitle: "Goods Handling Services in Barcelona | Disnet",
     metaDescription:
       "Goods handling with full process traceability, from small lots to large volumes with semi-automated sequences, in Barcelona.",
     intro: [
@@ -136,6 +138,7 @@ const services: Content["services"] = [
     slug: "almacenaje",
     name: "Storage",
     headline: "At Disnet, we have the most advanced technology for storing your goods",
+    metaTitle: "Warehousing & Storage in Barcelona | Disnet",
     metaDescription:
       "Storage with over 6,000 rack locations and 15,000 picking locations across 6,500 m² in Barcelona. Advanced technology to preserve your goods.",
     intro: [
@@ -228,6 +231,7 @@ const services: Content["services"] = [
     slug: "preparacion-de-pedidos",
     name: "Order Preparation",
     headline: "Disnet, specialists in picking processes",
+    metaTitle: "Order Picking & Packing Services | Disnet",
     metaDescription:
       "Order preparation (picking) with careful planning to choose the most suitable method for each case. 3PL logistics operator in Barcelona.",
     intro: [
@@ -301,6 +305,7 @@ const services: Content["services"] = [
     slug: "empaqueado-packing",
     name: "Packaging – Packing",
     headline: "At Disnet, we guarantee the best packaging for your goods",
+    metaTitle: "Packaging and Packing Services in Barcelona | Disnet",
     metaDescription:
       "Packaging with the most advanced sustainability, safety and traceability criteria, plus WMS recommendations for every shipment in Barcelona.",
     intro: [
@@ -337,6 +342,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "At Disnet, we guarantee the best delivery times",
+    metaTitle: "E-commerce Logistics & Fulfillment | Disnet",
     metaDescription:
       "Fulfillment for Shopify, WooCommerce and the leading platforms. Over 25 years managing shipments, with capacity for 2,000,000 orders a year.",
     subheadline: "Fulfillment for Shopify, WooCommerce and the leading platforms",
@@ -379,6 +385,7 @@ const services: Content["services"] = [
     slug: "transporte-de-mercancias",
     name: "Goods Transport",
     headline: "At Disnet, we offer the best prices for transporting your goods",
+    metaTitle: "Freight & Goods Transport in Barcelona | Disnet",
     metaDescription:
       "Goods transport with logistics quality control before every load, fast delivery and always on time. The best prices in Barcelona.",
     subheadline: "Fast delivery, always on time",
@@ -417,6 +424,7 @@ const services: Content["services"] = [
     slug: "logistica-inversa",
     name: "Reverse Logistics",
     headline: "Returns and incident management with total reliability",
+    metaTitle: "Reverse Logistics: Returns Management | Disnet",
     metaDescription:
       "Reverse logistics: returns and incident management with total reliability, integrated with Shopify, WooCommerce, Magento, PrestaShop and Opencart.",
     intro: [
@@ -502,6 +510,7 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
   description: "For your maximum convenience and control, Disnet offers you its \"Client Area\", where you'll have access to all your important information online and in real time.",
   metaDescription:
     "Disnet client area: access all your shipment and logistics operation information online, in real time, conveniently and securely.",
+  metaTitle: "Client Area | Disnet",
   portals: [
     {
       name: "MyDLS",
@@ -2082,11 +2091,12 @@ const ui: Content["ui"] = {
   addressLabel: "Address",
   phoneLabel: "Phone",
   emailLabel: "Email",
-  contactPageTitle: "Contact | Disnet",
-  servicesPageTitle: "Services | Disnet",
+  contactPageTitle: "Contact | Disnet, 3PL Logistics Operator in Barcelona",
+  servicesPageTitle: "Logistics & Warehousing Services in Barcelona | Disnet",
   servicesPageDescription:
     "Receiving, handling, storage, order preparation, packaging, e-commerce, transport and reverse logistics.",
   blogPageTitle: "Logistics blog",
+  blogPageMetaTitle: "Logistics & Supply Chain Blog | Disnet",
   blogPageDescription:
     "News, insights and practical advice from the Disnet team on logistics operations, warehousing and supply chain management.",
   changeToSpanish: "Switch to Spanish",

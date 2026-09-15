@@ -60,6 +60,7 @@ const services: Content["services"] = [
     slug: "recepcion-de-mercancias",
     name: "Recepción de mercancías",
     headline: "Con Disnet, la mercancía de tu empresa está siempre segura",
+    metaTitle: "Recepción de Mercancías en Barcelona | Disnet",
     metaDescription:
       "Recepción de mercancías con control de calidad logístico y gestión de incidencias, según los pliegos acordados. Operador logístico 3PL en Barcelona.",
     intro: [
@@ -95,6 +96,7 @@ const services: Content["services"] = [
     slug: "manipulacion-de-mercancias",
     name: "Manipulación de mercancías",
     headline: "Disnet, trazabilidad garantizada en todos nuestros procesos",
+    metaTitle: "Manipulación de Mercancías en Barcelona | Disnet",
     metaDescription:
       "Manipulación de mercancías con trazabilidad total del proceso, desde lotes pequeños hasta grandes volúmenes con secuencias semiautomatizadas en Barcelona.",
     intro: [
@@ -136,6 +138,7 @@ const services: Content["services"] = [
     slug: "almacenaje",
     name: "Almacenaje",
     headline: "En Disnet, tenemos la tecnología más avanzada para el almacenaje de tus mercancías",
+    metaTitle: "Almacenaje Logístico en Barcelona | Disnet",
     metaDescription:
       "Almacenaje con más de 6.000 ubicaciones en racks y 15.000 de picking en 6.500 m² en Barcelona. Tecnología avanzada para conservar tu mercancía.",
     intro: [
@@ -228,6 +231,7 @@ const services: Content["services"] = [
     slug: "preparacion-de-pedidos",
     name: "Preparación de pedidos",
     headline: "Disnet, especialistas en procesos de picking",
+    metaTitle: "Preparación de Pedidos: Picking y Packing | Disnet",
     metaDescription:
       "Preparación de pedidos (picking) con planificación minuciosa para elegir el método más adecuado en cada caso. Operador logístico 3PL en Barcelona.",
     intro: [
@@ -301,6 +305,7 @@ const services: Content["services"] = [
     slug: "empaqueado-packing",
     name: "Empaquetado – Packing",
     headline: "En Disnet, te garantizamos el mejor empaquetado para tu mercancía",
+    metaTitle: "Empaquetado y Packing en Barcelona | Disnet",
     metaDescription:
       "Empaquetado y packing con los criterios más avanzados en sostenibilidad, seguridad y trazabilidad, y recomendaciones de nuestro SGA para cada envío en Barcelona.",
     intro: [
@@ -337,6 +342,7 @@ const services: Content["services"] = [
     slug: "e-commerce",
     name: "e-Commerce",
     headline: "En Disnet, te garantizamos los mejores tiempos de entrega",
+    metaTitle: "Logística para E-commerce y Fulfillment | Disnet",
     metaDescription:
       "Fulfillment para Shopify, WooCommerce y las principales plataformas. Más de 25 años gestionando envíos, con capacidad para 2.000.000 de pedidos al año.",
     subheadline: "Fulfillment para Shopify, WooCommerce y las principales plataformas",
@@ -379,6 +385,7 @@ const services: Content["services"] = [
     slug: "transporte-de-mercancias",
     name: "Transporte de mercancías",
     headline: "En Disnet, ofrecemos los mejores precios para el transporte de tu mercancía",
+    metaTitle: "Transporte de Mercancías en Barcelona | Disnet",
     metaDescription:
       "Transporte de mercancías con control de calidad logística antes de cada carga, entrega rápida y siempre a tiempo. Los mejores precios en Barcelona.",
     subheadline: "Entrega rápida y siempre a tiempo",
@@ -417,6 +424,7 @@ const services: Content["services"] = [
     slug: "logistica-inversa",
     name: "Logística inversa",
     headline: "Gestión de devoluciones e incidencias con total fiabilidad",
+    metaTitle: "Logística Inversa: Gestión de Devoluciones | Disnet",
     metaDescription:
       "Logística inversa: gestión de devoluciones e incidencias con total fiabilidad, integrada con Shopify, WooCommerce, Magento, PrestaShop y Opencart.",
     intro: [
@@ -502,6 +510,7 @@ const clientAreaCopy: Content["clientAreaCopy"] = {
   description: "Para tu máxima comodidad y control, Disnet te ofrece su «Área de clientes», donde tendrás acceso a toda tu información importante online y en tiempo real.",
   metaDescription:
     "Área de clientes de Disnet: accede online y en tiempo real a toda la información de tus envíos y operaciones logísticas de forma cómoda y segura.",
+  metaTitle: "Área de Clientes | Disnet",
   portals: [
     {
       name: "MyDLS",
@@ -2082,11 +2091,12 @@ const ui: Content["ui"] = {
   addressLabel: "Dirección",
   phoneLabel: "Teléfono",
   emailLabel: "Email",
-  contactPageTitle: "Contacto | Disnet",
-  servicesPageTitle: "Servicios | Disnet",
+  contactPageTitle: "Contacto | Disnet, Operador Logístico en Barcelona",
+  servicesPageTitle: "Servicios de Logística y Almacenaje en Barcelona | Disnet",
   servicesPageDescription:
     "Recepción, manipulación, almacenaje, preparación de pedidos, empaquetado, e-commerce, transporte y logística inversa.",
   blogPageTitle: "Blog sobre logística",
+  blogPageMetaTitle: "Blog de Logística y Cadena de Suministro | Disnet",
   blogPageDescription:
     "Novedades, análisis y consejos del equipo de Disnet sobre operaciones logísticas y cadena de suministro.",
   changeToSpanish: "Cambiar a Castellano",

@@ -21,7 +21,7 @@ export async function generateMetadata({
   const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
   const { clientAreaCopy } = getContent(locale);
   return buildMetadata({
-    title: `${clientAreaCopy.title} | Disnet`,
+    title: clientAreaCopy.metaTitle ?? `${clientAreaCopy.title} | Disnet`,
     description: clientAreaCopy.metaDescription ?? clientAreaCopy.description,
     path: "/area-clientes",
     locale,

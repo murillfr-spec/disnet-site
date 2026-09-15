@@ -43,7 +43,7 @@ export async function generateMetadata({
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
   return buildMetadata({
-    title: `${service.name} | Disnet`,
+    title: service.metaTitle ?? `${service.name} | Disnet`,
     description: service.metaDescription ?? service.headline,
     path: `/servicios/${slug}`,
     locale,
