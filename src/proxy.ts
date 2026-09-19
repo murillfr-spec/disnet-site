@@ -31,6 +31,7 @@ const ALLOWED_STATIC_PATHS = new Set([
   "/next.svg",
   "/vercel.svg",
   "/window.svg",
+  "/images/blog-almacenaje-barcelona.webp",
   "/images/hero-1.webp",
   "/images/hero-2.webp",
   "/images/hero-4-almacen.webp",
